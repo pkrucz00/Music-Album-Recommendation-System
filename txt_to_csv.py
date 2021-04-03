@@ -1,11 +1,10 @@
 import csv
 
-file_path = "500_rolling_stones_2012.txt"
-dest_path = "albums.csv"
+file_path = "500_rolling_stones_2012_sp.txt"
+dest_path = "albums_sp.csv"
 
 
-def read_file(path):
-    result = []
+def read_file(path, result):
     with open(path, 'r') as file:
         raw_strings = file.readlines()
     for line in raw_strings:
@@ -30,7 +29,7 @@ def clear_titles(table):
 
 
 def main():
-    table = read_file(file_path)
+    table = read_file(file_path, [["Artist", "Title"]])
     clear_titles(table)
     write_to_csv(table)
 

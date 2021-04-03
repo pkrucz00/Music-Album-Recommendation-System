@@ -13,7 +13,7 @@ Artist Title
 "Miles Davis" "Kind of Blue"
 "The Velvet Underground and Nico" "The Velvet Underground"
 "The Beatles" "Abbey Road"
-"The Jimi Hendrix Experience" "Are You Experienced?"
+"Jimi Hendrix" "Are You Experienced?"
 "Bob Dylan" "Blood on the Tracks"
 Nirvana Nevermind
 "Bruce Springsteen" "Born to Run"
@@ -22,7 +22,7 @@ Nirvana Nevermind
 "Chuck Berry" "The Great Twenty-Eight"
 "Robert Johnson" "The Complete Recordings"
 "John Lennon" "Plastic Ono Band"
-"Stevie Wonder" Innervisons
+"Stevie Wonder" Innervisions
 "James Brown" "Live at the Apollo"
 "Fleetwood Mac" Rumours
 U2 "The Joshua Tree"
@@ -35,11 +35,11 @@ Ramones Ramones
 "The Band" "Music From Big Pink"
 "David Bowie" "The Rise and Fall of Ziggy Stardust and the Spiders From Mars"
 "Carole King" Tapestry
-"The Eagles" "Hotel California"
-"Muddy Waters" "The Anthology"
+Eagles "Hotel California"
+"Muddy Waters" Anthology
 "The Beatles" "Please Please Me"
 Love "Forever Changes"
-"The Sex Pistols" "Never Mind the Bollocks" " Here's the Sex Pistols'"
+"Sex Pistols" "Never Mind the Bollocks" " Here's the Sex Pistols'"
 "The Doors" "The Doors"
 "Pink Floyd" "The Dark Side of the Moon"
 "Patti Smith" Horses
@@ -47,13 +47,13 @@ Love "Forever Changes"
 "Bob Marley and the Wailers" Legend
 "John Coltrane" "A Love Supreme"
 "Public Enemy" "It Takes a Nation of Millions to Hold Us Back"
-"The Allman Brothers Band" "At Fillmore East"
+"Allman Brothers Band" "At Fillmore East"
 "Little Richard" "Here's Little Richard"
 "Simon and Garfunkel" "Bridge Over Troubled Water"
 "Al Green" "Greatest Hits"
 "The Beatles" "Meet the Beatles!"
-"Ray Charles" "The Birth of Soul: The Complete Atlantic Recordings"
-"The Jimi Hendrix Experience" "Electric Ladyland"
+"Ray Charles" "The Birth of Soul"
+"Jimi Hendrix" "Electric Ladyland"
 "Elvis Presley" "Elvis Presley"
 "Stevie Wonder" "Songs in the Key of Life"
 "The Rolling Stones" "Beggars Banquet"
@@ -81,7 +81,7 @@ AC/DC "Back in Black"
 "John Lennon" Imagine
 "The Clash" "The Clash"
 "Neil Young" Harvest
-"The Jimi Hendrix Experience" "Axis: Bold as Love"
+"Jimi Hendrix" "Axis: Bold as Love"
 "Aretha Franklin" "I Never Loved a Man the Way I Loved You"
 "Aretha Franklin" "Lady Soul"
 "Bruce Springsteen" "Born in the U.S.A."
@@ -120,17 +120,17 @@ Cream "Disraeli Gears"
 "Etta James" "At Last!"
 "The Byrds" "Sweetheart of the Rodeo"
 "Sly and the Family Stone" Stand!
-"Original Soundtrack" "The Harder They Come"
-Run-DMC "Raising Hell"
+"Jimmy Cliff" "The Harder They Come"
+Run-D.M.C. "Raising Hell"
 "Moby Grape" "Moby Grape"
 "Janis Joplin" Pearl
 "Bob Marley and the Wailers" "Catch a Fire"
 "The Byrds" "Younger Than Yesterday"
-"Iggy and the Stooges" "Raw Power"
+"The Stooges" "Raw Power"
 "Talking Heads" "Remain in Light"
 Television "Marquee Moon"
 "Black Sabbath" Paranoid
-"Original Soundtrack" "Saturday Night Fever"
+"Various Artists" "Saturday Night Fever"
 "Bruce Springsteen" "The Wild" " the Innocent & the E Street Shuffle'"
 "The Notorious B.I.G." "Ready to Die"
 Pavement "Slanted and Enchanted"
@@ -140,7 +140,7 @@ Pavement "Slanted and Enchanted"
 "The Meters" Rejuvenation
 Blondie "Parallel Lines"
 "B.B. King" "Live at the Regal"
-"Phil Spector" "A Christmas Gift for You"
+"Various Artists" "A Christmas Gift for You"
 "Dr. John" GRIS-Gris
 N.W.A. "Straight Outta Compton"
 "Steely Dan" Aja
@@ -154,7 +154,7 @@ Santana Santana
 "A Tribe Called Quest" "The Low End Theory"
 "Howlin' Wolf" "Moanin' in the Moonlight"
 "The Pretenders" Pretenders
-"The Beastie Boys" "Paul's Boutique"
+"Beastie Boys" "Paul's Boutique"
 "Joy Division" Closer
 "Elton John" "Captain Fantastic and the Brown Dirt Cowboy"
 Kiss Alive!
@@ -173,7 +173,7 @@ Metallica "Master of Puppets"
 "Rod Stewart" "Every Picture Tells a Story"
 "Todd Rundgren" Something/Anything?
 "Bob Dylan" Desire
-"The Carpenters" "Close to You"
+Carpenters "Close to You"
 Aerosmith Rocks
 Funkadelic "One Nation Under a Groove"
 "Curtis Mayfield and the Impressions" "The Anthology 1961-1977"
@@ -193,9 +193,9 @@ Madonna "The Immaculate Collection"
 "The Flying Burrito Brothers" "The Gilded Palace of Sin"
 "Green Day" Dookie
 "Lou Reed" Transformer
-"John Mayall With Eric Clapton" "Blues Breakers"
+"John Mayall & the Bluesbreakers" Bluesbreakers
 "Various Artists" "Nuggets: Original Artyfacts From the First Psychedelic Era" " 1965-1968'"
-R.E.M. Murmurs
+R.E.M. Murmur
 "Little Walter" "The Best Of"
 "The Strokes" "Is This It"
 AC/DC "Highway to Hell"
@@ -208,7 +208,7 @@ Prince "Dirty Mind"
 Santana Abraxas
 "Cat Stevens" "Tea for the Tillerman"
 "Pearl Jam" Ten
-"Neil Young With Crazy Horse" "Everybody Knows This Is Nowhere"
+"Neil Young" "Everybody Knows This Is Nowhere"
 "Pink Floyd" "Wish You Were Here"
 Pavement "Crooked Rain" " Crooked Rain'"
 "The Rolling Stones" "Tattoo You"
@@ -238,9 +238,9 @@ Queen "A Night at the Opera"
 "The Who" "The Who Sings My Generation"
 "Howlin' Wolf" "Howlin' Wolf"
 Madonna "Like a Prayer"
-"Steely Dan" "Can't Buy a Thrill"
+"Steely Dan" "Cant Buy A Thrill"
 "The Replacements" "Let It Be"
-Run-D.M.C. Run-D.M.C.
+Run-D.M.C. "RUN DMC"
 "Black Sabbath" "Black Sabbath"
 Eminem "The Marshall Mathers LP"
 "Jerry Lee Lewis" "All Killer" " No Filler!'"
@@ -281,13 +281,13 @@ Parliament "Mothership Connection"
 U2 "All That You Can't Leave Behind"
 "Mary J. Blige" "My Life"
 "Muddy Waters" "Folk Singer"
-"Barry White" "Can't Get Enough"
+"Barry White" "Cant Get Enough"
 "The Cars" "The Cars"
 "Stevie Wonder" "Music of My Mind"
-"Al Green" "I'm Still in Love With You"
+"Al Green" "Im Still in Love With You"
 X "Los Angeles"
 "Grateful Dead" "Anthem of the Sun"
-"The Kinks" "Something Else by the Kinks"
+"The Kinks" "Something Else"
 "Al Green" "Call Me"
 "Talking Heads" "Talking Heads: 77"
 "Bob Dylan and the Band" "The Basement Tapes"
@@ -295,7 +295,7 @@ X "Los Angeles"
 MC5 "Kick Out the Jams"
 "Leonard Cohen" "Songs of Love and Hate"
 "The Smiths" "Meat Is Murder"
-"The Mothers of Invention" "We're Only in It for the Money"
+"The Mothers of Invention" "Were Only in It for the Money"
 "Kanye West" "The College Dropout"
 Weezer Weezer
 "Black Sabbath" "Master of Reality"
@@ -348,8 +348,8 @@ Moby Play
 "Pink Floyd" "The Piper at the Gates of Dawn"
 "Muddy Waters" "At Newport 1960"
 Jay-Z "The Black Album"
-"The Yardbirds" "Roger the Engineer (a.k.a. Over Under Sideways Down)"
-"Neil Young and Crazy Horse" "Rust Never Sleeps"
+"The Yardbirds" "Roger the Engineer"
+"Neil Young" "Rust Never Sleeps"
 "Dire Straits" "Brothers in Arms"
 "Kanye West" "My Beautiful Dark Twisted Fantasy"
 "Billy Joel" "52nd Street"
@@ -374,15 +374,15 @@ Madonna "Ray of Light"
 "Jefferson Airplane" Volunteers
 "Roxy Music" Siren
 "Jackson Browne" "Late for the Sky"
-Björk Post
+Bjork Post
 "John Lee Hooker" "The Ultimate Collection 1948-1990"
 Oasis "(What's the Story) Morning Glory?"
 TLC CrazySexyCool
 "Toots and the Maytals" "Funky Kingston"
-"The Beach Boys" "Smile (2011 Version)"
+"The Beach Boys" Smile
 "Modern Lovers" "Modern Lovers"
 "Talking Heads" "More Songs About Buildings and Food"
-"The Who" "A Quick One (Happy Jack)"
+"The Who" "A Quick One"
 "Bob Dylan" "Love and Theft"
 "Steely Dan" "Pretzel Logic"
 "Wu-Tang Clan" "Enter the Wu-Tang: 36 Chambers"
@@ -411,12 +411,12 @@ Nas Illmatic
 "Bob Dylan" "Time Out of Mind"
 "Eric Clapton" "461 Ocean Boulevard"
 Wire "Pink Flag"
-Minuteman "Doubles Nickels on The Dime"
-"The Go- Go's" "Beauty and The Beast"
+Minutemen "Double Nickels on the Dime"
+"The Go- Go's" "Beauty And The Beat"
 "Van Halen" "Van Halen"
 "Tom Waits" "Mule Variations"
 U2 Boy
-"Paul McCartney and Wings" "Band On The Run"
+Wings "Band On The Run"
 Portishead Dummy
 "Buddy Holly and the Crickets" "The ""Chirping"" Crickets"
 "Various Artists" "The Best of Girl Groups Volumes 1 and 2"
@@ -445,7 +445,7 @@ Devo "Q: Are We Not Men? A: We Are Devo!"
 War "The World Is A Ghetto"
 "Steve Miller Band" "Fly Like an Eagle"
 MC5 "Back in the USA"
-"Stan Getz and Joao Gilberto" Getz/Gilberto
+"Stan Getz" Getz/Gilberto
 "The Police" Synchronicity
 "Big Star" "Third/Sister Lovers"
 "Jackson Browne" "For Everyman"
@@ -467,26 +467,26 @@ R.E.M. Document
 Coldplay "A Rush of Blood to the Head"
 "Bruce Springsteen" "Tunnel of Love"
 "The Paul Butterfield Blues Band" "The Paul Butterfield Blues Band"
-"The Fugees" "The Score"
+Fugees "The Score"
 "LL Cool J" Radio
 "Richard and Linda Thompson" "I Want to See the Bright Lights Tonight"
 "George Michael" Faith
 "The Smiths" "The Smiths"
-"Manu Chao" "Próxima Estación: Esperanza"
+"Manu Chao" "Proxima Estacion: Esperanza"
 "Elvis Costello and the Attractions" "Armed Forces"
 "The Notorious B.I.G." "Life After Death"
 "Merle Haggard" "Down Every Road"
 "Loretta Lynn" "All Time Greatest Hits"
 Funkadelic "Maggot Brain"
 Raekwon "Only Built 4 Cuban Linx"
-D'Angelo Voodoo
+"D Angelo" Voodoo
 "Steve Earle" "Guitar Town"
 "Gang of Four" Entertainment!
 "Mott the Hoople" "All the Young Dudes"
 "Pearl Jam" Vitalogy
 Earth "Wind and Fire" " 'That's the Way of the World'"
 "Cyndi Lauper " "She's So Unusual"
-"Hüsker Dü" "New Day Rising"
+"Husker Du" "New Day Rising"
 Kiss Destroyer
 "ZZ Top" "Tres Hombres"
 "Albert King" "Born Under a Bad Sign"
