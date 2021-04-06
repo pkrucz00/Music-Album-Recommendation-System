@@ -2,31 +2,36 @@ import pylast
 import csv
 import json
 import logging
+
 logging.basicConfig(level=logging.WARNING)
 
+last_fm_api_key = "194ebdf5b49fa996adb5ffb9bfcab1db"
 passwd_path = "hidden/passwdData.csv"
 albums_info_path = "album_info/albums.csv"
 dest_path = "album_info/last_fm_tags.json"
 
-'''
-Names in password csv file:
 
-NAME            FIRST_KEY   SECOND_KEY
-last_fm_api     API Key 	Shared Secret
-spotify_api     Client ID 	Client Secret
-last_fm_login   Login       Hashed Password 
-'''
-
-
-def read_passwords_from_csv(path):
-    result = {}
-
-    with open(path, "r", newline='') as csv_file:
-        csv_reader = csv.reader(csv_file, delimiter=";")
-        for line in csv_reader:
-            result[line[0]] = (line[1], line[2])  # result["name"] = ("first_key", "second_key")
-
-    return result
+# ----- unnecessary as of right now --------
+# '''
+# Names in password csv file:
+#
+# NAME            FIRST_KEY   SECOND_KEY
+# last_fm_api     API Key 	Shared Secret
+# spotify_api     Client ID 	Client Secret
+# last_fm_login   Login       Hashed Password
+# '''
+#
+#
+# def read_passwords_from_csv(path):
+#     result = {}
+#
+#     with open(path, "r", newline='') as csv_file:
+#         csv_reader = csv.reader(csv_file, delimiter=";")
+#         for line in csv_reader:
+#             result[line[0]] = (line[1], line[2])  # result["name"] = ("first_key", "second_key")
+#
+#     return result
+# -------------------------------------------
 
 
 def read_album_info_from_csv(path):
@@ -60,15 +65,16 @@ def get_tags(artist, title, network):
         return {}
 
 
-def get_albums_tag(api_info, user_info, albums_info):
+def get_albums_tag(api_key, albums_info):
     network = pylast.LastFMNetwork(
-        api_key=api_info[0],
+        api_key=api_key
         # api_secret=api_info[1],
         # username=user_info[0],
         # password_hash=user_info[1]
     )
 
-    return [{"title": title, "artist": artist, "tags": get_tags(artist, title, network)} for artist, title in albums_info]
+    return [{"title": title, "artist": artist, "tags": get_tags(artist, title, network)} for artist, title in
+            albums_info]
 
 
 def write_to_json(data, path):
@@ -77,12 +83,11 @@ def write_to_json(data, path):
 
 
 def main():
-    passwords = read_passwords_from_csv(passwd_path)
+    # passwords = read_passwords_from_csv(passwd_path)
     albums_info = read_album_info_from_csv(albums_info_path)
 
-    tags = get_albums_tag(api_info=passwords["last_fm_api"],
-                     user_info=passwords["last_fm_login"],
-                     albums_info=albums_info)
+    tags = get_albums_tag(api_key=last_fm_api_key,
+                          albums_info=albums_info)
 
     write_to_json(tags, dest_path)
 

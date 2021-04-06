@@ -1,6 +1,6 @@
 import csv
 
-file_path = "500_rolling_stones_2012.txt"
+file_path = "500_rolling_stones_2012_sp_some_deleted.txt"
 dest_path = "../album_info/albums.csv"
 
 
@@ -32,7 +32,7 @@ def clear_titles(table):  # further text cleaning
 def main():
     table = read_file(file_path, [["Artist", "Title"]])
     clear_titles(table)
-    # write_to_csv(table)   There are some issues with the text file - don't write to csv until the errors are fixed
+    #write_to_csv(table)   # There are some issues with the text file - don't write to csv until the errors are fixed
 
 
 if __name__ == '__main__':

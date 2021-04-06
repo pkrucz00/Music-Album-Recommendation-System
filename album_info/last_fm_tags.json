@@ -160,22 +160,6 @@
         "title": "The White Album"
     },
     {
-        "artist": "Elvis Presley",
-        "tags": {
-            "1976": 67,
-            "50s": 84,
-            "Rolling Stone 500 Greatest Albums": 34,
-            "USA": 17,
-            "albums I own": 17,
-            "classic rock": 34,
-            "favorite albums": 17,
-            "goodmusicqaz": 34,
-            "rock": 34,
-            "rockabilly": 100
-        },
-        "title": "The Sun Sessions"
-    },
-    {
         "artist": "Miles Davis",
         "tags": {
             "1959": 12,
@@ -907,39 +891,7 @@
         "title": "Beggars Banquet"
     },
     {
-        "artist": "Creedence Clearwater Revival",
-        "tags": {
-            "70s": 34,
-            "Southern Rock": 38,
-            "albums I own": 71,
-            "blues": 30,
-            "blues rock": 13,
-            "classic rock": 100,
-            "creedence clearwater revival": 17,
-            "folk rock": 17,
-            "rock": 59,
-            "rock n roll": 13
-        },
-        "title": "Chronicle, Vol. 1"
-    },
-    {
-        "artist": "Captain Beefheart and His Magic Band",
-        "tags": {
-            "1969": 45,
-            "60s": 54,
-            "Avant-Garde": 84,
-            "Experimental Rock": 31,
-            "albums I own": 19,
-            "art rock": 31,
-            "blues": 33,
-            "experimental": 100,
-            "psychedelic": 62,
-            "rock": 49
-        },
-        "title": "Trout Mask Replica"
-    },
-    {
-        "artist": "Sly & the Family Stone",
+        "artist": "Sly and the Family Stone",
         "tags": {
             "70s": 45,
             "Rolling Stone 500 Greatest Albums": 23,
@@ -1001,21 +953,6 @@
             "the rolling stones": 29
         },
         "title": "Sticky Fingers"
-    },
-    {
-        "artist": "Phil Spector",
-        "tags": {
-            "50s": 50,
-            "RS500best": 50,
-            "albums I own": 50,
-            "classic rock": 50,
-            "mrserialspectre": 50,
-            "phil spector": 100,
-            "rolling stone 500 greatest albums of all time": 50,
-            "time-100": 50,
-            "wall of sound": 50
-        },
-        "title": "Back to Mono (1958-1969)"
     },
     {
         "artist": "Van Morrison",
@@ -2552,22 +2489,6 @@
         "title": "1999"
     },
     {
-        "artist": "Linda Ronstadt",
-        "tags": {
-            "70s": 23,
-            "Favourites": 23,
-            "Linda Rondstat": 100,
-            "classic rock": 56,
-            "country": 23,
-            "country rock": 45,
-            "female": 23,
-            "female vocalist": 45,
-            "folk": 23,
-            "sexy": 23
-        },
-        "title": "The Very Best of Linda Ronstadt"
-    },
-    {
         "artist": "Marvin Gaye",
         "tags": {
             "1973": 20,
@@ -2758,54 +2679,6 @@
             "rock": 39
         },
         "title": "Rocks"
-    },
-    {
-        "artist": "Funkadelic",
-        "tags": {
-            "1001 Albums You Must Hear Before You Die": 12,
-            "1978": 40,
-            "70s": 52,
-            "Rolling Stone 500 Greatest Albums": 6,
-            "funk": 100,
-            "funk-rock": 6,
-            "funky": 15,
-            "p-funk": 6,
-            "rock": 9,
-            "soul": 32
-        },
-        "title": "One Nation Under a Groove"
-    },
-    {
-        "artist": "Curtis Mayfield and the Impressions",
-        "tags": {
-            "1992": 50,
-            "70s": 50,
-            "90s": 50,
-            "Rolling Stone 500 Greatest Albums": 100,
-            "Soul Funk": 50,
-            "USA": 50,
-            "compilation": 50,
-            "laptop": 50,
-            "male singer songwriter": 50,
-            "motown": 100
-        },
-        "title": "The Anthology 1961-1977"
-    },
-    {
-        "artist": "Abba",
-        "tags": {
-            "70s": 18,
-            "80s": 18,
-            "Rolling Stone 500 Greatest Albums": 12,
-            "abba": 18,
-            "abbaesque": 12,
-            "albums I own": 18,
-            "dance": 12,
-            "female vocalists": 12,
-            "pop": 100,
-            "swedish": 12
-        },
-        "title": "The Definitive Collection"
     },
     {
         "artist": "The Rolling Stones",
@@ -3055,22 +2928,6 @@
         "title": "Bluesbreakers"
     },
     {
-        "artist": "Various Artists",
-        "tags": {
-            "60s": 100,
-            "Garage Rock": 100,
-            "Psychedelic Rock": 50,
-            "blue eyed soul": 50,
-            "blues rock": 50,
-            "folk rock": 50,
-            "garage": 50,
-            "proto-punk": 100,
-            "psychedelic pop": 50,
-            "rock & roll": 50
-        },
-        "title": "Nuggets: Original Artyfacts From the First Psychedelic Era, 1965-1968"
-    },
-    {
         "artist": "R.E.M.",
         "tags": {
             "1983": 93,
@@ -3085,11 +2942,6 @@
             "rock": 67
         },
         "title": "Murmur"
-    },
-    {
-        "artist": "Little Walter",
-        "tags": {},
-        "title": "The Best Of"
     },
     {
         "artist": "The Strokes",
@@ -3319,11 +3171,6 @@
             "the rolling stones": 16
         },
         "title": "Tattoo You"
-    },
-    {
-        "artist": "Ike and Tina Turner",
-        "tags": {},
-        "title": "Proud Mary: The Best of Ike and Tina Turner"
     },
     {
         "artist": "New York Dolls",
@@ -3634,27 +3481,6 @@
         "title": "Bookends"
     },
     {
-        "artist": "Patsy Cline",
-        "tags": {
-            "2000": 50,
-            "Rolling Stone 500 Greatest Albums": 100,
-            "Universal Records": 50,
-            "mmt rs 500": 50,
-            "patsy cline taggradio": 50,
-            "rolling stone top 500 album": 50,
-            "rs500": 50
-        },
-        "title": "The Ultimate Collection"
-    },
-    {
-        "artist": "Jackie Wilson",
-        "tags": {
-            "Rolling Stone 500 Greatest Albums": 100,
-            "rs500": 100
-        },
-        "title": "Mr. Excitement!"
-    },
-    {
         "artist": "The Who",
         "tags": {
             "1001 Albums You Must Hear Before You Die": 41,
@@ -3773,11 +3599,6 @@
             "rap": 94
         },
         "title": "The Marshall Mathers LP"
-    },
-    {
-        "artist": "Jerry Lee Lewis",
-        "tags": {},
-        "title": "All Killer, No Filler!"
     },
     {
         "artist": "The Mothers of Invention",
@@ -4276,11 +4097,6 @@
             "soul": 32
         },
         "title": "Rhythm Nation 1814"
-    },
-    {
-        "artist": "Harry Smith, Ed.",
-        "tags": {},
-        "title": "Anthology of American Folk Music"
     },
     {
         "artist": "David Bowie",
@@ -5324,22 +5140,6 @@
         "title": "Stop Making Sense"
     },
     {
-        "artist": "De La Soul",
-        "tags": {
-            "1989": 87,
-            "80s": 52,
-            "Hip-Hop": 100,
-            "albums I own": 38,
-            "favorite albums": 14,
-            "golden age hip hop": 32,
-            "hip hop": 59,
-            "native tongues": 18,
-            "rap": 25,
-            "whimsical": 11
-        },
-        "title": "3 Feet High and Rising"
-    },
-    {
         "artist": "Pink Floyd",
         "tags": {
             "1967": 36,
@@ -5800,14 +5600,6 @@
         "title": "Post"
     },
     {
-        "artist": "John Lee Hooker",
-        "tags": {
-            "greatest hits": 100,
-            "rs500": 100
-        },
-        "title": "The Ultimate Collection 1948-1990"
-    },
-    {
         "artist": "Oasis",
         "tags": {
             "1995": 32,
@@ -6137,22 +5929,6 @@
         "title": "Rain Dogs"
     },
     {
-        "artist": "The Temptations",
-        "tags": {
-            "90s": 67,
-            "Classic soul and funk": 67,
-            "RS500best": 67,
-            "Rolling Stone 500 Greatest Albums": 67,
-            "USA": 67,
-            "compilation": 67,
-            "laptop": 67,
-            "motown": 100,
-            "old favorites": 67,
-            "temptations": 67
-        },
-        "title": "Anthology"
-    },
-    {
         "artist": "Red Hot Chili Peppers",
         "tags": {
             "1999": 17,
@@ -6447,11 +6223,6 @@
             "rolling stone 500 greatest albums of all time": 100
         },
         "title": "The \"Chirping\" Crickets"
-    },
-    {
-        "artist": "Various Artists",
-        "tags": {},
-        "title": "The Best of Girl Groups Volumes 1 and 2"
     },
     {
         "artist": "The Ronettes",
@@ -6868,22 +6639,6 @@
         "title": "Synchronicity"
     },
     {
-        "artist": "Big Star",
-        "tags": {
-            "1978": 100,
-            "70s": 67,
-            "Favourites": 34,
-            "albums I own": 34,
-            "beautiful": 34,
-            "classic albums": 34,
-            "classic rock": 34,
-            "pop": 34,
-            "power pop": 67,
-            "rs500": 34
-        },
-        "title": "Third/Sister Lovers"
-    },
-    {
         "artist": "Jackson Browne",
         "tags": {
             "1973": 25,
@@ -7028,22 +6783,6 @@
         "title": "Tumbleweed Connection"
     },
     {
-        "artist": "The Drifters",
-        "tags": {
-            "60s": 100,
-            "Rolling Stone 500 Greatest Albums": 100,
-            "USA": 50,
-            "compilation": 50,
-            "doo wop": 50,
-            "greatest hits": 50,
-            "laptop": 50,
-            "pop": 50,
-            "rock n roll": 50,
-            "soul": 50
-        },
-        "title": "Golden Hits"
-    },
-    {
         "artist": "Hole",
         "tags": {
             "1994": 32,
@@ -7058,22 +6797,6 @@
             "rock": 41
         },
         "title": "Live Through This"
-    },
-    {
-        "artist": "Public Image Ltd.",
-        "tags": {
-            "1001 Albums You Must Hear Before You Die": 22,
-            "1979": 45,
-            "Experimental Rock": 35,
-            "albums I own": 19,
-            "british": 14,
-            "dub": 14,
-            "experimental": 32,
-            "new wave": 16,
-            "post-punk": 100,
-            "punk": 16
-        },
-        "title": "Metal Box"
     },
     {
         "artist": "R.E.M.",
