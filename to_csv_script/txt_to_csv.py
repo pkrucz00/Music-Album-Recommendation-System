@@ -30,7 +30,7 @@ def clear_titles(table):  # further text cleaning
 
 
 def main():
-    table = read_file(file_path, [["Artist", "Title"]])
+    table = read_file(file_path, [])
     clear_titles(table)
     #write_to_csv(table)   # There are some issues with the text file - don't write to csv until the errors are fixed
 
