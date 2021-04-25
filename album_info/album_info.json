@@ -3115,17 +3115,13 @@
             "valence": 0.5763030653596238
         },
         "genre": [
-            "james taylor",
             "soft rock",
             "folk",
             "fire and rain",
             "blues",
-            "peter asher",
             "knocking 'round the zoo",
             "sweet baby james",
-            "james taylor and the original flying machine",
-            "country",
-            "warner bros."
+            "country"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 64,
@@ -4512,13 +4508,9 @@
         "genre": [
             "jazz fusion",
             "chicano rock",
-            "canongate",
-            "allmusic",
             "latin rock",
             "blues rock",
-            "all media network",
             "psychedelic rock",
-            "canongate books",
             "acid rock"
         ],
         "tags": {
@@ -5085,7 +5077,6 @@
         },
         "genre": [
             "pub rock",
-            "popmatters",
             "power pop",
             "new york",
             "punk rock",
@@ -6094,10 +6085,8 @@
             "valence": 0.7058276520140218
         },
         "genre": [
-            "stylus magazine",
             "post-disco",
             "dance-punk",
-            "the guardian",
             "pop",
             "r&b",
             "funk",
@@ -6508,10 +6497,8 @@
             "valence": 0.2871276054059688
         },
         "genre": [
-            "allmusic",
             "experimental rock",
             "the guardian",
-            "las vegas weekly",
             "shoegaze",
             "spin",
             "chicago tribune",
@@ -11299,13 +11286,9 @@
             "valence": 0.32617915369568246
         },
         "genre": [
-            "popmatters",
             "experimental rock",
             "folk rock",
             "avant-pop",
-            "rolling stone",
-            "the new york observer",
-            "the wall street journal",
             "art pop",
             "psychedelic rock",
             "progressive pop"
@@ -12620,7 +12603,6 @@
             "art pop",
             "ambient",
             "art rock",
-            "interview",
             "minimalist"
         ],
         "tags": {
