@@ -11,6 +11,31 @@ def get_features_matrix(features, size):
     return np.array([[np.sum(np.abs(standardized[alb_1, :] - standardized[alb_2, :])) for alb_2 in range(size)] for alb_1 in range(size)])
 
 
+def get_tags_matrix(tags):
+    tags_values = np.array([np.array([tag[1] for tag in album_tags]) for album_tags in tags])
+    tags_values = np.sqrt(np.nan_to_num(tags_values))
+    weights_sum = np.sum(tags_values, axis=1)
+    tags_values = np.array([np.divide(album_tags_values, weights_sum[index]) for index, album_tags_values in enumerate(tags_values)])
+    tags = [[(tag[0], tags_values[alb_ind][tag_ind]) for tag_ind, tag in enumerate(album_tags)] for alb_ind, album_tags in enumerate(tags)]
+
+    similarity = np.zeros([len(tags), len(tags)])
+    for album_a_index, album_a_tags in enumerate(tags):
+        for album_b_index, album_b_tags in enumerate(tags):
+            for album_a_tag in album_a_tags:
+                for album_b_tag in album_b_tags:
+                    if album_a_tag[0] == album_b_tag[0]:
+                        similarity[album_a_index][album_b_index] += album_a_tag[1] + album_b_tag[1]
+
+    # distribution = [0 for i in range(21)]
+    # x = [i for i in range(21)]
+    # for album_a_index, album_a_tags in enumerate(tags):
+    #     for album_b_index, album_b_tags in enumerate(tags):
+    #         distribution[(int)(similarity[album_a_index][album_b_index] * 10)] += 1
+    # plt.scatter(x, distribution)
+    # plt.show()
+
+    return similarity
+
 
 def prepare_data(json_path):
     with open(json_path, "r") as file:
