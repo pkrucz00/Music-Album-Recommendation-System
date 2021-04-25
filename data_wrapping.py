@@ -38,5 +38,22 @@ def prepare_data(json_path):
 
     return spotify_features, lastfm_tags, wiki_generes
 
-prepare_data(JSON_PATH)
-#print(prepare_data(JSON_PATH))
+
+def get_genres_matrix(data):
+    def cos_sim(tab, i, j):
+        return np.sum(tab[:, i]*tab[:, j])/(np.linalg.norm(tab[:, i])*np.linalg.norm(tab[:, j]))
+
+    general_generes = np.array(["rock", "blues", "jazz", "hip-hop", "rap", "pop", "r&b", "soul", "funk"])
+
+    squeezed_matrix = np.array([";".join(row) for row in data])
+
+    genre_vectors = np.sign(np.array([np.char.count(squeezed_matrix, genre_name) for genre_name in general_generes]))
+    n = genre_vectors.shape[1]
+
+    return np.array([[cos_sim(genre_vectors, i, j) for i in range(n)] for j in range(n)])
+
+
+
+spotify_data, lastfm_data, wiki_data = prepare_data(JSON_PATH)
+marek_marucha = get_genres_matrix(data=wiki_data)
+print(marek_marucha)
