@@ -851,37 +851,6 @@
         "title": "Who's Next"
     },
     {
-        "artist": "Led Zeppelin",
-        "features": {
-            "acousticness": 0.3618662096631461,
-            "danceability": 0.39575138311754937,
-            "energy": 0.6551262755061144,
-            "instrumentalness": 0.25796379325378505,
-            "liveness": 0.1759893937207826,
-            "loudness": -10.133541119591774,
-            "speechiness": 0.046116713298288474,
-            "tempo": 116.19624201230579,
-            "valence": 0.5634014962598514
-        },
-        "genre": [
-            "heavy metal",
-            "hard rock"
-        ],
-        "tags": {
-            "1969": 55,
-            "60s": 58,
-            "Led Zeppelin": 20,
-            "albums I own": 100,
-            "blues rock": 59,
-            "classic rock": 90,
-            "favorite albums": 18,
-            "hard rock": 92,
-            "heavy metal": 17,
-            "rock": 60
-        },
-        "title": "Led Zeppelin"
-    },
-    {
         "artist": "Joni Mitchell",
         "features": {
             "acousticness": 0.9081862097859718,
@@ -9289,40 +9258,6 @@
             "roots rock": 100
         },
         "title": "Damn the Torpedoes"
-    },
-    {
-        "artist": "The Velvet Underground",
-        "features": {
-            "acousticness": 0.22274108982353977,
-            "danceability": 0.38699084706914183,
-            "energy": 0.6114571777118321,
-            "instrumentalness": 0.4077397845397421,
-            "liveness": 0.10001945267632066,
-            "loudness": -11.346219737073268,
-            "speechiness": 0.061743617700773405,
-            "tempo": 117.45254496011701,
-            "valence": 0.44283253605947653
-        },
-        "genre": [
-            "experimental rock",
-            "avant-pop",
-            "psychedelic rock",
-            "art rock",
-            "proto-punk"
-        ],
-        "tags": {
-            "1969": 98,
-            "60s": 96,
-            "Psychedelic Rock": 38,
-            "The Velvet Underground": 28,
-            "albums I own": 89,
-            "art rock": 26,
-            "classic rock": 82,
-            "favorite albums": 33,
-            "psychedelic": 77,
-            "rock": 100
-        },
-        "title": "The Velvet Underground"
     },
     {
         "artist": "Pixies",

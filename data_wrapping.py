@@ -3,6 +3,14 @@ import json
 
 JSON_PATH = "album_info/album_info.json"
 
+def get_features_matrix(features, size):
+    #data standarization. Every feature has expected value 0 and standard deviation 1.
+    standardized = np.array([(features[:, feature] - features[:, feature].mean()) / features[:, feature].std() for feature in range(9)]).T
+
+    #returns matrix of similarity between albums. Every value is a sum of distances between feature values of two albums. The smaller number is, the more similar albums are.
+    return np.array([[np.sum(np.abs(standardized[alb_1, :] - standardized[alb_2, :])) for alb_2 in range(size)] for alb_1 in range(size)])
+
+
 
 def prepare_data(json_path):
     with open(json_path, "r") as file:
@@ -30,5 +38,5 @@ def prepare_data(json_path):
 
     return spotify_features, lastfm_tags, wiki_generes
 
-
-print(prepare_data(JSON_PATH))
+prepare_data(JSON_PATH)
+#print(prepare_data(JSON_PATH))
