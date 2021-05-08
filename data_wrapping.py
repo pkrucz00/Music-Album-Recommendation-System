@@ -53,9 +53,6 @@ def prepare_data(json_path):
     with open(json_path, "r") as file:
         albums_info = json.load(file)
 
-    print(albums_info[114])
-    print(albums_info[384])
-
     no_albums = len(albums_info)
     max_tags = max(map(lambda album: len(album["tags"]), albums_info))
     max_genres = max(map(lambda album: len(album["genre"]), albums_info))
@@ -77,7 +74,7 @@ def prepare_data(json_path):
         for j in range(max_genres):
             wiki_generes[i][j] = album_genres[j] if j < no_genres else None
 
-    get_tags_matrix(lastfm_tags)
+    #get_tags_matrix(lastfm_tags)
     return spotify_features, lastfm_tags, wiki_generes
 
 
