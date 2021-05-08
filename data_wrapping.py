@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import json
 
@@ -12,27 +13,38 @@ def get_features_matrix(features, size):
 
 
 def get_tags_matrix(tags):
-    tags_values = np.array([np.array([tag[1] for tag in album_tags]) for album_tags in tags])
-    tags_values = np.sqrt(np.nan_to_num(tags_values))
+    tags_values = np.sqrt(np.array([[tag[1] for tag in album_tags] for album_tags in tags]))
     weights_sum = np.sum(tags_values, axis=1)
-    tags_values = np.array([np.divide(album_tags_values, weights_sum[index]) for index, album_tags_values in enumerate(tags_values)])
+    tags_values = np.array([np.divide(tags_weights, weights_sum[index]) for index, tags_weights in enumerate(tags_values)])
     tags = [[(tag[0], tags_values[alb_ind][tag_ind]) for tag_ind, tag in enumerate(album_tags)] for alb_ind, album_tags in enumerate(tags)]
+    similarity = np.array([[np.sum([[tag_1[1] + tag_2[1] if tag_1[0] == tag_2[0] else 0 for tag_2 in tags_2] for tag_1 in tags_1]) for tags_2 in tags] for tags_1 in tags])
 
-    similarity = np.zeros([len(tags), len(tags)])
-    for album_a_index, album_a_tags in enumerate(tags):
-        for album_b_index, album_b_tags in enumerate(tags):
-            for album_a_tag in album_a_tags:
-                for album_b_tag in album_b_tags:
-                    if album_a_tag[0] == album_b_tag[0]:
-                        similarity[album_a_index][album_b_index] += album_a_tag[1] + album_b_tag[1]
-
-    # distribution = [0 for i in range(21)]
-    # x = [i for i in range(21)]
+    # similarity = np.zeros([len(tags), len(tags)])
     # for album_a_index, album_a_tags in enumerate(tags):
     #     for album_b_index, album_b_tags in enumerate(tags):
-    #         distribution[(int)(similarity[album_a_index][album_b_index] * 10)] += 1
-    # plt.scatter(x, distribution)
-    # plt.show()
+    #         for album_a_tag in album_a_tags:
+    #             for album_b_tag in album_b_tags:
+    #                 if album_a_tag[0] == album_b_tag[0]:
+    #                     similarity[album_a_index][album_b_index] += album_a_tag[1] + album_b_tag[1]
+
+    distribution = [0 for i in range(21)]
+    x = [i for i in range(21)]
+    for album_a_index, album_a_tags in enumerate(tags):
+        for album_b_index, album_b_tags in enumerate(tags):
+            distribution[(int)(similarity[album_a_index][album_b_index] * 10)] += 1
+    plt.scatter(x, distribution)
+    plt.show()
+
+    distribution = [0 for i in range(50)]
+    x = [i for i in range(50)]
+    for album_a_index, album_a_tags in enumerate(tags):
+        counter = 0
+        for album_b_index, album_b_tags in enumerate(tags):
+            if similarity[album_a_index][album_b_index] > 0:
+                counter += 1
+        distribution[counter // 10] += 1
+    plt.scatter(x, distribution)
+    plt.show()
 
     return similarity
 
@@ -41,18 +53,22 @@ def prepare_data(json_path):
     with open(json_path, "r") as file:
         albums_info = json.load(file)
 
+    print(albums_info[114])
+    print(albums_info[384])
+
     no_albums = len(albums_info)
     max_tags = max(map(lambda album: len(album["tags"]), albums_info))
     max_genres = max(map(lambda album: len(album["genre"]), albums_info))
     # print(list(map(lambda x: (x["artist"], x["title"]), filter(lambda album: len(album["genre"]) > 7, albums_info))))
 
     spotify_features = np.array([[v for v in album["features"].values()] for album in albums_info], dtype="f4")
+
+    # lastfm_tags = np.array([[list(album['tags'].items())[tag_ind] if tag_ind < len(album['tags'].items()) else (None, 0) for tag_ind in range(max_tags)] for album in albums_info])
     lastfm_tags = np.zeros((no_albums, max_tags), dtype=[('tag_name', "U128"), ("value", "f4")])
     for i in range(no_albums):
         album_tags = list(albums_info[i]["tags"].items())
-        no_tags = len(album_tags)
-        for j in range(max_tags):
-            lastfm_tags[i][j] = album_tags[j] if j < no_tags else None
+        for j in range(len(album_tags)):
+            lastfm_tags[i][j] = album_tags[j]
 
     wiki_generes = np.zeros((no_albums, max_genres), dtype="U32")
     for i in range(no_albums):
@@ -61,6 +77,7 @@ def prepare_data(json_path):
         for j in range(max_genres):
             wiki_generes[i][j] = album_genres[j] if j < no_genres else None
 
+    get_tags_matrix(lastfm_tags)
     return spotify_features, lastfm_tags, wiki_generes
 
 
@@ -78,7 +95,8 @@ def get_genres_matrix(data):
     return np.array([[cos_sim(genre_vectors, i, j) for i in range(n)] for j in range(n)])
 
 
+prepare_data(JSON_PATH)
 
-spotify_data, lastfm_data, wiki_data = prepare_data(JSON_PATH)
-marek_marucha = get_genres_matrix(data=wiki_data)
-print(marek_marucha)
+#spotify_data, lastfm_data, wiki_data = prepare_data(JSON_PATH)
+#marek_marucha = get_genres_matrix(data=wiki_data)
+#print(marek_marucha)
