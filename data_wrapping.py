@@ -15,7 +15,6 @@ def get_features_matrix(features, size):
 
     distribution = [0 for i in range(101)]
     x = [i for i in range(101)]
-    print(similarity)
     for album_a in range(len(similarity)):
         for album_b in range(len(similarity)):
             distribution[int(similarity[album_a][album_b] * 100)] += 1
@@ -99,7 +98,7 @@ def prepare_data(json_path):
             wiki_generes[i][j] = album_genres[j] if j < no_genres else None
 
     #get_tags_matrix(lastfm_tags)
-    return spotify_features, lastfm_tags, wiki_generes
+    return spotify_features, lastfm_tags, wiki_generes, albums_info
 
 
 def get_genres_matrix(data):
@@ -119,11 +118,25 @@ def get_genres_matrix(data):
 
 
 
-spotify_data, lastfm_data, wiki_data = prepare_data(JSON_PATH)
+def wrangle(json_path):
+    spotify_data, lastfm_data, wiki_data, albums_info = prepare_data(JSON_PATH)
 
-alice_in_wonderland = get_features_matrix(spotify_data, len(spotify_data))
-cat_in_a_hat = get_tags_matrix(lastfm_data)
-marek_marucha = get_genres_matrix(data=wiki_data)
+    alice_in_wonderland = get_features_matrix(spotify_data, len(spotify_data))
+    cat_in_a_hat = get_tags_matrix(lastfm_data)
+    marek_marucha = get_genres_matrix(data=wiki_data)
 
 
-#print(marek_marucha)
+    ###         FOR TESTING         ###
+    betty_boop = np.nan_to_num(marek_marucha)
+    final_matrix = alice_in_wonderland + cat_in_a_hat + betty_boop
+
+
+    album_index = 0
+    print(albums_info[album_index]['title'])
+    similarity_list = [(i, final_matrix[album_index][i]) for i in range(len(final_matrix))]
+    similarity_list.sort(key = lambda x:x[1], reverse=True)
+    for album in similarity_list:
+        print(albums_info[album[0]]['title'], similarity_list[1])
+
+
+wrangle(JSON_PATH)
