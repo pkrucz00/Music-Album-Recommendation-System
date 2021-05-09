@@ -6,10 +6,12 @@ JSON_PATH = "album_info/album_info.json"
 
 def get_features_matrix(features, size):
     #data standarization. Every feature has expected value 0 and standard deviation 1.
-    standardized = np.array([(features[:, feature] - features[:, feature].mean()) / features[:, feature].std() for feature in range(9)]).T
+    standardized = np.array([(features[:, feature] - features[:, feature].mean())
+                             / features[:, feature].std() for feature in range(9)]).T
 
     #returns matrix of similarity between albums. Every value is a sum of distances between feature values of two albums. The smaller number is, the more similar albums are.
-    differences = np.array([[np.sum(np.abs(standardized[alb_1, :] - standardized[alb_2, :])) for alb_2 in range(size)] for alb_1 in range(size)])
+    differences = np.array([[np.sum(np.abs(standardized[alb_1, :] - standardized[alb_2, :]))
+                      for alb_2 in range(size)] for alb_1 in range(size)])
 
     similarity = np.square(np.ones((size, size)) - differences / np.max(differences))
 
@@ -79,9 +81,8 @@ def prepare_data(json_path):
     no_albums = len(albums_info)
     max_tags = max(map(lambda album: len(album["tags"]), albums_info))
     max_genres = max(map(lambda album: len(album["genre"]), albums_info))
-    # print(list(map(lambda x: (x["artist"], x["title"]), filter(lambda album: len(album["genre"]) > 7, albums_info))))
 
-    spotify_features = np.array([[v for v in album["features"].values()] for album in albums_info], dtype="f4")
+    spotify_features = np.array([[v for v in album["features"].values()] for album in albums_info], dtype="f8")
 
     # lastfm_tags = np.array([[list(album['tags'].items())[tag_ind] if tag_ind < len(album['tags'].items()) else (None, 0) for tag_ind in range(max_tags)] for album in albums_info])
     lastfm_tags = np.zeros((no_albums, max_tags), dtype=[('tag_name', "U128"), ("value", "f4")])
@@ -106,15 +107,13 @@ def get_genres_matrix(data):
         return np.sum(tab[:, i]*tab[:, j])/(np.linalg.norm(tab[:, i])*np.linalg.norm(tab[:, j]))
 
     general_generes = np.array(["rock", "blues", "jazz", "hip-hop", "rap", "pop", "r&b", "soul", "funk"])
-
     squeezed_matrix = np.array([";".join(row) for row in data])
-
-    genre_vectors = np.sign(np.array([np.char.count(squeezed_matrix, genre_name) for genre_name in general_generes]))
+    genre_vectors = np.sign(np.array([np.char.count(squeezed_matrix, genre_name)
+                                      for genre_name in general_generes]))
     n = genre_vectors.shape[1]
 
-    return np.array([[cos_sim(genre_vectors, i, j) for i in range(n)] for j in range(n)])
-
-
+    return np.array([[cos_sim(genre_vectors, i, j)
+                      for i in range(n)] for j in range(n)])
 
 
 
