@@ -25,6 +25,7 @@ def get_features_matrix(features, size):
     #     for album_b in range(len(similarity)):
     #         distribution[int(similarity[album_a][album_b] * 100)] += 1
     # plt.scatter(x, distribution)
+    # plt.title("SPOTIFY ALBUM PAIRS")
     # plt.show()
     #
     # distribution = [0 for i in range(30)]
@@ -35,6 +36,7 @@ def get_features_matrix(features, size):
     #         album_similarity += similarity[album_a][album_b]
     #     distribution[int(album_similarity / 10)] += 1
     # plt.scatter(x, distribution)
+    # plt.title("SPOTIFY EVERY ALBUM")
     # plt.show()
 
     return similarity
@@ -65,6 +67,7 @@ def get_tags_matrix(tags):
     #     for album_b_index, album_b_tags in enumerate(tags):
     #         distribution[(int)(similarity[album_a_index][album_b_index] * 10)] += 1
     # plt.scatter(x, distribution)
+    # plt.title("LASTFM ALBUM PAIRS")
     # plt.show()
     #
     # distribution = [0 for i in range(50)]
@@ -76,6 +79,7 @@ def get_tags_matrix(tags):
     #             counter += 1
     #     distribution[counter // 10] += 1
     # plt.scatter(x, distribution)
+    # plt.title("LASTFM FOUND ALBUMS WITH SAME >= 1 TAGS")
     # plt.show()
     #
     # distribution = [0 for i in range(50)]
@@ -86,9 +90,10 @@ def get_tags_matrix(tags):
     #         album_similarity += similarity[album_a_index][album_b_index]
     #     distribution[int(album_similarity / 10)] += 1
     # plt.scatter(x, distribution)
+    # plt.title("LASTFM ALBUMS WEIGHTS SUM")
     # plt.show()
 
-    return similarity/2
+    return similarity / 2
 
 
 def prepare_data(json_path):
@@ -201,11 +206,15 @@ def wrangle(features_weight, tags_weight, genre_weight):
     final_matrix = features_weight * alice_in_wonderland +\
                    tags_weight * cat_in_a_hat + genre_weight * betty_boop
 
+    #TO THINK OF
+    final_matrix = np.array([(final_matrix[i, :] - final_matrix[i, :].mean()) / final_matrix[i, :].std() for i in range(len(final_matrix))])
+
     # album_index = 364
-    album_index = 28
+    album_index = 32
     print(albums_info[album_index]['title'])
     similarity_list = [(i, final_matrix[album_index][i]) for i in range(len(final_matrix))]
     similarity_list.sort(key=lambda x: x[1], reverse=True)
+    del similarity_list[0]
     acc = 0
     for album in similarity_list:
         if album[1] == 0:
