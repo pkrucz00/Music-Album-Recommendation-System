@@ -14,12 +14,23 @@ def get_features_matrix(features, size):
                       for alb_2 in range(size)] for alb_1 in range(size)])
 
     similarity = np.square(np.ones((size, size)) - differences / np.max(differences))
+    #similarity = np.array([similarity[]])
 
     distribution = [0 for i in range(101)]
     x = [i for i in range(101)]
     for album_a in range(len(similarity)):
         for album_b in range(len(similarity)):
             distribution[int(similarity[album_a][album_b] * 100)] += 1
+    plt.scatter(x, distribution)
+    plt.show()
+
+    distribution = [0 for i in range(30)]
+    x = [i for i in range(30)]
+    for album_a in range(len(similarity)):
+        album_similarity = 0
+        for album_b in range(len(similarity)):
+            album_similarity += similarity[album_a][album_b]
+        distribution[int(album_similarity / 10)] += 1
     plt.scatter(x, distribution)
     plt.show()
 
@@ -127,15 +138,15 @@ def wrangle(json_path):
 
     ###         FOR TESTING         ###
     betty_boop = np.nan_to_num(marek_marucha)
-    final_matrix = alice_in_wonderland + cat_in_a_hat + betty_boop
-
+    final_matrix = alice_in_wonderland * 0 + cat_in_a_hat * 0 + betty_boop * 1
+    print(type(final_matrix))
 
     album_index = 0
     print(albums_info[album_index]['title'])
     similarity_list = [(i, final_matrix[album_index][i]) for i in range(len(final_matrix))]
     similarity_list.sort(key = lambda x:x[1], reverse=True)
     for album in similarity_list:
-        print(albums_info[album[0]]['title'], similarity_list[1])
+        print(albums_info[album[0]]['title'], album[1])
 
 
 wrangle(JSON_PATH)
