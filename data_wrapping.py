@@ -9,7 +9,20 @@ def get_features_matrix(features, size):
     standardized = np.array([(features[:, feature] - features[:, feature].mean()) / features[:, feature].std() for feature in range(9)]).T
 
     #returns matrix of similarity between albums. Every value is a sum of distances between feature values of two albums. The smaller number is, the more similar albums are.
-    return np.array([[np.sum(np.abs(standardized[alb_1, :] - standardized[alb_2, :])) for alb_2 in range(size)] for alb_1 in range(size)])
+    differences = np.array([[np.sum(np.abs(standardized[alb_1, :] - standardized[alb_2, :])) for alb_2 in range(size)] for alb_1 in range(size)])
+
+    similarity = np.square(np.ones((size, size)) - differences / np.max(differences))
+
+    distribution = [0 for i in range(101)]
+    x = [i for i in range(101)]
+    print(similarity)
+    for album_a in range(len(similarity)):
+        for album_b in range(len(similarity)):
+            distribution[int(similarity[album_a][album_b] * 100)] += 1
+    plt.scatter(x, distribution)
+    plt.show()
+
+    return similarity
 
 
 def get_tags_matrix(tags):
@@ -27,6 +40,7 @@ def get_tags_matrix(tags):
     #                 if album_a_tag[0] == album_b_tag[0]:
     #                     similarity[album_a_index][album_b_index] += album_a_tag[1] + album_b_tag[1]
 
+
     distribution = [0 for i in range(21)]
     x = [i for i in range(21)]
     for album_a_index, album_a_tags in enumerate(tags):
@@ -43,6 +57,16 @@ def get_tags_matrix(tags):
             if similarity[album_a_index][album_b_index] > 0:
                 counter += 1
         distribution[counter // 10] += 1
+    plt.scatter(x, distribution)
+    plt.show()
+
+    distribution = [0 for i in range(50)]
+    x = [i for i in range(50)]
+    for album_a_index, album_a_tags in enumerate(tags):
+        album_similarity = 0
+        for album_b_index, album_b_tags in enumerate(tags):
+            album_similarity += similarity[album_a_index][album_b_index]
+        distribution[int(album_similarity / 10)] += 1
     plt.scatter(x, distribution)
     plt.show()
 
@@ -92,8 +116,14 @@ def get_genres_matrix(data):
     return np.array([[cos_sim(genre_vectors, i, j) for i in range(n)] for j in range(n)])
 
 
-prepare_data(JSON_PATH)
 
-#spotify_data, lastfm_data, wiki_data = prepare_data(JSON_PATH)
-#marek_marucha = get_genres_matrix(data=wiki_data)
+
+
+spotify_data, lastfm_data, wiki_data = prepare_data(JSON_PATH)
+
+alice_in_wonderland = get_features_matrix(spotify_data, len(spotify_data))
+cat_in_a_hat = get_tags_matrix(lastfm_data)
+marek_marucha = get_genres_matrix(data=wiki_data)
+
+
 #print(marek_marucha)
