@@ -151,7 +151,7 @@ def get_genres_matrix(data):
 
     n = data.shape[0]
 
-    general_generes = np.array(["rock", "blues", "jazz", "rap", "pop", "r&b", "hop", "folk", "punk",
+    general_generes = np.array(["rock", "blues", "jazz", "rap", "pop", "r&b", "hip hop", "folk", "punk",
                                 "reggae", "country", "soul", "funk", "baroque", "metal", "chamber", "art", "electro",
                                 "disco", "soft", "hard", "alternative", "grunge", "new wave", "trip hop"])
 
@@ -186,8 +186,8 @@ def get_genres_matrix(data):
     return (genre_array + trigram_array)/2
 
 
-def wrangle(features_weight, tags_weight, genre_weight):
-    spotify_data, lastfm_data, wiki_data, albums_info = prepare_data(JSON_PATH)
+def wrangle(json_path, features_weight=2, tags_weight=2, genre_weight=1):
+    spotify_data, lastfm_data, wiki_data, albums_info = prepare_data(json_path)
 
     a = time()
     alice_in_wonderland = get_features_matrix(spotify_data, len(spotify_data))
@@ -209,7 +209,7 @@ def wrangle(features_weight, tags_weight, genre_weight):
                    tags_weight * cat_in_a_hat + genre_weight * betty_boop
 
     #TO THINK OF
-    final_matrix = np.array([(final_matrix[i, :] - final_matrix[i, :].mean()) / final_matrix[i, :].std() for i in range(len(final_matrix))])
+    final_matrix = [(final_matrix[i, :] - final_matrix[i, :].mean()) / final_matrix[i, :].std() for i in range(len(final_matrix))]
 
     # album_index = 364
     album_index = 370
