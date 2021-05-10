@@ -11,7 +11,10 @@ Przekonano się, że nie można nigdy w pełni ufać użytkownikom, zwłaszcza t
 
 POMYSŁY
 Dodanie sumy walidacyjnej, by sprawdzać, które albumy nie napotkały błedów przy poborze informacji
-Używanie numpy przy data wranglingu
+Używanie numpy przy data wranglingu  --zrealizowane
+
+Zrównoleglenie obliczeń macierzy podobieństwa
+
 
 PYTANIA
-Czy można zostawić sekretny klucz "na widoku"?
+

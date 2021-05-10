@@ -6,6 +6,34 @@ from time import time
 
 JSON_PATH = "album_info/album_info.json"
 
+def prepare_data(json_path):
+    with open(json_path, "r") as file:
+        albums_info = json.load(file)
+
+    no_albums = len(albums_info)
+    max_tags = max(map(lambda album: len(album["tags"]), albums_info))
+    max_genres = max(map(lambda album: len(album["genre"]), albums_info))
+
+    spotify_features = np.array([[v for v in album["features"].values()] for album in albums_info], dtype="f8")
+
+    # lastfm_tags = np.array([[list(album['tags'].items())[tag_ind] if tag_ind < len(album['tags'].items()) else (None, 0) for tag_ind in range(max_tags)] for album in albums_info])
+    lastfm_tags = np.zeros((no_albums, max_tags), dtype=[('tag_name', "U128"), ("value", "f4")])
+    for i in range(no_albums):
+        album_tags = list(albums_info[i]["tags"].items())
+        for j in range(len(album_tags)):
+            lastfm_tags[i][j] = album_tags[j]
+
+    wiki_generes = np.zeros((no_albums, max_genres), dtype="U32")
+    for i in range(no_albums):
+        album_genres = albums_info[i]["genre"]
+        no_genres = len(album_genres)
+        for j in range(max_genres):
+            wiki_generes[i][j] = album_genres[j] if j < no_genres else ""
+
+    # get_tags_matrix(lastfm_tags)
+    return spotify_features, lastfm_tags, wiki_generes, albums_info
+
+
 
 def get_features_matrix(features, size):
     # data standarization. Every feature has expected value 0 and standard deviation 1.
@@ -96,32 +124,6 @@ def get_tags_matrix(tags):
     return similarity / 2
 
 
-def prepare_data(json_path):
-    with open(json_path, "r") as file:
-        albums_info = json.load(file)
-
-    no_albums = len(albums_info)
-    max_tags = max(map(lambda album: len(album["tags"]), albums_info))
-    max_genres = max(map(lambda album: len(album["genre"]), albums_info))
-
-    spotify_features = np.array([[v for v in album["features"].values()] for album in albums_info], dtype="f8")
-
-    # lastfm_tags = np.array([[list(album['tags'].items())[tag_ind] if tag_ind < len(album['tags'].items()) else (None, 0) for tag_ind in range(max_tags)] for album in albums_info])
-    lastfm_tags = np.zeros((no_albums, max_tags), dtype=[('tag_name', "U128"), ("value", "f4")])
-    for i in range(no_albums):
-        album_tags = list(albums_info[i]["tags"].items())
-        for j in range(len(album_tags)):
-            lastfm_tags[i][j] = album_tags[j]
-
-    wiki_generes = np.zeros((no_albums, max_genres), dtype="U32")
-    for i in range(no_albums):
-        album_genres = albums_info[i]["genre"]
-        no_genres = len(album_genres)
-        for j in range(max_genres):
-            wiki_generes[i][j] = album_genres[j] if j < no_genres else ""
-
-    # get_tags_matrix(lastfm_tags)
-    return spotify_features, lastfm_tags, wiki_generes, albums_info
 
 
 def get_genres_matrix(data):
@@ -151,7 +153,7 @@ def get_genres_matrix(data):
 
     general_generes = np.array(["rock", "blues", "jazz", "rap", "pop", "r&b", "hop", "folk", "punk",
                                 "reggae", "country", "soul", "funk", "baroque", "metal", "chamber", "art", "electro",
-                                "disco", "soft", "hard", "alternative", "grunge", "new wave"])
+                                "disco", "soft", "hard", "alternative", "grunge", "new wave", "trip hop"])
 
     squeezed_matrix = np.array([";".join(row) for row in data])
     no_occurrences = np.array([np.char.count(squeezed_matrix, genre_name) for genre_name in general_generes])
@@ -170,7 +172,7 @@ def get_genres_matrix(data):
     genre_array = np.array([[cos_sim_np(tf_idf[:, i], tf_idf[:, j], lengths[i], lengths[j])
                             for i in range(n)] for j in range(n)])
     b = time()
-    print(f': General genres similarity computation: {round(b - a, 4)} [s]')
+    print(f'General genres similarity computation: {round(b - a, 4)} [s]')
 
     a = time()
     trigrams = [all_k_grams(album_genres, 3) for album_genres in data]
@@ -210,8 +212,8 @@ def wrangle(features_weight, tags_weight, genre_weight):
     final_matrix = np.array([(final_matrix[i, :] - final_matrix[i, :].mean()) / final_matrix[i, :].std() for i in range(len(final_matrix))])
 
     # album_index = 364
-    album_index = 32
-    print(albums_info[album_index]['title'])
+    album_index = 370
+    print(albums_info[album_index]['title'], albums_info[album_index]['artist'])
     similarity_list = [(i, final_matrix[album_index][i]) for i in range(len(final_matrix))]
     similarity_list.sort(key=lambda x: x[1], reverse=True)
     del similarity_list[0]
@@ -222,14 +224,19 @@ def wrangle(features_weight, tags_weight, genre_weight):
         print(f"{albums_info[album[0]]['title']:40}, {albums_info[album[0]]['artist']:30}, {album[1]:10}")
 
     x = [album_similarity[1] for album_similarity in similarity_list]
+
     plt.hist(x, bins=40)
+    plt.title(f"{albums_info[album_index]['title']} by  {albums_info[album_index]['artist']} \n"
+              f"Spotify: {features_weight}, LastFm {tags_weight} wiki: {genre_weight}")
     plt.show()
 
     print(f'Percent of 0 similarities {100*acc/len(albums_info)}')
+
+    return final_matrix
 
 
 # _, _, genres_data, _ = prepare_data(JSON_PATH)
 # hahaha = get_genres_matrix(genres_data)
 # n = hahaha.shape[0]
 # print(np.count_nonzero(hahaha)/(n*n))
-wrangle(3, 3, 1)
+wrangle(2, 2, 1)
