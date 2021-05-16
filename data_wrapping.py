@@ -211,26 +211,26 @@ def wrangle(json_path, features_weight=2, tags_weight=2, genre_weight=1):
     #TO THINK OF
     final_matrix = [(final_matrix[i, :] - final_matrix[i, :].mean()) / final_matrix[i, :].std() for i in range(len(final_matrix))]
 
-    # album_index = 364
-    album_index = 370
-    print(albums_info[album_index]['title'], albums_info[album_index]['artist'])
-    similarity_list = [(i, final_matrix[album_index][i]) for i in range(len(final_matrix))]
-    similarity_list.sort(key=lambda x: x[1], reverse=True)
-    del similarity_list[0]
-    acc = 0
-    for album in similarity_list:
-        if album[1] == 0:
-            acc += 1
-        print(f"{albums_info[album[0]]['title']:40}, {albums_info[album[0]]['artist']:30}, {album[1]:10}")
-
-    x = [album_similarity[1] for album_similarity in similarity_list]
-
-    plt.hist(x, bins=40)
-    plt.title(f"{albums_info[album_index]['title']} by  {albums_info[album_index]['artist']} \n"
-              f"Spotify: {features_weight}, LastFm {tags_weight} wiki: {genre_weight}")
-    plt.show()
-
-    print(f'Percent of 0 similarities {100*acc/len(albums_info)}')
+    # # album_index = 364
+    # album_index = 370
+    # print(albums_info[album_index]['title'], albums_info[album_index]['artist'])
+    # similarity_list = [(i, final_matrix[album_index][i]) for i in range(len(final_matrix))]
+    # similarity_list.sort(key=lambda x: x[1], reverse=True)
+    # del similarity_list[0]
+    # acc = 0
+    # for album in similarity_list:
+    #     if album[1] == 0:
+    #         acc += 1
+    #     print(f"{albums_info[album[0]]['title']:40}, {albums_info[album[0]]['artist']:30}, {album[1]:10}")
+    #
+    # x = [album_similarity[1] for album_similarity in similarity_list]
+    #
+    # plt.hist(x, bins=40)
+    # plt.title(f"{albums_info[album_index]['title']} by  {albums_info[album_index]['artist']} \n"
+    #           f"Spotify: {features_weight}, LastFm {tags_weight} wiki: {genre_weight}")
+    # plt.show()
+    #
+    # print(f'Percent of 0 similarities {100*acc/len(albums_info)}')
 
     return final_matrix
 
@@ -239,4 +239,4 @@ def wrangle(json_path, features_weight=2, tags_weight=2, genre_weight=1):
 # hahaha = get_genres_matrix(genres_data)
 # n = hahaha.shape[0]
 # print(np.count_nonzero(hahaha)/(n*n))
-wrangle(2, 2, 1)
+
