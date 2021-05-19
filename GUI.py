@@ -2,6 +2,7 @@ from MarsCore import MarsCore
 import tkinter as tk
 from tkinter import ttk
 from functools import partial
+from time import time
 
 JSON_PATH = "album_info/album_info.json"
 
@@ -9,12 +10,21 @@ wangjangle = MarsCore(json_path=JSON_PATH)
 
 #rating album, cleaning root and creating new elements (upadated)
 def rate_update(index, rate):
+    t1 = time()
+    wangjangle.choose(index, rate)
+    t2 = time()
+    print('time of giving grade (adding similarities, sorting, etc.): {}s'.format(t2 - t1))
+
+    t1 = time()
     for ele in root.winfo_children():
         ele.destroy()
+    t2 = time()
+    print('time of deleting elements from root: {}s'.format(t2 - t1))
 
-    print(index, rate)
-    wangjangle.choose(index, rate)
+    t1 = time()
     update(wangjangle)
+    t2 = time()
+    print('time of adding new elements to the root: {}s\n'.format(t2 - t1))
 
 
 #setting root
