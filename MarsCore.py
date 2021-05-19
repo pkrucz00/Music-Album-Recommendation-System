@@ -31,7 +31,7 @@ class MarsCore:
             result = list(filter(lambda x: x[0] == ind, elem_list))
             return result[0] if result else None
 
-        print(f"Chosen album: {self.album_titles[index]} by {self.album_artists[index]}")
+        # print(f"Chosen album: {self.album_titles[index]} by {self.album_artists[index]}")
         album_tuple = get_elem_with_index(elem_list=self.result_list, ind=index)
         self.result_list.remove(album_tuple)
         self.already_chosen[index] = grade
@@ -39,7 +39,7 @@ class MarsCore:
         new_result_list = []
         for i, curr_rating in self.result_list:
             if i != index:
-                similarity = self.similarity_matrix[index][i]  # [index][i] czy [i][index]?
+                similarity = self.similarity_matrix[i][index]  # [index][i] czy [i][index]?
                 new_rating = curr_rating + grade * similarity
                 new_result_list.append((i, new_rating))
 
@@ -59,7 +59,7 @@ class MarsCore:
         return result_string
 
 
-wangjangle = MarsCore(json_path=JSON_PATH)
-wangjangle.choose(39, 2)
-wangjangle.choose(379, 2)
-print(wangjangle)
+# wangjangle = MarsCore(json_path=JSON_PATH)
+# wangjangle.choose(39, 2)
+# wangjangle.choose(379, 2)
+# print(wangjangle)
