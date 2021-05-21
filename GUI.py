@@ -49,7 +49,7 @@ def update(wangjangle):
     canvas_left.bind('<Configure>', lambda e: canvas_left.configure(scrollregion=canvas_left.bbox('all')))
 
     display_window_left = tk.Frame(canvas_left)
-    canvas_left.create_window((0,0), window=display_window_left, anchor='nw')
+    canvas_left.create_window((0, 0), window=display_window_left, anchor='nw')
 
     #filling slidebar with albums
     for index, position in enumerate(wangjangle.result_list):
@@ -58,7 +58,7 @@ def update(wangjangle):
 
         #adding buttons to rank
         for rate in range(-2, 3):
-            new_button = tk.Button(display_window_left, text=rate, padx=20, pady=20, command=partial(rate_update, position[0], rate))
+            new_button = tk.Button(display_window_left, text=rate+3, padx=20, pady=20, command=partial(rate_update, position[0], rate))
             new_button.grid(row=index, column=rate+3)
 
 
@@ -77,7 +77,7 @@ def update(wangjangle):
     canvas_right.bind('<Configure>', lambda e: canvas_right.configure(scrollregion=canvas_right.bbox('all')))
 
     display_window_right = tk.Frame(canvas_right)
-    canvas_right.create_window((0,0), window=display_window_right, anchor='nw')
+    canvas_right.create_window((0, 0), window=display_window_right, anchor='nw')
 
     #filling slidebar with info
     for position in wangjangle.already_chosen.items():

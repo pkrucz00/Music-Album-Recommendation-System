@@ -161,7 +161,7 @@ def get_genres_matrix(data):
     no_occurrences = np.vstack([no_occurrences, unmatched_indicator])      #adding "other" row
 
     genre_tf = np.log(1 + no_occurrences)
-    no_documents_with_given_genre = np.sum(np.sign(no_occurrences), axis=1)
+    no_documents_with_given_genre = np.sum(np.sign(no_occurrences) + 10e-7, axis=1)
     terms_idf = np.log(1 + n/no_documents_with_given_genre)
     tf_idf = terms_idf[:, np.newaxis] * genre_tf
 
