@@ -5,9 +5,8 @@ from functools import partial
 from time import time
 from math import ceil
 
+
 JSON_PATH = "album_info/album_info.json"
-
-
 
 class DisplayInfo:
     def __init__(self, chunk_length, mars_object):
@@ -16,12 +15,10 @@ class DisplayInfo:
         self.mars_object = mars_object
 
     def increment_chunk_index(self):
-        print(self.curr_chunk_index)
-        update(self.mars_object, self)
         self.curr_chunk_index += 1
+        update(self.mars_object, self)
 
     def decrement_chunk_index(self):
-        print(self.curr_chunk_index)
         self.curr_chunk_index -= 1
         update(self.mars_object, self)
 
@@ -29,7 +26,7 @@ class DisplayInfo:
         return self.curr_chunk_index > 0
 
     def can_go_right(self):
-        return self.curr_chunk_index*(self.chunk_length+1) < self.get_no_albums()
+        return (self.curr_chunk_index+1)*self.chunk_length < self.get_no_albums()
 
     def return_chunk(self):
         return self.mars_object.result_list[self.chunk_length * self.curr_chunk_index:
@@ -52,11 +49,11 @@ def rate_update(index, rate):
     t2 = time()
     print('time of giving grade (adding similarities, sorting, etc.): {}s'.format(t2 - t1))
 
-    t1 = time()
-    for ele in root.winfo_children():
-        ele.destroy()
-    t2 = time()
-    print('time of deleting elements from root: {}s'.format(t2 - t1))
+    # t1 = time()
+    # # for ele in root.winfo_children():
+    # #     ele.destroy()
+    # t2 = time()
+    # print('time of deleting elements from root: {}s'.format(t2 - t1))
 
     t1 = time()
     update(core, display_info)
@@ -66,8 +63,6 @@ def rate_update(index, rate):
 
 def del_elem(index):
     core.unchoose(index)
-    for ele in root.winfo_children():
-        ele.destroy()
     update(core, display_info)
 
 
@@ -76,13 +71,12 @@ def boolean_to_button_constants(expression):
 
 
 # setting root
-root = tk.Tk()
-root.geometry("1080x720")
-# root.resizable(False, False)
-root.title("MARS")
+
 
 
 def update(core, display_info):
+    for ele in root.winfo_children():
+        ele.destroy()
     # creating left slidebar for albums sorted (to rank)
     not_chosen = tk.LabelFrame(root, border=2)
     not_chosen.pack(side='left', fill='both', expand=1)
@@ -143,18 +137,23 @@ def update(core, display_info):
     canvas_right.create_window((0, 0), window=display_window_right, anchor='nw')
 
     # filling slidebar with info
-    for position in core.already_chosen.items():
-        frame = tk.Frame(display_window_right, bd=10)
-        frame.pack()
-        label = tk.Label(frame,
-                         text="{}\n{}\nRating: {}".format(core.album_titles[position[0]],
-                                                          core.album_artists[position[0]],
-                                                          position[1] + 3))
-        remove_button = tk.Button(frame, text="remove", command=lambda: del_elem(position[0]))
-        label.grid(column=0)
-        remove_button.grid(column=1)
+    for i, (index, grade) in enumerate(core.already_chosen.items()):
+        display_grade = grade + 3
+        label = tk.Label(display_window_right, width=46, height=5,
+                         text="{}\n{}\nRating: {}".format(core.album_titles[index],
+                                                          core.album_artists[index],
+                                                          display_grade))
+        remove_button = tk.Button(display_window_right, text="remove", command=lambda: del_elem(index))
+        label.grid(row=i, column=0)
+        remove_button.grid(row=i, column=1)
+        i += 1
 
 
 if __name__ == "__main__":
+    root = tk.Tk()
+    root.geometry("1080x720")
+    # root.resizable(False, False)
+    root.title("MARS")
+
     update(core, display_info)
     root.mainloop()

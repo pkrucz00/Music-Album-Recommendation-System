@@ -166,8 +166,6 @@ def get_genres_matrix(data):
     terms_idf = np.log(1 + n/no_documents_with_given_genre)
     tf_idf = terms_idf[:, np.newaxis] * genre_tf
 
-
-
     a = time()
     lengths = np.linalg.norm(tf_idf, axis=0)
     genre_array = np.array([[cos_sim_np(tf_idf[:, i], tf_idf[:, j], lengths[i], lengths[j])
