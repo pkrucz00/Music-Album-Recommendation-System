@@ -28,18 +28,6 @@ features_list = ['danceability', 'energy', 'loudness', 'speechiness', 'acousticn
                  'liveness', 'valence', 'tempo']
 
 
-# ----- unnecessary as of right now --------
-# '''
-# Names in password csv file:
-#
-# NAME            FIRST_KEY   SECOND_KEY
-# last_fm_api     API Key 	Shared Secret
-# spotify_api     Client ID 	Client Secret
-# last_fm_login   Login       Hashed Password
-# '''
-# -------------------------------------------
-
-
 def read_album_info_from_csv(path):
     result = []
 
@@ -57,14 +45,10 @@ def get_features(album, artist, spotify):
         logging.warning(f"Album {artist} - {album} hasn't been found on spotify")
         return {}
 
-    # print(album_info[0]['images'])
-    # print()
-
     cover = requests.get(album_info[0]['images'][2]['url'])
-    # with open(album_covers + "{}: {}.png".format(album, artist), 'wb') as file:
-    #     file.write(cover.content)
 
-    file = open(album_covers + "{} - {}.png".format(artist, album).replace('/', ' ').replace('?', ' ').replace(':', ' '), "wb")
+    file = open(album_covers + "{} - {}.png".format(artist, album).replace('/', ' ')
+                .replace('?', ' ').replace(':', ' '), "wb")
     file.write(cover.content)
     file.close()
 
@@ -95,8 +79,6 @@ def get_tags(artist, title, network):
 
     try:
         album = network.get_album(title=title, artist=artist)
-        # artist = network.get_artist(artist_name=artist)    # might be needed in the future
-        # artist.get_top_tags()
         tags = album.get_top_tags(limit=10)
         if len(tags) == 0:
             logging.warning(f'Album {artist} - {title} has 0 tags on last.fm')
@@ -153,7 +135,6 @@ def write_to_json(data, path):
 
 
 def main():
-    # passwords = read_passwords_from_csv(passwd_path)
     albums_names = read_album_info_from_csv(albums_info_path)
     albums_info = get_albums_info(api_key=last_fm_api_key,
                                   albums_names=albums_names)
