@@ -64,7 +64,7 @@ def get_features(album, artist, spotify):
     # with open(album_covers + "{}: {}.png".format(album, artist), 'wb') as file:
     #     file.write(cover.content)
 
-    file = open(album_covers + "{} - {}.png".format(artist, album).replace('/', ' ').replace('?', ' '), "wb")
+    file = open(album_covers + "{} - {}.png".format(artist, album).replace('/', ' ').replace('?', ' ').replace(':', ' '), "wb")
     file.write(cover.content)
     file.close()
 

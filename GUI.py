@@ -50,11 +50,9 @@ class LoopState:
 
 # rating album, cleaning root and creating new elements (upadated)
 def rate_update(state, index, rate):
-    print(state.mars_object)
     t1 = time()
     state.mars_object.choose(index, rate)
     t2 = time()
-    print(state.mars_object)
     logging.debug('Time of giving grade (adding similarities, sorting, etc.): {}s'.format(t2 - t1))
 
     t1 = time()
@@ -115,7 +113,7 @@ def update(state):
     for index, entry in enumerate(truncated_list):
         cover[index] = ImageTk.PhotoImage(Image.open(
             album_covers + "{} - {}.png".format(state.mars_object.album_artists[entry[INDEX]],
-                                                state.mars_object.album_titles[entry[INDEX]]).replace('/', ' ').replace('?', ' ')))
+                                                state.mars_object.album_titles[entry[INDEX]]).replace('/', ' ').replace('?', ' ').replace(':', ' ')))
         cover_label = tk.Label(display_window_left, image=cover[index])
         cover_label.grid(row=index + 1, column=0)
 
