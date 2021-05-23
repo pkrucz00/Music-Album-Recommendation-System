@@ -1,5 +1,8 @@
 from data_wrapping import wrangle
 from json import load
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 JSON_PATH = "album_info/album_info.json"
 
@@ -20,15 +23,17 @@ class MarsCore:
 
         self.similarity_matrix = wrangle(json_path)
         self.result_list = [(i, 0) for i in range(self.no_albums)]  # (index, curr_rating)
-        self.already_chosen = {}  # soon: {index: grade}
+        self.already_chosen = {}  # {index: grade}
 
     def choose(self, index, grade):
         print(f"Chosen album: {self.album_titles[index]} by {self.album_artists[index]}")
+        logging.debug(f"Chosen album: {self.album_titles[index]} by {self.album_artists[index]}")
         self.already_chosen[index] = grade
         self.__update_result_list(index, grade)
 
     def unchoose(self, index):
         print(f"Chosen album: {self.album_titles[index]} by {self.album_artists[index]}")
+        logging.debug(f"Chosen album: {self.album_titles[index]} by {self.album_artists[index]}")
         old_grade = self.already_chosen.pop(index)
         new_rating = sum([grade*self.similarity_matrix[index][i] for i, grade in self.already_chosen.items()])
         self.__update_result_list(index, -old_grade, [(index, new_rating)])

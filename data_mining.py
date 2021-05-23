@@ -9,9 +9,7 @@ import requests
 # API imports
 import wptools
 import wikipedia
-
 import pylast
-
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
