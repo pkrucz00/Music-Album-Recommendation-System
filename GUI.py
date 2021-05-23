@@ -114,7 +114,8 @@ def update(state):
         try:
             cover[index] = ImageTk.PhotoImage(Image.open(
                 album_covers + "{} - {}.png".format(state.mars_object.album_artists[entry[INDEX]],
-                                                    state.mars_object.album_titles[entry[INDEX]]).replace('/', ' ').replace('?', ' ')))
+                                                    state.mars_object.album_titles[entry[INDEX]]).replace('/', ' ')
+                .replace('?', ' ').replace(':', ' ')))
         except:
             cover[index] = ImageTk.PhotoImage(Image.open(album_covers + "no_image.png"))
         cover_label = tk.Label(display_window_left, image=cover[index])
