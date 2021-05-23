@@ -13,12 +13,14 @@
             "valence": 0.5666583329193179
         },
         "genre": [
-            "psychedelic rock",
-            "hard rock"
+            "rock",
+            "psychedelia",
+            "pop",
+            "art rock"
         ],
         "tags": {
             "1967": 38,
-            "60s": 84,
+            "60s": 85,
             "Psychedelic Rock": 32,
             "The Beatles": 28,
             "albums I own": 100,
@@ -44,22 +46,22 @@
             "valence": 0.49234274406790285
         },
         "genre": [
-            "psychedelic pop",
-            "chamber pop",
             "art rock",
+            "chamber pop",
+            "psychedelic pop",
             "progressive pop"
         ],
         "tags": {
-            "1966": 86,
+            "1966": 88,
             "60s": 100,
-            "albums I own": 67,
-            "baroque pop": 50,
-            "classic rock": 36,
-            "favorite albums": 71,
-            "favourite albums": 36,
-            "pop": 81,
-            "psychedelic pop": 23,
-            "rock": 43
+            "albums I own": 68,
+            "baroque pop": 49,
+            "classic rock": 35,
+            "favorite albums": 69,
+            "favourite albums": 35,
+            "pop": 83,
+            "psychedelic pop": 25,
+            "rock": 44
         },
         "title": "Pet Sounds"
     },
@@ -77,10 +79,10 @@
             "valence": 0.6149239902605947
         },
         "genre": [
-            "pop",
-            "allmusic",
             "rock",
-            "psychedelia"
+            "psychedelia",
+            "allmusic",
+            "pop"
         ],
         "tags": {
             "1966": 41,
@@ -99,19 +101,19 @@
     {
         "artist": "Bob Dylan",
         "features": {
-            "acousticness": 0.6657535606243968,
-            "danceability": 0.45101723569894964,
+            "acousticness": 0.6659946868718631,
+            "danceability": 0.4508966725752166,
             "energy": 0.6570011338674732,
             "instrumentalness": 8.147413284908016e-06,
             "liveness": 0.24876378490573178,
-            "loudness": -7.185376308954747,
-            "speechiness": 0.035710557102100915,
-            "tempo": 104.2030722015231,
-            "valence": 0.5732549492532328
+            "loudness": -7.185737998325948,
+            "speechiness": 0.03572261341447423,
+            "tempo": 104.20331332777056,
+            "valence": 0.5726521336345672
         },
         "genre": [
-            "folk rock",
             "rock and roll",
+            "folk rock",
             "blues rock"
         ],
         "tags": {
@@ -122,9 +124,9 @@
             "favorite albums": 63,
             "favourite albums": 35,
             "folk": 95,
-            "folk rock": 66,
+            "folk rock": 65,
             "rock": 53,
-            "singer-songwriter": 76
+            "singer-songwriter": 75
         },
         "title": "Highway 61 Revisited"
     },
@@ -142,10 +144,10 @@
             "valence": 0.7115759830082745
         },
         "genre": [
-            "folk rock",
-            "pop",
+            "rock",
             "allmusic",
-            "rock"
+            "pop",
+            "folk rock"
         ],
         "tags": {
             "1965": 47,
@@ -175,7 +177,10 @@
             "valence": 0.5780931954814416
         },
         "genre": [
-            "soul"
+            "progressive soul",
+            "symphonic pop",
+            "psychedelic soul",
+            "r&b"
         ],
         "tags": {
             "1971": 14,
@@ -236,10 +241,11 @@
             "valence": 0.7875936752233258
         },
         "genre": [
-            "post-punk",
-            "rock and roll",
             "rock",
-            "punk rock"
+            "rock and roll",
+            "punk rock",
+            "post-punk",
+            "new wave"
         ],
         "tags": {
             "1979": 37,
@@ -299,8 +305,8 @@
             "valence": 0.5321782711659808
         },
         "genre": [
-            "pop",
-            "rock"
+            "rock",
+            "pop"
         ],
         "tags": {
             "1968": 100,
@@ -360,11 +366,11 @@
             "valence": 0.44283253605947653
         },
         "genre": [
-            "experimental rock",
-            "avant-pop",
             "psychedelic rock",
+            "experimental rock",
             "art rock",
-            "proto-punk"
+            "proto-punk",
+            "avant-pop"
         ],
         "tags": {
             "1967": 55,
@@ -460,15 +466,15 @@
         ],
         "tags": {
             "1975": 79,
-            "70s": 68,
-            "albums I own": 98,
-            "classic rock": 31,
-            "favorite albums": 77,
-            "favourite albums": 31,
+            "70s": 69,
+            "albums I own": 96,
+            "classic rock": 30,
+            "favorite albums": 75,
+            "favourite albums": 30,
             "folk": 100,
-            "folk rock": 55,
-            "rock": 50,
-            "singer-songwriter": 40
+            "folk rock": 54,
+            "rock": 49,
+            "singer-songwriter": 39
         },
         "title": "Blood on the Tracks"
     },
@@ -517,18 +523,18 @@
             "valence": 0.508628252391508
         },
         "genre": [
-            "power pop",
-            "rock"
+            "rock",
+            "power pop"
         ],
         "tags": {
             "1975": 65,
             "70s": 74,
-            "albums I own": 72,
-            "classic albums": 11,
-            "classic rock": 75,
+            "albums I own": 71,
+            "classic albums": 13,
+            "classic rock": 74,
             "favorite albums": 15,
             "favourite albums": 18,
-            "heartland rock": 15,
+            "heartland rock": 16,
             "rock": 100,
             "singer-songwriter": 25
         },
@@ -548,9 +554,9 @@
             "valence": 0.4732042431703182
         },
         "genre": [
+            "blue-eyed soul",
             "folk rock",
-            "folk jazz",
-            "blue-eyed soul"
+            "folk jazz"
         ],
         "tags": {
             "1968": 83,
@@ -581,19 +587,19 @@
         },
         "genre": [
             "pop",
-            "post-disco",
+            "funk",
             "rock",
-            "funk"
+            "post-disco"
         ],
         "tags": {
             "1982": 20,
             "80s": 91,
-            "albums I own": 47,
+            "albums I own": 46,
             "dance": 35,
             "funk": 23,
-            "michael jackson": 90,
+            "michael jackson": 89,
             "pop": 100,
-            "rnb": 14,
+            "rnb": 15,
             "soul": 19,
             "thriller": 20
         },
@@ -673,9 +679,9 @@
             "valence": 0.34502237263695174
         },
         "genre": [
-            "avant-pop",
+            "rock",
             "brooklyn rail",
-            "rock"
+            "avant-pop"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 29,
@@ -705,12 +711,12 @@
             "valence": 0.5451213509607382
         },
         "genre": [
-            "abc-clio",
-            "soul",
-            "jazz",
-            "funk",
             "rock",
-            "progressive soul"
+            "funk",
+            "jazz",
+            "progressive soul",
+            "soul",
+            "abc-clio"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 8,
@@ -740,9 +746,9 @@
             "valence": 0.5110879675065787
         },
         "genre": [
-            "r&b",
+            "penguin books",
             "soul",
-            "penguin books"
+            "r&b"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 73,
@@ -772,9 +778,9 @@
             "valence": 0.5081487002800121
         },
         "genre": [
-            "folk rock",
             "pop rock",
-            "soft rock"
+            "soft rock",
+            "folk rock"
         ],
         "tags": {
             "1977": 58,
@@ -810,7 +816,7 @@
             "1987": 27,
             "80s": 65,
             "U2": 51,
-            "albums I own": 73,
+            "albums I own": 74,
             "alternative rock": 17,
             "classic rock": 39,
             "favorite albums": 54,
@@ -864,8 +870,8 @@
             "valence": 0.5747848898817195
         },
         "genre": [
-            "folk rock",
-            "folk"
+            "folk",
+            "folk rock"
         ],
         "tags": {
             "1971": 41,
@@ -895,10 +901,10 @@
             "valence": 0.6315789661029052
         },
         "genre": [
-            "folk rock",
             "folk",
-            "rolling stone",
-            "blues"
+            "folk rock",
+            "blues",
+            "rolling stone"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 35,
@@ -928,13 +934,13 @@
             "valence": 0.5967962545039358
         },
         "genre": [
+            "country blues",
             "blues",
-            "hard rock",
-            "country blues"
+            "hard rock"
         ],
         "tags": {
             "1969": 46,
-            "60s": 87,
+            "60s": 89,
             "albums I own": 52,
             "blues": 23,
             "blues rock": 41,
@@ -965,14 +971,14 @@
         "tags": {
             "1001 Albums You Must Hear Before You Die": 10,
             "1976": 52,
-            "70s": 47,
+            "70s": 46,
             "Ramones": 22,
             "albums I own": 44,
             "favorite albums": 11,
             "favourite albums": 19,
             "punk": 100,
-            "punk rock": 87,
-            "rock": 19
+            "punk rock": 86,
+            "rock": 20
         },
         "title": "Ramones"
     },
@@ -1052,10 +1058,10 @@
             "valence": 0.49411210201279426
         },
         "genre": [
-            "rough guides",
             "pop",
             "popmatters",
-            "soft rock"
+            "soft rock",
+            "rough guides"
         ],
         "tags": {
             "1971": 47,
@@ -1115,9 +1121,7 @@
             "valence": 0.6122972290144325
         },
         "genre": [
-            "blues",
-            "chicago blues",
-            "delta blues"
+            "chicago blues"
         ],
         "tags": {
             "BLUEZZZ": 50,
@@ -1139,16 +1143,17 @@
             "valence": 0.7957621096294352
         },
         "genre": [
-            "pop",
+            "rock",
             "rock and roll",
             "simon & schuster",
-            "rock",
+            "pop",
+            "rolling stone",
             "beat music"
         ],
         "tags": {
             "1963": 62,
             "60s": 100,
-            "Rock and Roll": 19,
+            "Rock and Roll": 17,
             "The Beatles": 34,
             "albums I own": 71,
             "beatles": 33,
@@ -1173,11 +1178,11 @@
             "valence": 0.4998430995492277
         },
         "genre": [
-            "orchestral pop",
-            "folk rock",
             "baroque pop",
+            "psychedelic rock",
+            "orchestral pop",
             "psychedelic pop",
-            "psychedelic rock"
+            "folk rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 24,
@@ -1216,7 +1221,7 @@
             "british": 18,
             "classic albums": 18,
             "classic rock": 22,
-            "favorite albums": 22,
+            "favorite albums": 18,
             "punk": 100,
             "punk rock": 96,
             "rock": 31
@@ -1237,7 +1242,9 @@
             "valence": 0.44790849895144985
         },
         "genre": [
-            "psychedelic rock"
+            "art rock",
+            "psychedelic rock",
+            "hard rock"
         ],
         "tags": {
             "1967": 44,
@@ -1274,7 +1281,7 @@
             "70s": 42,
             "Pink Floyd": 23,
             "Progressive rock": 100,
-            "Psychedelic Rock": 24,
+            "Psychedelic Rock": 23,
             "albums I own": 54,
             "classic rock": 49,
             "favorite albums": 42,
@@ -1329,10 +1336,10 @@
             "valence": 0.4859095893197669
         },
         "genre": [
-            "folk rock",
             "roots rock",
             "country rock",
-            "americana"
+            "americana",
+            "folk rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 53,
@@ -1374,7 +1381,7 @@
             "favourite albums": 9,
             "legend": 7,
             "reggae": 100,
-            "roots reggae": 12
+            "roots reggae": 13
         },
         "title": "Legend"
     },
@@ -1394,9 +1401,9 @@
         "genre": [
             "hard bop",
             "post-bop",
+            "free jazz",
             "modal jazz",
-            "avant-garde jazz",
-            "free jazz"
+            "avant-garde jazz"
         ],
         "tags": {
             "60s": 25,
@@ -1426,13 +1433,13 @@
             "valence": 0.6883975356688953
         },
         "genre": [
-            "allmusic",
-            "people (magazine)",
-            "hardcore hip hop",
-            "complex magazine",
             "sampledelia",
             "east coast hip hop",
-            "political rap"
+            "allmusic",
+            "complex magazine",
+            "political rap",
+            "hardcore hip hop",
+            "people (magazine)"
         ],
         "tags": {
             "1988": 60,
@@ -1463,8 +1470,8 @@
         },
         "genre": [
             "rock and roll",
-            "soul",
             "gospel",
+            "soul",
             "rhythm and blues"
         ],
         "tags": {
@@ -1504,7 +1511,7 @@
             "albums I own": 100,
             "classic rock": 73,
             "favorite albums": 24,
-            "folk": 54,
+            "folk": 56,
             "folk rock": 26,
             "rock": 45,
             "singer-songwriter": 66
@@ -1555,10 +1562,10 @@
             "valence": 0.5443000935216141
         },
         "genre": [
-            "pop",
+            "rock",
             "rock and roll",
-            "the washington post",
-            "rock"
+            "pop",
+            "the washington post"
         ],
         "tags": {
             "60s": 100,
@@ -1616,10 +1623,10 @@
             "valence": 0.4593055182286755
         },
         "genre": [
-            "hard rock",
-            "blues",
             "psychedelic rock",
             "funk",
+            "blues",
+            "hard rock",
             "progressive soul"
         ],
         "tags": {
@@ -1639,15 +1646,15 @@
     {
         "artist": "Elvis Presley",
         "features": {
-            "acousticness": 0.6413492822300778,
-            "danceability": 0.5577281381545419,
-            "energy": 0.601450472568303,
-            "instrumentalness": 0.018097364943261574,
-            "liveness": 0.20816679493997045,
-            "loudness": -8.030003420313948,
-            "speechiness": 0.05808180219273054,
-            "tempo": 110.89449994145852,
-            "valence": 0.6982345025739102
+            "acousticness": 0.8495785502402005,
+            "danceability": 0.5118013202133623,
+            "energy": 0.34655653766631045,
+            "instrumentalness": 0.001059514597545842,
+            "liveness": 0.18732526491189308,
+            "loudness": -12.932054124639725,
+            "speechiness": 0.07199505781694865,
+            "tempo": 102.38035816849454,
+            "valence": 0.6216827259560299
         },
         "genre": [
             "rock and roll"
@@ -1680,9 +1687,9 @@
             "valence": 0.576912593897861
         },
         "genre": [
-            "avant-pop",
+            "progressive soul",
             "r&b",
-            "progressive soul"
+            "avant-pop"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 15,
@@ -1712,10 +1719,10 @@
             "valence": 0.5023859785305276
         },
         "genre": [
-            "guardian.co.uk",
-            "hard rock",
-            "country blues",
             "roots rock",
+            "guardian.co.uk",
+            "country blues",
+            "hard rock",
             "guardian news and media limited"
         ],
         "tags": {
@@ -1746,11 +1753,11 @@
             "valence": 0.742514365737144
         },
         "genre": [
-            "pop",
-            "rock and roll",
-            "psychedelic soul",
             "rock",
-            "funk"
+            "rock and roll",
+            "pop",
+            "funk",
+            "psychedelic soul"
         ],
         "tags": {
             "70s": 45,
@@ -1780,9 +1787,9 @@
             "valence": 0.3633520046594108
         },
         "genre": [
+            "glam metal",
             "heavy metal",
-            "hard rock",
-            "glam metal"
+            "hard rock"
         ],
         "tags": {
             "1987": 23,
@@ -1842,9 +1849,9 @@
             "valence": 0.5191083998204109
         },
         "genre": [
+            "roots rock",
             "rock and roll",
-            "hard rock",
-            "roots rock"
+            "hard rock"
         ],
         "tags": {
             "1971": 50,
@@ -1874,8 +1881,8 @@
             "valence": 0.6454334089096023
         },
         "genre": [
-            "jazz rock",
-            "soft rock"
+            "soft rock",
+            "jazz rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 24,
@@ -1906,9 +1913,9 @@
         },
         "genre": [
             "electronica",
+            "experimental rock",
             "post-rock",
-            "ambient",
-            "experimental rock"
+            "ambient"
         ],
         "tags": {
             "2000": 35,
@@ -1939,9 +1946,9 @@
         },
         "genre": [
             "pop",
+            "disco",
             "r&b",
-            "funk",
-            "disco"
+            "funk"
         ],
         "tags": {
             "1979": 46,
@@ -1971,8 +1978,8 @@
             "valence": 0.5634014962598514
         },
         "genre": [
-            "blues rock",
             "heavy metal",
+            "blues rock",
             "hard rock"
         ],
         "tags": {
@@ -2003,8 +2010,8 @@
             "valence": 0.3994357257359393
         },
         "genre": [
-            "adult contemporary music",
-            "rock"
+            "rock",
+            "adult contemporary music"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 20,
@@ -2026,10 +2033,10 @@
             "acousticness": 0.5517929945354224,
             "danceability": 0.661437960656613,
             "energy": 0.5924829744750846,
-            "instrumentalness": 0.05694920256924939,
+            "instrumentalness": 0.05694714157561492,
             "liveness": 0.1352544116304815,
             "loudness": -10.615287704161048,
-            "speechiness": 0.12247450690727293,
+            "speechiness": 0.12246763692849136,
             "tempo": 118.3364961697415,
             "valence": 0.7013504545472388
         },
@@ -2128,8 +2135,8 @@
             "valence": 0.47985753664479486
         },
         "genre": [
-            "folk rock",
-            "country rock"
+            "country rock",
+            "folk rock"
         ],
         "tags": {
             "1970": 70,
@@ -2190,12 +2197,12 @@
             "valence": 0.5256669949260621
         },
         "genre": [
+            "rock",
+            "billboard",
             "popmatters",
             "gospel",
             "bbc",
-            "soul blues",
-            "rock",
-            "billboard"
+            "soul blues"
         ],
         "tags": {
             "1984": 65,
@@ -2225,6 +2232,8 @@
             "valence": 0.5807348329984335
         },
         "genre": [
+            "heavy metal",
+            "arena rock",
             "hard rock"
         ],
         "tags": {
@@ -2255,8 +2264,8 @@
             "valence": 0.5885654286971587
         },
         "genre": [
-            "r&b",
-            "soul"
+            "soul",
+            "r&b"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 39,
@@ -2287,6 +2296,7 @@
         },
         "genre": [
             "heavy metal",
+            "blues rock",
             "hard rock"
         ],
         "tags": {
@@ -2297,7 +2307,7 @@
             "albums I own": 86,
             "blues rock": 32,
             "classic rock": 100,
-            "favorite albums": 26,
+            "favorite albums": 25,
             "hard rock": 76,
             "rock": 55
         },
@@ -2348,7 +2358,8 @@
             "valence": 0.7768816131915881
         },
         "genre": [
-            "punk rock"
+            "punk rock",
+            "rock and roll"
         ],
         "tags": {
             "1977": 37,
@@ -2378,8 +2389,8 @@
             "valence": 0.4317042097564492
         },
         "genre": [
-            "folk rock",
-            "country rock"
+            "country rock",
+            "folk rock"
         ],
         "tags": {
             "1972": 56,
@@ -2440,8 +2451,8 @@
             "valence": 0.5730025309939167
         },
         "genre": [
-            "blues",
-            "soul"
+            "soul",
+            "blues"
         ],
         "tags": {
             "1967": 50,
@@ -2472,9 +2483,9 @@
         },
         "genre": [
             "memphis soul",
-            "r&b",
             "soul",
-            "southern soul"
+            "southern soul",
+            "r&b"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 48,
@@ -2536,9 +2547,9 @@
             "valence": 0.25674327448350354
         },
         "genre": [
+            "art rock",
             "progressive rock",
-            "progressive pop",
-            "art rock"
+            "progressive pop"
         ],
         "tags": {
             "1979": 27,
@@ -2601,9 +2612,9 @@
         },
         "genre": [
             "pop",
-            "r&b",
             "soul",
-            "blue-eyed soul"
+            "blue-eyed soul",
+            "r&b"
         ],
         "tags": {
             "1969": 43,
@@ -2633,12 +2644,12 @@
             "valence": 0.4683441442999142
         },
         "genre": [
-            "abc-clio",
-            "soul",
-            "jazz",
-            "funk",
             "rock",
-            "progressive soul"
+            "funk",
+            "jazz",
+            "progressive soul",
+            "soul",
+            "abc-clio"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 11,
@@ -2668,8 +2679,8 @@
             "valence": 0.5508821275763968
         },
         "genre": [
-            "glam rock",
-            "soft rock"
+            "soft rock",
+            "glam rock"
         ],
         "tags": {
             "1973": 86,
@@ -2728,12 +2739,12 @@
             "valence": 0.6661507163538571
         },
         "genre": [
-            "avant-pop",
-            "psychedelic pop",
+            "rock",
             "r&b",
-            "soul",
             "funk",
-            "rock"
+            "soul",
+            "psychedelic pop",
+            "avant-pop"
         ],
         "tags": {
             "1987": 92,
@@ -2763,9 +2774,9 @@
             "valence": 0.6994729275455724
         },
         "genre": [
-            "blues",
             "honky-tonk",
-            "country"
+            "country",
+            "blues"
         ],
         "tags": {
             "70s": 13,
@@ -2795,11 +2806,11 @@
             "valence": 0.2901436727879221
         },
         "genre": [
-            "jazz fusion",
-            "experimental jazz",
             "avant-funk",
-            "jazz-rock",
-            "psychedelia"
+            "psychedelia",
+            "experimental jazz",
+            "jazz fusion",
+            "jazz-rock"
         ],
         "tags": {
             "1970": 26,
@@ -2859,8 +2870,8 @@
             "valence": 0.5670547263815559
         },
         "genre": [
-            "blues",
-            "folk"
+            "folk",
+            "blues"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 21,
@@ -2890,8 +2901,8 @@
             "valence": 0.7550235927728327
         },
         "genre": [
-            "power pop",
             "punk rock",
+            "power pop",
             "paste",
             "new wave"
         ],
@@ -2923,10 +2934,10 @@
             "valence": 0.7062471868690539
         },
         "genre": [
-            "psychedelic funk",
+            "avant-soul",
             "avant-pop",
-            "funk",
-            "avant-soul"
+            "psychedelic funk",
+            "funk"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 17,
@@ -2956,9 +2967,9 @@
             "valence": 0.43167872128413554
         },
         "genre": [
-            "psychedelic pop",
+            "chamber pop",
             "baroque pop",
-            "chamber pop"
+            "psychedelic pop"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 39,
@@ -2988,8 +2999,8 @@
             "valence": 0.15540619182314738
         },
         "genre": [
-            "traditional pop",
-            "vocal jazz"
+            "vocal jazz",
+            "traditional pop"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 100,
@@ -3019,10 +3030,10 @@
             "valence": 0.44375950171228035
         },
         "genre": [
-            "cleis press",
-            "hard rock",
-            "blues rock",
             "psychedelic rock",
+            "blues rock",
+            "hard rock",
+            "cleis press",
             "acid rock"
         ],
         "tags": {
@@ -3053,8 +3064,8 @@
             "valence": 0.47947548993005545
         },
         "genre": [
-            "hard bop",
-            "jazz"
+            "jazz",
+            "hard bop"
         ],
         "tags": {
             "1960": 20,
@@ -3084,13 +3095,17 @@
             "valence": 0.5763030653596238
         },
         "genre": [
-            "soft rock",
             "folk",
-            "fire and rain",
-            "blues",
             "knocking 'round the zoo",
+            "warner bros.",
+            "blues",
+            "fire and rain",
+            "soft rock",
+            "james taylor and the original flying machine",
+            "country",
+            "james taylor",
             "sweet baby james",
-            "country"
+            "peter asher"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 64,
@@ -3120,12 +3135,12 @@
             "valence": 0.4723907609784552
         },
         "genre": [
-            "countrypolitan",
             "pop",
+            "rhythm and blues",
             "soul",
-            "western",
             "country",
-            "rhythm and blues"
+            "countrypolitan",
+            "western"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 50,
@@ -3153,9 +3168,9 @@
             "valence": 0.7298353194676781
         },
         "genre": [
+            "surf punk",
             "punk rock",
-            "pop punk",
-            "surf punk"
+            "pop punk"
         ],
         "tags": {
             "1977": 57,
@@ -3212,8 +3227,8 @@
             "valence": 0.4159567118011809
         },
         "genre": [
-            "art pop",
-            "pop rock"
+            "pop rock",
+            "art pop"
         ],
         "tags": {
             "1971": 45,
@@ -3243,9 +3258,9 @@
             "valence": 0.6442651974942751
         },
         "genre": [
-            "blues rock",
-            "art rock",
             "pop rock",
+            "art rock",
+            "blues rock",
             "hard rock"
         ],
         "tags": {
@@ -3276,10 +3291,10 @@
             "valence": 0.6099548506352578
         },
         "genre": [
-            "proto-punk",
-            "pop",
             "art rock",
-            "rock"
+            "pop",
+            "rock",
+            "proto-punk"
         ],
         "tags": {
             "1970": 100,
@@ -3309,6 +3324,7 @@
             "valence": 0.337168938977479
         },
         "genre": [
+            "indie rock",
             "alternative rock",
             "post-grunge",
             "britpop"
@@ -3317,13 +3333,13 @@
             "1995": 23,
             "90s": 28,
             "albums I own": 100,
-            "alternative": 32,
+            "alternative": 33,
             "alternative rock": 51,
             "favorite albums": 52,
             "favourite albums": 18,
             "indie": 15,
             "radiohead": 40,
-            "rock": 38
+            "rock": 39
         },
         "title": "The Bends"
     },
@@ -3401,8 +3417,8 @@
             "valence": 0.6129322969439758
         },
         "genre": [
-            "blues rock",
             "psychedelic rock",
+            "blues rock",
             "hard rock"
         ],
         "tags": {
@@ -3422,20 +3438,20 @@
     {
         "artist": "The Who",
         "features": {
-            "acousticness": 0.09021983432993215,
-            "danceability": 0.46105518808836354,
-            "energy": 0.7109725711184915,
-            "instrumentalness": 0.10026237474639856,
-            "liveness": 0.2640888168562194,
-            "loudness": -6.933583885013061,
-            "speechiness": 0.05402826383066767,
-            "tempo": 130.72108340499483,
-            "valence": 0.43447738526199137
+            "acousticness": 0.10218977634127772,
+            "danceability": 0.4502528374049682,
+            "energy": 0.6710361712778591,
+            "instrumentalness": 0.06733569069074251,
+            "liveness": 0.19388019602466727,
+            "loudness": -8.634159636009127,
+            "speechiness": 0.05488354205173541,
+            "tempo": 130.95186442280806,
+            "valence": 0.45749471866904606
         },
         "genre": [
+            "power pop",
             "psychedelic pop",
-            "art pop",
-            "power pop"
+            "art pop"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 38,
@@ -3465,8 +3481,8 @@
             "valence": 0.6759352820451512
         },
         "genre": [
-            "rock and roll",
-            "rhythm and blues"
+            "british r&b",
+            "blues rock"
         ],
         "tags": {
             "1965": 100,
@@ -3549,10 +3565,10 @@
             "valence": 0.54074148889116
         },
         "genre": [
-            "blues",
-            "r&b",
+            "soul blues",
             "traditional pop",
-            "soul blues"
+            "r&b",
+            "blues"
         ],
         "tags": {
             "60s": 64,
@@ -3582,8 +3598,8 @@
             "valence": 0.6698958230876116
         },
         "genre": [
-            "country",
-            "country rock"
+            "country rock",
+            "country"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 37,
@@ -3602,22 +3618,23 @@
     {
         "artist": "Sly and the Family Stone",
         "features": {
-            "acousticness": 0.2520002398815068,
+            "acousticness": 0.2520408827363725,
             "danceability": 0.6046821340263243,
             "energy": 0.7303214644834922,
-            "instrumentalness": 0.19382438946058828,
+            "instrumentalness": 0.19384064660253453,
             "liveness": 0.3349817433859539,
             "loudness": -10.08285589129967,
             "speechiness": 0.08587865267128104,
-            "tempo": 102.76390294966365,
+            "tempo": 102.76394359251853,
             "valence": 0.6884928803846604
         },
         "genre": [
-            "psychedelic soul",
             "funk",
-            "rock",
+            "psychedelic funk",
             "progressive soul",
-            "oxford university press"
+            "pitchfork",
+            "psychedelic soul",
+            "funk rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 21,
@@ -3666,19 +3683,19 @@
     {
         "artist": "Run-D.M.C.",
         "features": {
-            "acousticness": 0.007727312579794042,
-            "danceability": 0.8039194695579049,
-            "energy": 0.6255886953603286,
-            "instrumentalness": 0.002004467990604258,
-            "liveness": 0.12207358553732843,
-            "loudness": -13.944892438782492,
-            "speechiness": 0.23494988169426717,
-            "tempo": 134.0235741609553,
-            "valence": 0.7342825083077986
+            "acousticness": 0.011861290197832207,
+            "danceability": 0.8175180096378828,
+            "energy": 0.8094911094944315,
+            "instrumentalness": 0.0030175821643945535,
+            "liveness": 0.1194137009545428,
+            "loudness": -8.344919927508796,
+            "speechiness": 0.23250112129600614,
+            "tempo": 127.74279468063165,
+            "valence": 0.6715918985390896
         },
         "genre": [
-            "rap rock",
-            "hip hop"
+            "hip hop",
+            "rap rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 32,
@@ -3708,11 +3725,11 @@
             "valence": 0.5240037746023186
         },
         "genre": [
-            "folk rock",
-            "psychedelic rock",
-            "country rock",
             "magnet",
-            "acid rock"
+            "psychedelic rock",
+            "acid rock",
+            "country rock",
+            "folk rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 35,
@@ -3742,10 +3759,10 @@
             "valence": 0.5317018557208423
         },
         "genre": [
-            "blues rock",
+            "funk rock",
             "soul blues",
             "r&b",
-            "funk rock"
+            "blues rock"
         ],
         "tags": {
             "1971": 31,
@@ -3775,10 +3792,10 @@
             "valence": 0.7890474340039708
         },
         "genre": [
-            "r&b",
-            "rocksteady",
+            "ska",
             "reggae",
-            "ska"
+            "rocksteady",
+            "r&b"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 42,
@@ -3808,11 +3825,11 @@
             "valence": 0.577703297085496
         },
         "genre": [
-            "raga rock",
-            "folk rock",
-            "psychedelic rock",
             "rock",
-            "country rock"
+            "psychedelic rock",
+            "raga rock",
+            "country rock",
+            "folk rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 31,
@@ -3874,11 +3891,12 @@
         },
         "genre": [
             "art pop",
-            "funk",
             "worldbeat",
-            "new wave",
+            "experimental rock",
+            "funk",
+            "dance-rock",
             "post-punk",
-            "dance-rock"
+            "new wave"
         ],
         "tags": {
             "1980": 57,
@@ -3908,10 +3926,10 @@
             "valence": 0.6626104247572284
         },
         "genre": [
-            "post-punk",
+            "rock",
             "art punk",
             "garage rock",
-            "rock"
+            "post-punk"
         ],
         "tags": {
             "1977": 100,
@@ -3941,10 +3959,12 @@
             "valence": 0.3975789414298575
         },
         "genre": [
+            "psychedelic rock",
+            "wvua-fm",
             "rolling stone",
             "heavy metal",
-            "wvua-fm",
-            "psychedelic rock",
+            "ultimate classic rock",
+            "doom metal",
             "proto-punk"
         ],
         "tags": {
@@ -4036,9 +4056,9 @@
             "valence": 0.535846004667617
         },
         "genre": [
+            "east coast hip hop",
             "hardcore hip hop",
-            "gangsta rap",
-            "east coast hip hop"
+            "gangsta rap"
         ],
         "tags": {
             "1990s": 20,
@@ -4068,9 +4088,9 @@
             "valence": 0.46856488244358363
         },
         "genre": [
-            "lo-fi",
             "noise pop",
-            "indie rock"
+            "indie rock",
+            "lo-fi"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 18,
@@ -4100,8 +4120,8 @@
             "valence": 0.4881069613286729
         },
         "genre": [
-            "pop",
-            "rock"
+            "rock",
+            "pop"
         ],
         "tags": {
             "70s": 45,
@@ -4131,9 +4151,9 @@
             "valence": 0.44666329294891444
         },
         "genre": [
-            "power pop",
             "punk rock",
-            "alternative rock"
+            "alternative rock",
+            "power pop"
         ],
         "tags": {
             "1985": 100,
@@ -4164,8 +4184,8 @@
         },
         "genre": [
             "g-funk",
-            "west coast hip hop",
-            "gangsta rap"
+            "gangsta rap",
+            "west coast hip hop"
         ],
         "tags": {
             "1992": 29,
@@ -4225,8 +4245,8 @@
             "valence": 0.7048669688903428
         },
         "genre": [
-            "power pop",
             "pop rock",
+            "power pop",
             "new wave"
         ],
         "tags": {
@@ -4288,9 +4308,9 @@
         },
         "genre": [
             "new orleans r&b",
+            "zydeco",
             "psychedelic rock",
-            "swamp rock",
-            "zydeco"
+            "swamp rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 50,
@@ -4320,10 +4340,10 @@
             "valence": 0.7165573714454087
         },
         "genre": [
-            "hardcore hip hop",
-            "west coast hip hop",
+            "allmusic",
             "gangsta rap",
-            "allmusic"
+            "west coast hip hop",
+            "hardcore hip hop"
         ],
         "tags": {
             "1980s": 34,
@@ -4350,9 +4370,9 @@
             "valence": 0.6015193226223045
         },
         "genre": [
-            "yacht rock",
-            "pop rock",
-            "jazz rock"
+            "jazz rock",
+            "jazz fusion",
+            "progressive rock"
         ],
         "tags": {
             "1977": 33,
@@ -4382,10 +4402,10 @@
             "valence": 0.5019026170194407
         },
         "genre": [
-            "folk rock",
-            "brooklynvegan",
             "acid rock",
-            "psychedelic rock"
+            "brooklynvegan",
+            "psychedelic rock",
+            "folk rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 17,
@@ -4475,12 +4495,9 @@
             "valence": 0.6989923967359488
         },
         "genre": [
-            "jazz fusion",
-            "chicano rock",
             "latin rock",
-            "blues rock",
-            "psychedelic rock",
-            "acid rock"
+            "jazz fusion",
+            "blues rock"
         ],
         "tags": {
             "1969": 71,
@@ -4510,9 +4527,9 @@
             "valence": 0.5598133251223847
         },
         "genre": [
-            "hard rock",
             "rock",
-            "heartland rock"
+            "heartland rock",
+            "hard rock"
         ],
         "tags": {
             "1978": 59,
@@ -4542,24 +4559,24 @@
             "valence": 0.4465852333254167
         },
         "genre": [
-            "chamber pop",
             "the guardian",
-            "blender",
-            "ign",
             "indie rock",
-            "art rock"
+            "ign",
+            "art rock",
+            "chamber pop",
+            "blender"
         ],
         "tags": {
             "00s": 19,
             "2004": 48,
             "albums I own": 100,
-            "alternative": 22,
-            "baroque pop": 14,
-            "favorite albums": 38,
-            "favourite albums": 45,
-            "indie": 46,
+            "alternative": 21,
+            "baroque pop": 13,
+            "favorite albums": 37,
+            "favourite albums": 44,
+            "indie": 45,
             "indie rock": 74,
-            "rock": 18
+            "rock": 17
         },
         "title": "Funeral"
     },
@@ -4578,9 +4595,9 @@
         },
         "genre": [
             "post-punk",
+            "dance-rock",
             "spin",
-            "new wave",
-            "dance-rock"
+            "new wave"
         ],
         "tags": {
             "1979": 35,
@@ -4611,8 +4628,8 @@
         },
         "genre": [
             "jazz rap",
-            "east coast hip hop",
-            "alternative hip hop"
+            "alternative hip hop",
+            "east coast hip hop"
         ],
         "tags": {
             "1991": 77,
@@ -4673,10 +4690,10 @@
             "valence": 0.272
         },
         "genre": [
+            "rock",
             "punk rock",
-            "new wave",
             "alternative rock",
-            "rock"
+            "new wave"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 23,
@@ -4737,19 +4754,19 @@
             "valence": 0.5425679348834391
         },
         "genre": [
-            "post-punk",
-            "gothic rock"
+            "gothic rock",
+            "post-punk"
         ],
         "tags": {
             "1980": 40,
             "80s": 36,
             "Gothic Rock": 12,
             "albums I own": 39,
-            "alternative": 11,
+            "alternative": 10,
             "british": 11,
             "favorite albums": 16,
-            "favourite albums": 21,
-            "new wave": 39,
+            "favourite albums": 20,
+            "new wave": 40,
             "post-punk": 100
         },
         "title": "Closer"
@@ -4768,8 +4785,8 @@
             "valence": 0.5168125688582443
         },
         "genre": [
-            "pop",
-            "rock"
+            "rock",
+            "pop"
         ],
         "tags": {
             "better on vinyl": 100,
@@ -4806,7 +4823,7 @@
             "classic rock": 19,
             "hard rock": 100,
             "heavy metal": 37,
-            "live": 55,
+            "live": 46,
             "rock": 19
         },
         "title": "Alive!"
@@ -4887,13 +4904,13 @@
             "valence": 0.26515061917419025
         },
         "genre": [
-            "progressive rock",
             "art rock",
-            "alternative rock"
+            "alternative rock",
+            "progressive rock"
         ],
         "tags": {
             "1997": 24,
-            "90s": 23,
+            "90s": 24,
             "albums I own": 100,
             "alternative": 49,
             "alternative rock": 54,
@@ -4984,6 +5001,7 @@
             "valence": 0.5056893535825622
         },
         "genre": [
+            "post-punk",
             "baroque pop",
             "new wave"
         ],
@@ -5045,13 +5063,14 @@
             "valence": 0.7964255464696679
         },
         "genre": [
-            "pub rock",
+            "punk rock",
             "power pop",
             "new york",
-            "punk rock",
             "billboard",
+            "popmatters",
+            "new wave",
             "paste",
-            "new wave"
+            "pub rock"
         ],
         "tags": {
             "1977": 100,
@@ -5141,8 +5160,8 @@
             "valence": 0.3848368704124124
         },
         "genre": [
-            "psychedelic rock",
-            "rock"
+            "rock",
+            "psychedelic rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 77,
@@ -5202,10 +5221,10 @@
             "valence": 0.5275983590919552
         },
         "genre": [
-            "pop",
-            "r&b",
             "rock",
-            "psychedelia"
+            "psychedelia",
+            "pop",
+            "r&b"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 80,
@@ -5328,9 +5347,10 @@
             "valence": 0.7639371872708363
         },
         "genre": [
-            "blues rock",
-            "art rock",
-            "pop rock",
+            "rock",
+            "rock and roll",
+            "pop",
+            "blues",
             "hard rock"
         ],
         "tags": {
@@ -5361,10 +5381,10 @@
             "valence": 0.7765478227968539
         },
         "genre": [
-            "r&b",
-            "rocksteady",
+            "ska",
             "reggae",
-            "ska"
+            "rocksteady",
+            "r&b"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 17,
@@ -5455,12 +5475,8 @@
             "valence": 0.6451488177174015
         },
         "genre": [
-            "dance",
-            "hip hop",
             "pop",
-            "r&b",
-            "electronica",
-            "deep house"
+            "dance"
         ],
         "tags": {
             "1990": 15,
@@ -5553,9 +5569,9 @@
         "genre": [
             "pop",
             "art pop",
+            "worldbeat",
             "progressive pop",
-            "art rock",
-            "worldbeat"
+            "art rock"
         ],
         "tags": {
             "1986": 61,
@@ -5585,21 +5601,21 @@
             "valence": 0.4556934126752944
         },
         "genre": [
-            "folk rock",
+            "country rock",
             "psychedelic rock",
-            "country rock"
+            "folk rock"
         ],
         "tags": {
-            "1001 Albums You Must Hear Before You Die": 62,
+            "1001 Albums You Must Hear Before You Die": 58,
             "1967": 100,
-            "60s": 62,
-            "USA": 23,
-            "albums I own": 23,
-            "classic rock": 34,
-            "favorite albums": 23,
-            "folk rock": 73,
-            "psychedelic": 28,
-            "rock": 45
+            "60s": 58,
+            "USA": 22,
+            "albums I own": 22,
+            "classic rock": 32,
+            "folk": 22,
+            "folk rock": 69,
+            "psychedelic": 27,
+            "rock": 48
         },
         "title": "Buffalo Springfield Again"
     },
@@ -5678,10 +5694,10 @@
             "valence": 0.6418587894302318
         },
         "genre": [
-            "hard rock",
-            "punk jazz",
-            "avant-rock",
             "punk rock",
+            "punk jazz",
+            "hard rock",
+            "avant-rock",
             "proto-punk"
         ],
         "tags": {
@@ -5743,8 +5759,8 @@
         },
         "genre": [
             "punk rock",
-            "pop punk",
-            "alternative rock"
+            "alternative rock",
+            "pop punk"
         ],
         "tags": {
             "1994": 18,
@@ -5774,7 +5790,7 @@
             "valence": 0.6112856195335442
         },
         "genre": [
-            "rock n' roll",
+            "pop rock",
             "glam rock"
         ],
         "tags": {
@@ -5805,8 +5821,8 @@
             "valence": 0.7310611645056951
         },
         "genre": [
-            "blues rock",
-            "british blues"
+            "british blues",
+            "blues rock"
         ],
         "tags": {
             "j mayallj": 100
@@ -5827,13 +5843,13 @@
             "valence": 0.7144426358923504
         },
         "genre": [
+            "alternative rock",
+            "rolling stone",
+            "post-punk",
+            "garage rock",
             "allmusic",
             "folk rock",
-            "rolling stone",
-            "garage rock",
-            "alternative rock",
-            "the week",
-            "post-punk"
+            "the week"
         ],
         "tags": {
             "1983": 97,
@@ -5843,7 +5859,7 @@
             "alternative rock": 75,
             "favorite albums": 30,
             "indie": 26,
-            "jangle pop": 49,
+            "jangle pop": 52,
             "post-punk": 41,
             "rock": 71
         },
@@ -5863,9 +5879,9 @@
             "valence": 0.745808675854009
         },
         "genre": [
-            "post-punk revival",
             "indie rock",
-            "garage rock revival"
+            "garage rock revival",
+            "post-punk revival"
         ],
         "tags": {
             "00s": 16,
@@ -5897,6 +5913,7 @@
         "genre": [
             "blues rock",
             "rock and roll",
+            "arena rock",
             "hard rock"
         ],
         "tags": {
@@ -5989,9 +6006,9 @@
             "valence": 0.5397060064269229
         },
         "genre": [
-            "folk rock",
             "rockabilly",
             "americana",
+            "folk rock",
             "blues"
         ],
         "tags": {
@@ -6022,8 +6039,8 @@
             "valence": 0.5007920666374892
         },
         "genre": [
-            "blues rock",
             "psychedelic rock",
+            "blues rock",
             "hard rock"
         ],
         "tags": {
@@ -6054,13 +6071,13 @@
             "valence": 0.7058276520140218
         },
         "genre": [
-            "post-disco",
-            "dance-punk",
             "pop",
             "r&b",
             "funk",
-            "rock",
-            "new wave"
+            "post-disco",
+            "the guardian",
+            "new wave",
+            "stylus magazine"
         ],
         "tags": {
             "1980": 53,
@@ -6090,11 +6107,11 @@
             "valence": 0.5324914797907973
         },
         "genre": [
-            "jazz fusion",
+            "psychedelic rock",
             "chicano rock",
-            "latin rock",
             "blues rock",
-            "psychedelic rock"
+            "latin rock",
+            "jazz fusion"
         ],
         "tags": {
             "1970": 37,
@@ -6185,9 +6202,9 @@
             "valence": 0.43332516959474077
         },
         "genre": [
-            "rolling stone",
+            "country rock",
             "hard rock",
-            "country rock"
+            "rolling stone"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 47,
@@ -6247,8 +6264,8 @@
             "valence": 0.4228495821278068
         },
         "genre": [
-            "alternative rock",
-            "indie rock"
+            "indie rock",
+            "alternative rock"
         ],
         "tags": {
             "1994": 60,
@@ -6278,9 +6295,9 @@
             "valence": 0.6904527115228442
         },
         "genre": [
+            "rock",
             "rock and roll",
-            "hard rock",
-            "rock"
+            "hard rock"
         ],
         "tags": {
             "1981": 54,
@@ -6310,9 +6327,9 @@
             "valence": 0.6465537582719244
         },
         "genre": [
-            "proto-punk",
             "glam punk",
             "glam rock",
+            "proto-punk",
             "hard rock"
         ],
         "tags": {
@@ -6372,10 +6389,9 @@
             "valence": 0.6271925506038034
         },
         "genre": [
-            "new wave",
+            "indie rock",
             "alternative rock",
-            "post-punk",
-            "indie rock"
+            "post-punk"
         ],
         "tags": {
             "1986": 61,
@@ -6405,8 +6421,8 @@
             "valence": 0.6228346550408784
         },
         "genre": [
-            "rap rock",
-            "hip hop"
+            "hip hop",
+            "rap rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 13,
@@ -6466,13 +6482,15 @@
             "valence": 0.2871276054059688
         },
         "genre": [
-            "experimental rock",
-            "the guardian",
             "shoegaze",
             "spin",
-            "chicago tribune",
+            "las vegas weekly",
             "dream pop",
-            "noise rock"
+            "the guardian",
+            "allmusic",
+            "noise rock",
+            "avant-rock",
+            "chicago tribune"
         ],
         "tags": {
             "1991": 27,
@@ -6503,9 +6521,9 @@
         },
         "genre": [
             "boogie-woogie",
+            "new orleans r&b",
             "louisiana blues",
-            "new orleans blues",
-            "new orleans r&b"
+            "new orleans blues"
         ],
         "tags": {
             "70s": 20,
@@ -6535,8 +6553,8 @@
             "valence": 0.634167743924613
         },
         "genre": [
-            "post-punk",
-            "rock"
+            "rock",
+            "post-punk"
         ],
         "tags": {
             "1983": 49,
@@ -6597,14 +6615,13 @@
         },
         "genre": [
             "punk rock",
-            "pop punk",
-            "alternative rock"
+            "pop punk"
         ],
         "tags": {
             "2004": 17,
             "American Idiot": 23,
             "albums I own": 100,
-            "alternative rock": 17,
+            "alternative rock": 16,
             "favorite albums": 15,
             "green day": 35,
             "pop punk": 17,
@@ -6660,8 +6677,9 @@
             "valence": 0.5882479353958454
         },
         "genre": [
-            "alternative rock",
-            "indie rock"
+            "noise pop",
+            "indie rock",
+            "alternative rock"
         ],
         "tags": {
             "1989": 56,
@@ -6752,9 +6770,9 @@
             "valence": 0.5792132773783054
         },
         "genre": [
-            "blues rock",
             "rock",
-            "americana"
+            "americana",
+            "blues rock"
         ],
         "tags": {
             "1989": 50,
@@ -6784,11 +6802,11 @@
             "valence": 0.3835572268605859
         },
         "genre": [
-            "hard rock",
-            "avant-pop",
-            "heavy metal",
+            "pop",
             "progressive rock",
-            "pop"
+            "heavy metal",
+            "hard rock",
+            "avant-pop"
         ],
         "tags": {
             "1975": 49,
@@ -6818,12 +6836,12 @@
             "valence": 0.6489944163927269
         },
         "genre": [
-            "stereogum",
-            "blues rock",
-            "garage rock",
+            "rock and roll",
             "drowned in sound",
+            "stereogum",
             "r&b",
-            "rock and roll"
+            "blues rock",
+            "garage rock"
         ],
         "tags": {
             "1972": 50,
@@ -6914,10 +6932,9 @@
         },
         "genre": [
             "mod pop",
-            "rolling stone",
-            "garage rock",
+            "power pop",
             "r&b",
-            "power pop"
+            "garage rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 41,
@@ -7007,9 +7024,9 @@
             "valence": 0.7249623013969493
         },
         "genre": [
-            "folk rock",
             "pop",
-            "soft rock"
+            "soft rock",
+            "folk rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 32,
@@ -7039,9 +7056,9 @@
             "valence": 0.5296323262714719
         },
         "genre": [
+            "indie rock",
             "alternative rock",
-            "post-punk",
-            "indie rock"
+            "post-punk"
         ],
         "tags": {
             "1984": 86,
@@ -7071,8 +7088,8 @@
             "valence": 0.5581216509775526
         },
         "genre": [
-            "rap rock",
-            "hip hop"
+            "hip hop",
+            "rap rock"
         ],
         "tags": {
             "Classic Era Rap": 100,
@@ -7094,9 +7111,9 @@
             "valence": 0.3774777209876961
         },
         "genre": [
-            "stoner rock",
             "heavy metal",
-            "spin"
+            "spin",
+            "stoner rock"
         ],
         "tags": {
             "1970": 40,
@@ -7126,8 +7143,8 @@
             "valence": 0.5776748297729237
         },
         "genre": [
-            "hardcore hip hop",
-            "horrorcore"
+            "horrorcore",
+            "hardcore hip hop"
         ],
         "tags": {
             "00s": 26,
@@ -7157,6 +7174,7 @@
             "valence": 0.5662803820493182
         },
         "genre": [
+            "psychedelic rock",
             "experimental rock"
         ],
         "tags": {
@@ -7217,9 +7235,9 @@
             "valence": 0.39896183226741433
         },
         "genre": [
-            "avant-garde jazz",
+            "jazz",
             "free jazz",
-            "jazz"
+            "avant-garde jazz"
         ],
         "tags": {
             "1959": 36,
@@ -7250,9 +7268,9 @@
         },
         "genre": [
             "popmatters",
+            "alternative rock",
             "baroque pop",
-            "the week",
-            "alternative rock"
+            "the week"
         ],
         "tags": {
             "1992": 60,
@@ -7282,9 +7300,9 @@
             "valence": 0.6484219891566593
         },
         "genre": [
+            "the source",
             "mafioso rap",
             "east coast hip hop",
-            "the source",
             "the boombox"
         ],
         "tags": {
@@ -7315,11 +7333,11 @@
             "valence": 0.4067234533977199
         },
         "genre": [
+            "electronic",
             "experimental rock",
-            "avant-pop",
             "ambient",
             "art rock",
-            "electronic"
+            "avant-pop"
         ],
         "tags": {
             "1977": 93,
@@ -7470,9 +7488,9 @@
             "valence": 0.622870412412856
         },
         "genre": [
-            "experimental pop",
+            "electronic pop",
             "synth-pop",
-            "electronic pop"
+            "experimental pop"
         ],
         "tags": {
             "1977": 54,
@@ -7503,8 +7521,8 @@
         },
         "genre": [
             "pop",
-            "r&b",
-            "pop-soul"
+            "pop-soul",
+            "r&b"
         ],
         "tags": {
             "1985": 50,
@@ -7534,11 +7552,11 @@
             "valence": 0.7190029329483648
         },
         "genre": [
-            "folk rock",
-            "rolling stone",
-            "baroque pop",
+            "rock",
             "pop",
-            "rock"
+            "baroque pop",
+            "rolling stone",
+            "folk rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 40,
@@ -7569,8 +7587,8 @@
         },
         "genre": [
             "pop",
-            "r&b",
-            "trip hop"
+            "trip hop",
+            "r&b"
         ],
         "tags": {
             "1997": 27,
@@ -7601,9 +7619,9 @@
         },
         "genre": [
             "pop",
+            "jazz",
             "folk",
-            "country",
-            "jazz"
+            "country"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 89,
@@ -7633,11 +7651,12 @@
             "valence": 0.6106365451767488
         },
         "genre": [
-            "folk rock",
-            "rolling stone",
             "psychedelic rock",
+            "rolling stone",
+            "americana",
             "country rock",
-            "paste"
+            "paste",
+            "folk rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 25,
@@ -7667,9 +7686,9 @@
             "valence": 0.39178454788763656
         },
         "genre": [
+            "soft rock",
             "folk rock",
-            "blues rock",
-            "soft rock"
+            "blues rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 60,
@@ -7710,7 +7729,7 @@
             "female vocalists": 57,
             "folk": 100,
             "pop": 12,
-            "singer-songwriter": 19,
+            "singer-songwriter": 16,
             "soul": 14
         },
         "title": "Tracy Chapman"
@@ -7729,8 +7748,11 @@
             "valence": 0.6949107576358254
         },
         "genre": [
-            "folk rock",
-            "country rock"
+            "roots rock",
+            "blues rock",
+            "americana",
+            "country rock",
+            "folk rock"
         ],
         "tags": {
             "1970": 50,
@@ -7760,13 +7782,10 @@
             "valence": 0.3948736422584518
         },
         "genre": [
-            "gospel",
-            "blues",
-            "r&b",
-            "rock and roll",
-            "soul",
-            "jazz",
-            "country"
+            "the new york sun",
+            "rhythm and blues",
+            "traditional pop",
+            "swingin' pop"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 100,
@@ -7796,8 +7815,10 @@
             "valence": 0.5154685213463528
         },
         "genre": [
+            "pop rock",
+            "psychedelic rock",
             "jazz rock",
-            "rock"
+            "r&b"
         ],
         "tags": {
             "1968": 46,
@@ -7853,8 +7874,8 @@
             "instrumentalness": 0.015405379676478693,
             "liveness": 0.1256573583588645,
             "loudness": -14.380578357395395,
-            "speechiness": 0.04700926832851471,
-            "tempo": 110.80783807766731,
+            "speechiness": 0.047073323153254236,
+            "tempo": 110.80636481669833,
             "valence": 0.5218018394099648
         },
         "genre": [
@@ -7891,13 +7912,13 @@
             "valence": 0.27984968130056925
         },
         "genre": [
-            "noise pop",
+            "shoegazing",
+            "alternative rock",
             "rolling stone",
             "bubblegum pop",
-            "shoegazing",
-            "paste",
-            "alternative rock",
-            "post-punk"
+            "post-punk",
+            "noise pop",
+            "paste"
         ],
         "tags": {
             "1985": 100,
@@ -7922,10 +7943,7 @@
             "valence": 0.7472308650253463
         },
         "genre": [
-            "punk rock",
-            "country",
-            "rock",
-            "disco"
+            "rock"
         ],
         "tags": {
             "1978": 80,
@@ -7955,10 +7973,16 @@
             "valence": 0.6503057299990029
         },
         "genre": [
-            "pop",
-            "psychedelia",
-            "rock",
-            "surf"
+            "psychedelic rock",
+            "art pop",
+            "progressive pop",
+            "rolling stone",
+            "experimental rock",
+            "the new york observer",
+            "the wall street journal",
+            "popmatters",
+            "folk rock",
+            "avant-pop"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 100,
@@ -8018,12 +8042,12 @@
             "valence": 0.7319412397977316
         },
         "genre": [
-            "doo-wop",
             "rock and roll",
+            "disco",
             "r&b",
-            "soul",
             "funk",
-            "disco"
+            "soul",
+            "doo-wop"
         ],
         "tags": {
             "soul": 100
@@ -8045,8 +8069,8 @@
         },
         "genre": [
             "r&b",
-            "funk",
-            "funk rock"
+            "funk rock",
+            "funk"
         ],
         "tags": {
             "1974": 50,
@@ -8076,8 +8100,8 @@
             "valence": 0.6286617162672647
         },
         "genre": [
-            "hip hop",
-            "horrorcore"
+            "horrorcore",
+            "hip-hop"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 11,
@@ -8107,11 +8131,11 @@
             "valence": 0.7976182703981449
         },
         "genre": [
-            "funk rock",
+            "disco",
             "r&b",
             "funk",
             "progressive soul",
-            "disco"
+            "funk rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 14,
@@ -8141,9 +8165,8 @@
             "valence": 0.53300111666101
         },
         "genre": [
-            "r&b",
-            "new jack swing",
-            "industrial pop"
+            "pop",
+            "r&b"
         ],
         "tags": {
             "1989": 38,
@@ -8173,8 +8196,8 @@
             "valence": 0.5896975868952817
         },
         "genre": [
-            "glam rock",
-            "hard rock"
+            "hard rock",
+            "glam rock"
         ],
         "tags": {
             "1973": 63,
@@ -8295,8 +8318,8 @@
         },
         "genre": [
             "power pop",
-            "new wave",
-            "synth-rock"
+            "synth-rock",
+            "new wave"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 15,
@@ -8356,8 +8379,8 @@
             "valence": 0.6659887707201336
         },
         "genre": [
-            "gangsta rap",
-            "hip hop"
+            "hip hop",
+            "gangsta rap"
         ],
         "tags": {
             "1972": 25,
@@ -8417,9 +8440,11 @@
             "valence": 0.5111088475187893
         },
         "genre": [
-            "acid rock",
             "psychedelic rock",
-            "experimental rock"
+            "experimental rock",
+            "the national",
+            "acid rock",
+            "avant-garde"
         ],
         "tags": {
             "1968": 100,
@@ -8449,8 +8474,8 @@
             "valence": 0.625893403647762
         },
         "genre": [
-            "r&b",
             "baroque pop",
+            "r&b",
             "music hall"
         ],
         "tags": {
@@ -8511,8 +8536,17 @@
             "valence": 0.8272170713520586
         },
         "genre": [
-            "art punk",
-            "new wave"
+            "art pop",
+            "worldbeat",
+            "dance-rock",
+            "avant-funk",
+            "post-punk",
+            "the guardian",
+            "experimental pop",
+            "university of michigan press",
+            "new wave",
+            "art rock",
+            "the new york times"
         ],
         "tags": {
             "1970s": 13,
@@ -8542,8 +8576,8 @@
             "valence": 0.6157656428042756
         },
         "genre": [
-            "alternative country",
             "roots rock",
+            "alternative country",
             "americana"
         ],
         "tags": {
@@ -8573,8 +8607,8 @@
             "valence": 0.5404057127780078
         },
         "genre": [
-            "proto-punk",
             "art rock",
+            "proto-punk",
             "experimental rock",
             "noise rock"
         ],
@@ -8606,10 +8640,10 @@
             "valence": 0.40521924988305613
         },
         "genre": [
-            "proto-punk",
             "punk rock",
-            "garage rock",
-            "hard rock"
+            "hard rock",
+            "proto-punk",
+            "garage rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 37,
@@ -8669,11 +8703,11 @@
             "valence": 0.6442732449134027
         },
         "genre": [
+            "alternative rock",
+            "post-punk",
             "indie rock",
             "salon",
-            "paste",
-            "alternative rock",
-            "post-punk"
+            "paste"
         ],
         "tags": {
             "1985": 90,
@@ -8703,22 +8737,22 @@
             "valence": 0.6769885245204186
         },
         "genre": [
-            "conscious rap",
-            "chipmunk soul",
             "pop rap",
-            "hip hop"
+            "conscious rap",
+            "hip hop",
+            "chipmunk soul"
         ],
         "tags": {
-            "00s": 37,
-            "1001 Albums You Must Hear Before You Die": 17,
-            "2004": 70,
+            "00s": 39,
+            "2004": 73,
             "Hip-Hop": 100,
             "Kanye West": 67,
             "albums I own": 89,
             "favourite albums": 20,
             "hip hop": 70,
+            "hiphop": 17,
             "pop rap": 17,
-            "rap": 75
+            "rap": 78
         },
         "title": "The College Dropout"
     },
@@ -8736,22 +8770,22 @@
             "valence": 0.4948427994984667
         },
         "genre": [
+            "alternative rock",
+            "power pop",
             "emo",
             "geek rock",
             "pop rock",
-            "pop punk",
-            "power pop",
-            "alternative rock"
+            "pop punk"
         ],
         "tags": {
             "1994": 27,
             "90s": 47,
             "albums I own": 100,
             "alternative": 48,
-            "alternative rock": 51,
+            "alternative rock": 50,
             "favorite albums": 32,
             "indie rock": 20,
-            "power pop": 19,
+            "power pop": 18,
             "rock": 58,
             "weezer": 50
         },
@@ -8801,7 +8835,7 @@
             "valence": 0.6847825527399947
         },
         "genre": [
-            "country"
+            "drama"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 100,
@@ -8831,11 +8865,11 @@
             "valence": 0.5261807562158848
         },
         "genre": [
-            "progressive rap",
-            "hardcore hip hop",
-            "sampledelica",
             "east coast hip hop",
-            "political rap"
+            "progressive rap",
+            "political rap",
+            "sampledelica",
+            "hardcore hip hop"
         ],
         "tags": {
             "1990": 83,
@@ -8865,9 +8899,9 @@
             "valence": 0.5973086892655367
         },
         "genre": [
+            "country rock",
             "folk rock",
-            "allmusic",
-            "country rock"
+            "allmusic"
         ],
         "tags": {
             "1960s": 14,
@@ -8897,9 +8931,9 @@
             "valence": 0.18749142747806172
         },
         "genre": [
+            "alternative rock",
             "folk rock",
-            "jazz-rock",
-            "alternative rock"
+            "jazz-rock"
         ],
         "tags": {
             "1994": 33,
@@ -8929,10 +8963,10 @@
             "valence": 0.5895374094007294
         },
         "genre": [
-            "alternative country",
-            "folk",
+            "country blues",
             "roots rock",
-            "country blues"
+            "folk",
+            "alternative country"
         ],
         "tags": {
             "1998": 25,
@@ -8962,24 +8996,24 @@
             "valence": 0.4893947840225896
         },
         "genre": [
-            "neo-psychedelia",
-            "folk rock",
-            "garage rock",
             "sampledelia",
-            "rap rock",
             "alternative rock",
-            "alternative hip hop"
+            "rap rock",
+            "neo-psychedelia",
+            "garage rock",
+            "alternative hip hop",
+            "folk rock"
         ],
         "tags": {
-            "1996": 50,
-            "90s": 51,
+            "1996": 51,
+            "90s": 52,
             "Hip-Hop": 20,
             "albums I own": 100,
             "alternative": 77,
+            "alternative rock": 16,
             "beck": 36,
             "experimental": 30,
             "favorite albums": 53,
-            "indie": 15,
             "rock": 48
         },
         "title": "Odelay"
@@ -8998,8 +9032,8 @@
             "valence": 0.7566639038733384
         },
         "genre": [
-            "pop rock",
-            "rock"
+            "rock",
+            "pop rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 23,
@@ -9029,9 +9063,9 @@
             "valence": 0.48715013175752747
         },
         "genre": [
-            "traditional pop",
+            "swing",
             "jazz",
-            "swing"
+            "traditional pop"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 55,
@@ -9061,8 +9095,8 @@
             "valence": 0.7197973342443083
         },
         "genre": [
-            "southern rock",
-            "roots rock"
+            "roots rock",
+            "southern rock"
         ],
         "tags": {
             "70s": 100,
@@ -9088,8 +9122,8 @@
         },
         "genre": [
             "rap rock",
-            "funk metal",
             "alternative rock",
+            "funk metal",
             "funk rock"
         ],
         "tags": {
@@ -9150,9 +9184,9 @@
             "valence": 0.4033117427897847
         },
         "genre": [
-            "alternative metal",
             "rolling stone",
-            "alternative rock"
+            "alternative rock",
+            "alternative metal"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 19,
@@ -9182,8 +9216,8 @@
             "valence": 0.40418086362793576
         },
         "genre": [
-            "folk rock",
-            "alternative rock"
+            "alternative rock",
+            "folk rock"
         ],
         "tags": {
             "Favourites": 25,
@@ -9214,9 +9248,9 @@
         },
         "genre": [
             "neo soul",
-            "r&b",
             "hip hop soul",
-            "hip hop"
+            "hip hop",
+            "r&b"
         ],
         "tags": {
             "1998": 31,
@@ -9293,18 +9327,18 @@
         "artist": "The O'Jays",
         "features": {
             "acousticness": 0.30613381832471465,
-            "danceability": 0.6098726487328016,
-            "energy": 0.5797396147101849,
-            "instrumentalness": 2.0071238960115894e-05,
+            "danceability": 0.6097981481767618,
+            "energy": 0.5800376169343439,
+            "instrumentalness": 2.0264940405819227e-05,
             "liveness": 0.34796142800527674,
-            "loudness": -11.846532459315972,
-            "speechiness": 0.06268280636578855,
-            "tempo": 118.37405044948808,
-            "valence": 0.6854611534306378
+            "loudness": -11.846383458203892,
+            "speechiness": 0.06267535631018457,
+            "tempo": 118.37412495004413,
+            "valence": 0.6845671467581609
         },
         "genre": [
-            "r&b",
-            "philly soul"
+            "philly soul",
+            "r&b"
         ],
         "tags": {
             "1972": 14,
@@ -9426,8 +9460,8 @@
             "valence": 0.39589698266418655
         },
         "genre": [
-            "baroque pop",
-            "rock"
+            "rock",
+            "baroque pop"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 38,
@@ -9457,20 +9491,20 @@
             "valence": 0.577583382104746
         },
         "genre": [
-            "avant-pop",
+            "cleveland.com",
             "the brooklyn rail",
-            "new wave",
-            "cleveland.com"
+            "avant-pop",
+            "new wave"
         ],
         "tags": {
-            "1981": 85,
+            "1981": 80,
             "80s": 70,
             "Progressive rock": 15,
             "The Police": 25,
             "album rock": 15,
             "albums I own": 75,
             "classic rock": 65,
-            "favorite albums": 20,
+            "favorite albums": 15,
             "new wave": 100,
             "rock": 70
         },
@@ -9490,10 +9524,10 @@
             "valence": 0.6673348121399261
         },
         "genre": [
-            "funk rock",
             "r&b",
             "soul",
             "art rock",
+            "funk rock",
             "space rock"
         ],
         "tags": {
@@ -9554,16 +9588,16 @@
             "valence": 0.36582402196936115
         },
         "genre": [
-            "stylus magazine",
-            "gothic rock",
+            "alternative rock",
             "revolver",
+            "gothic rock",
             "art rock",
-            "alternative rock"
+            "stylus magazine"
         ],
         "tags": {
-            "1989": 46,
+            "1989": 47,
             "80s": 100,
-            "Gothic Rock": 27,
+            "Gothic Rock": 28,
             "albums I own": 94,
             "alternative": 37,
             "favorite albums": 38,
@@ -9588,8 +9622,8 @@
             "valence": 0.4866708992537752
         },
         "genre": [
-            "lo-fi",
-            "indie rock"
+            "indie rock",
+            "lo-fi"
         ],
         "tags": {
             "1993": 74,
@@ -9619,12 +9653,12 @@
             "valence": 0.21520561031689445
         },
         "genre": [
-            "avant-rock",
-            "indie rock",
             "punk rock",
-            "avant-punk",
             "alternative rock",
-            "noise rock"
+            "indie rock",
+            "avant-punk",
+            "noise rock",
+            "avant-rock"
         ],
         "tags": {
             "1988": 42,
@@ -9684,8 +9718,8 @@
             "valence": 0.41698596723757103
         },
         "genre": [
-            "blues rock",
-            "country rock"
+            "country rock",
+            "blues rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 40,
@@ -9835,9 +9869,9 @@
             "valence": 0.3954162220764382
         },
         "genre": [
-            "stoner rock",
             "grunge",
             "heavy metal",
+            "stoner rock",
             "hard rock"
         ],
         "tags": {
@@ -9868,9 +9902,9 @@
             "valence": 0.3983040452665891
         },
         "genre": [
+            "art rock",
             "electronica",
             "art pop",
-            "art rock",
             "experimental rock"
         ],
         "tags": {
@@ -9902,7 +9936,6 @@
         },
         "genre": [
             "folk rock",
-            "rolling stone",
             "progressive rock",
             "hard rock"
         ],
@@ -9934,8 +9967,8 @@
             "valence": 0.46986216562331623
         },
         "genre": [
-            "blues rock",
-            "acid rock"
+            "acid rock",
+            "blues rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 56,
@@ -9965,9 +9998,9 @@
             "valence": 0.33554544040175116
         },
         "genre": [
-            "blues",
             "folk",
-            "jazz"
+            "jazz",
+            "blues"
         ],
         "tags": {
             "1974": 63,
@@ -10027,13 +10060,13 @@
             "valence": 0.3197740641878096
         },
         "genre": [
+            "blues",
+            "electronica",
+            "ambient",
             "techno",
             "breakbeat",
-            "blues",
-            "ambient",
             "roots",
-            "downtempo",
-            "electronica"
+            "downtempo"
         ],
         "tags": {
             "1999": 28,
@@ -10126,8 +10159,8 @@
             "valence": 0.3013411874056393
         },
         "genre": [
-            "art rock",
-            "rock"
+            "rock",
+            "art rock"
         ],
         "tags": {
             "1973": 89,
@@ -10188,11 +10221,11 @@
             "valence": 0.3877327000056065
         },
         "genre": [
-            "experimental rock",
-            "psychedelic pop",
             "psychedelic rock",
-            "space rock",
-            "acid pop"
+            "experimental rock",
+            "acid pop",
+            "psychedelic pop",
+            "space rock"
         ],
         "tags": {
             "1967": 36,
@@ -10305,11 +10338,11 @@
             "valence": 0.5591314184217777
         },
         "genre": [
-            "hard rock",
             "rolling stone",
+            "acoustic",
+            "hard rock",
             "abc-clio",
-            "proto-grunge",
-            "acoustic"
+            "proto-grunge"
         ],
         "tags": {
             "1979": 60,
@@ -10369,15 +10402,15 @@
             "valence": 0.33748367852601746
         },
         "genre": [
-            "progressive rap",
-            "rap opera",
-            "hip hop",
             "pop",
-            "art pop"
+            "rap opera",
+            "art pop",
+            "progressive rap",
+            "hip hop"
         ],
         "tags": {
-            "10s": 17,
-            "2010": 95,
+            "10s": 19,
+            "2010": 97,
             "Hip-Hop": 100,
             "Kanye West": 19,
             "albums I own": 50,
@@ -10385,7 +10418,7 @@
             "favorite albums": 14,
             "hip hop": 45,
             "pop rap": 20,
-            "rap": 59
+            "rap": 60
         },
         "title": "My Beautiful Dark Twisted Fantasy"
     },
@@ -10403,8 +10436,8 @@
             "valence": 0.5818625478200647
         },
         "genre": [
-            "jazz rock",
-            "rock"
+            "rock",
+            "jazz rock"
         ],
         "tags": {
             "1978": 70,
@@ -10434,8 +10467,8 @@
             "valence": 0.6895909902164755
         },
         "genre": [
-            "blues rock",
             "experimental pop",
+            "blues rock",
             "blues"
         ],
         "tags": {
@@ -10495,12 +10528,10 @@
             "valence": 0.6072998142510283
         },
         "genre": [
-            "rowman & littlefield",
-            "music hall",
-            "baroque pop",
             "pop rock",
-            "hal leonard corporation",
-            "psychedelic rock"
+            "baroque pop",
+            "psychedelic rock",
+            "music hall"
         ],
         "tags": {
             "1967": 100,
@@ -10519,15 +10550,15 @@
     {
         "artist": "Miles Davis",
         "features": {
-            "acousticness": 0.7014500745731189,
-            "danceability": 0.371137384215179,
-            "energy": 0.144846254358056,
-            "instrumentalness": 0.21773193633567414,
-            "liveness": 0.1683484538702549,
-            "loudness": -19.399074242947872,
-            "speechiness": 0.04356211439490736,
-            "tempo": 118.01976720479531,
-            "valence": 0.1876312435843429
+            "acousticness": 0.8093481090017098,
+            "danceability": 0.32461875586804606,
+            "energy": 0.11405044877186724,
+            "instrumentalness": 0.38311187051733653,
+            "liveness": 0.2861987605930323,
+            "loudness": -19.393766482099313,
+            "speechiness": 0.04170230353265463,
+            "tempo": 105.63020247250037,
+            "valence": 0.1738759791181209
         },
         "genre": [
             "orchestral jazz",
@@ -10561,8 +10592,8 @@
             "valence": 0.6720447785754027
         },
         "genre": [
-            "pop",
-            "rock"
+            "rock",
+            "pop"
         ],
         "tags": {
             "1972": 58,
@@ -10623,17 +10654,17 @@
             "valence": 0.5772495953203364
         },
         "genre": [
-            "hip-hop",
+            "southern hip hop",
             "psychedelic funk",
-            "southern hip hop"
+            "hip-hop"
         ],
         "tags": {
             "00s": 32,
             "2000": 81,
             "Hip-Hop": 100,
-            "Southern Hip Hop": 15,
             "albums I own": 69,
-            "funk": 27,
+            "atlanta": 13,
+            "funk": 25,
             "hip hop": 52,
             "outkast": 25,
             "rap": 69,
@@ -10655,13 +10686,13 @@
             "valence": 0.2835059136578773
         },
         "genre": [
-            "indie rock",
-            "alternative metal",
+            "alternative rock",
             "psychedelic rock",
-            "american songwriter",
             "metal hammer",
+            "american songwriter",
             "grunge",
-            "alternative rock"
+            "alternative metal",
+            "indie rock"
         ],
         "tags": {
             "1993": 45,
@@ -10691,11 +10722,11 @@
             "valence": 0.7359421160491136
         },
         "genre": [
-            "dance",
             "pop",
+            "dance",
             "alternative dance",
-            "post-punk",
-            "dance-rock"
+            "dance-rock",
+            "post-punk"
         ],
         "tags": {
             "1987": 40,
@@ -10725,8 +10756,10 @@
             "valence": 0.6897309879848179
         },
         "genre": [
-            "blues rock",
-            "psychedelic rock"
+            "r&b",
+            "psychedelic rock",
+            "jazz rock",
+            "blues rock"
         ],
         "tags": {
             "1971": 60,
@@ -10756,10 +10789,10 @@
             "valence": 0.5197332772471587
         },
         "genre": [
-            "metal hammer",
-            "rolling stone",
+            "rap metal",
             "funk metal",
-            "rap metal"
+            "metal hammer",
+            "rolling stone"
         ],
         "tags": {
             "1992": 23,
@@ -10793,16 +10826,16 @@
             "country"
         ],
         "tags": {
-            "1994": 45,
-            "90s": 45,
-            "Johnny Cash": 25,
-            "acoustic": 25,
-            "albums I own": 65,
-            "americana": 35,
-            "cash": 40,
+            "1994": 48,
+            "90s": 48,
+            "Johnny Cash": 27,
+            "acoustic": 27,
+            "albums I own": 69,
+            "americana": 32,
+            "cash": 43,
             "country": 100,
-            "folk": 50,
-            "singer-songwriter": 25
+            "folk": 53,
+            "singer-songwriter": 27
         },
         "title": "American Recordings"
     },
@@ -10820,8 +10853,8 @@
             "valence": 0.3403249364062747
         },
         "genre": [
-            "electronica",
             "synth-pop",
+            "electronica",
             "trip hop"
         ],
         "tags": {
@@ -10852,9 +10885,10 @@
             "valence": 0.428
         },
         "genre": [
-            "folk rock",
-            "rock and roll",
-            "country rock"
+            "rock",
+            "country rock",
+            "soft rock",
+            "folk rock"
         ],
         "tags": {
             "albums I own": 100
@@ -10906,8 +10940,8 @@
             "valence": 0.42399050367990126
         },
         "genre": [
-            "glam rock",
-            "hard rock"
+            "hard rock",
+            "glam rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 50,
@@ -10937,23 +10971,23 @@
             "valence": 0.5306748795541255
         },
         "genre": [
+            "punk rock",
+            "alternative rock",
             "garage rock",
             "indie rock",
-            "punk rock",
-            "post-punk revival",
-            "alternative rock"
+            "post-punk revival"
         ],
         "tags": {
             "00s": 14,
             "2006": 32,
             "albums I own": 100,
-            "alternative": 13,
+            "alternative": 14,
             "british": 41,
             "favorite albums": 12,
             "favourite albums": 17,
-            "indie": 44,
+            "indie": 45,
             "indie rock": 53,
-            "rock": 35
+            "rock": 36
         },
         "title": "Whatever People Say I Am, That's What I'm Not"
     },
@@ -10972,8 +11006,8 @@
         },
         "genre": [
             "post-punk",
-            "reggae rock",
             "white reggae",
+            "reggae rock",
             "new wave"
         ],
         "tags": {
@@ -11004,9 +11038,9 @@
             "valence": 0.45669504712665093
         },
         "genre": [
-            "folk rock",
             "acid rock",
-            "psychedelic rock"
+            "psychedelic rock",
+            "folk rock"
         ],
         "tags": {
             "1969": 72,
@@ -11036,9 +11070,9 @@
             "valence": 0.5069676363209025
         },
         "genre": [
-            "glam rock",
+            "art rock",
             "art pop",
-            "art rock"
+            "glam rock"
         ],
         "tags": {
             "1975": 100,
@@ -11127,11 +11161,8 @@
             "valence": 0.3283623062406197
         },
         "genre": [
-            "stereogum",
-            "consequence of sound",
             "rock",
-            "britpop",
-            "billboard"
+            "britpop"
         ],
         "tags": {
             "1995": 32,
@@ -11161,9 +11192,9 @@
             "valence": 0.622713391345411
         },
         "genre": [
-            "r&b",
             "hip hop soul",
-            "hip hop"
+            "hip hop",
+            "r&b"
         ],
         "tags": {
             "1994": 61,
@@ -11221,12 +11252,16 @@
             "valence": 0.32617915369568246
         },
         "genre": [
-            "experimental rock",
-            "folk rock",
-            "avant-pop",
-            "art pop",
             "psychedelic rock",
-            "progressive pop"
+            "art pop",
+            "progressive pop",
+            "rolling stone",
+            "experimental rock",
+            "the new york observer",
+            "the wall street journal",
+            "popmatters",
+            "folk rock",
+            "avant-pop"
         ],
         "tags": {
             "60s": 50,
@@ -11258,8 +11293,8 @@
         "genre": [
             "post-punk",
             "avant-pop",
-            "new wave",
-            "psychedelic funk"
+            "psychedelic funk",
+            "new wave"
         ],
         "tags": {
             "rock": 100
@@ -11310,8 +11345,8 @@
             "valence": 0.5486617206132928
         },
         "genre": [
-            "blues",
             "roots rock",
+            "blues",
             "jazz",
             "americana",
             "country"
@@ -11345,8 +11380,8 @@
         },
         "genre": [
             "pop rock",
-            "the cincinnati enquirer",
-            "jazz rock"
+            "jazz rock",
+            "the cincinnati enquirer"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 34,
@@ -11406,8 +11441,8 @@
             "valence": 0.8403003682297346
         },
         "genre": [
-            "isicathamiya",
             "mbaqanga",
+            "isicathamiya",
             "maskanda"
         ],
         "tags": {
@@ -11437,9 +11472,9 @@
             "valence": 0.5132512008388693
         },
         "genre": [
-            "hard rock",
             "rock",
-            "soft rock"
+            "soft rock",
+            "hard rock"
         ],
         "tags": {
             "1980s": 34,
@@ -11469,9 +11504,9 @@
             "valence": 0.4210480864720724
         },
         "genre": [
-            "blues rock",
             "punk blues",
-            "garage rock revival"
+            "garage rock revival",
+            "blues rock"
         ],
         "tags": {
             "2003": 31,
@@ -11532,7 +11567,7 @@
             "rock"
         ],
         "tags": {
-            "1970": 43,
+            "1970": 45,
             "60s": 30,
             "70s": 43,
             "The Beatles": 39,
@@ -11541,7 +11576,7 @@
             "british": 28,
             "classic rock": 78,
             "favorite albums": 58,
-            "rock": 81
+            "rock": 82
         },
         "title": "Let It Be"
     },
@@ -11559,8 +11594,8 @@
             "valence": 0.5823574942339133
         },
         "genre": [
-            "world",
             "dance",
+            "world",
             "hip hop"
         ],
         "tags": {
@@ -11622,10 +11657,10 @@
             "valence": 0.6099427891724154
         },
         "genre": [
-            "electronica",
             "electronic rock",
-            "dance-punk",
-            "indie rock"
+            "indie rock",
+            "electronica",
+            "dance-punk"
         ],
         "tags": {
             "00s": 18,
@@ -11655,9 +11690,9 @@
             "valence": 0.4999592177167167
         },
         "genre": [
-            "glam rock",
+            "art rock",
             "art pop",
-            "art rock"
+            "glam rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 30,
@@ -11718,10 +11753,10 @@
             "valence": 0.6430554946059943
         },
         "genre": [
-            "synthrock",
+            "synth-rock",
+            "blues rock",
             "hard rock",
             "allmusic",
-            "blues rock",
             "new wave"
         ],
         "tags": {
@@ -11755,15 +11790,15 @@
             "experimental rock"
         ],
         "tags": {
-            "1985": 95,
+            "1985": 97,
             "80s": 40,
             "Tom Waits": 33,
             "albums I own": 99,
             "blues": 53,
-            "experimental": 40,
+            "experimental": 42,
             "favorite albums": 55,
             "favourite albums": 55,
-            "rock": 42,
+            "rock": 44,
             "singer-songwriter": 100
         },
         "title": "Rain Dogs"
@@ -11782,9 +11817,9 @@
             "valence": 0.5071065426850738
         },
         "genre": [
+            "funk rock",
             "alternative rock",
-            "allmusic",
-            "funk rock"
+            "allmusic"
         ],
         "tags": {
             "1999": 17,
@@ -11814,9 +11849,9 @@
             "valence": 0.6279964246828742
         },
         "genre": [
-            "hardcore hip hop",
             "jazz rap",
-            "east coast hip hop"
+            "east coast hip hop",
+            "hardcore hip hop"
         ],
         "tags": {
             "1994": 44,
@@ -11846,9 +11881,9 @@
             "valence": 0.5828624947361972
         },
         "genre": [
+            "hard rock",
             "blues rock",
-            "southern rock",
-            "hard rock"
+            "southern rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 12,
@@ -11878,8 +11913,8 @@
             "valence": 0.5880577414783184
         },
         "genre": [
-            "power pop",
-            "rock"
+            "rock",
+            "power pop"
         ],
         "tags": {
             "1974": 100,
@@ -11909,10 +11944,10 @@
             "valence": 0.5851733891229629
         },
         "genre": [
-            "uncut",
-            "alternative rock",
             "indie rock",
-            "punk blues"
+            "alternative rock",
+            "punk blues",
+            "uncut"
         ],
         "tags": {
             "1993": 79,
@@ -11943,8 +11978,8 @@
         },
         "genre": [
             "dub",
-            "post-punk",
-            "experimental"
+            "experimental",
+            "post-punk"
         ],
         "tags": {
             "1980": 100,
@@ -11974,10 +12009,10 @@
             "valence": 0.6043319329864196
         },
         "genre": [
-            "musique concr\u00e8te",
             "acid rock",
-            "psychedelic rock",
-            "psychedelia"
+            "psychedelic pop",
+            "musique concr\u00e8te",
+            "psychedelic rock"
         ],
         "tags": {
             "1967": 61,
@@ -12007,9 +12042,9 @@
             "valence": 0.4184822121604139
         },
         "genre": [
-            "blues",
             "rockabilly",
-            "country"
+            "country",
+            "blues"
         ],
         "tags": {
             "1997": 100,
@@ -12070,13 +12105,13 @@
             "valence": 0.7156948084673882
         },
         "genre": [
-            "art punk",
-            "bloomsbury publishing",
             "punk rock",
-            "billboard",
-            "33\u2153",
             "post-punk",
-            "alternative press"
+            "billboard",
+            "art punk",
+            "alternative press",
+            "33\u2153",
+            "bloomsbury publishing"
         ],
         "tags": {
             "1977": 93,
@@ -12106,11 +12141,11 @@
             "valence": 0.6992040847004881
         },
         "genre": [
-            "hardcore punk",
+            "alternative rock",
             "mcfarland & company",
             "post-hardcore",
-            "alternative rock",
-            "post-punk"
+            "post-punk",
+            "hardcore punk"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 27,
@@ -12140,8 +12175,8 @@
             "valence": 0.7480620554120183
         },
         "genre": [
-            "post-punk",
             "pop rock",
+            "post-punk",
             "new wave"
         ],
         "tags": {
@@ -12294,6 +12329,16 @@
             "valence": 0.3770561169691346
         },
         "genre": [
+            "the daily telegraph",
+            "alternative rock",
+            "experimental rock",
+            "the independent",
+            "electronica",
+            "huffington post",
+            "billboard",
+            "allmusic",
+            "gothic rock",
+            "downtempo",
             "trip hop"
         ],
         "tags": {
@@ -12311,34 +12356,6 @@
         "title": "Dummy"
     },
     {
-        "artist": "Buddy Holly and the Crickets",
-        "features": {
-            "acousticness": 0.7227328177052132,
-            "danceability": 0.5960290719078668,
-            "energy": 0.3838370140090589,
-            "instrumentalness": 1.4419069816962493e-07,
-            "liveness": 0.1991376056195298,
-            "loudness": -12.593500252704386,
-            "speechiness": 0.03711758174730331,
-            "tempo": 115.87336050204793,
-            "valence": 0.7366300664343155
-        },
-        "genre": [
-            "rock and roll"
-        ],
-        "tags": {
-            "1001": 100,
-            "1001 Albums You Must Hear Before You Die": 100,
-            "50s": 100,
-            "Rock 'n' Roll": 100,
-            "buddy holly": 100,
-            "rock n roll": 100,
-            "rockabilly": 100,
-            "rolling stone 500 greatest albums of all time": 100
-        },
-        "title": "The \"Chirping\" Crickets"
-    },
-    {
         "artist": "Diana Ross and The Supremes",
         "features": {
             "acousticness": 0.41991040870356494,
@@ -12352,7 +12369,7 @@
             "valence": 0.6630860616351519
         },
         "genre": [
-            "r&b"
+            "pop"
         ],
         "tags": {
             "60s": 100,
@@ -12385,7 +12402,7 @@
             "albums I own": 91,
             "classic rock": 39,
             "favourite albums": 34,
-            "heartland rock": 29,
+            "heartland rock": 34,
             "rock": 100,
             "singer-songwriter": 34
         },
@@ -12435,9 +12452,9 @@
             "valence": 0.3194500517468843
         },
         "genre": [
+            "rock",
             "power pop",
-            "hard rock",
-            "rock"
+            "hard rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 100,
@@ -12467,8 +12484,8 @@
             "valence": 0.456115229430444
         },
         "genre": [
-            "blues",
-            "rock"
+            "rock",
+            "blues"
         ],
         "tags": {
             "00s": 34,
@@ -12501,8 +12518,8 @@
             "punk rock",
             "morning news",
             "reggae rock",
-            "new wave",
-            "post-punk"
+            "post-punk",
+            "new wave"
         ],
         "tags": {
             "1978": 39,
@@ -12532,16 +12549,17 @@
             "valence": 0.3531995165817865
         },
         "genre": [
-            "electronic pop",
-            "avant-pop",
-            "ambient pop",
             "art pop",
+            "minimalist",
             "ambient",
+            "electronic pop",
+            "interview",
+            "ambient pop",
             "art rock",
-            "minimalist"
+            "avant-pop"
         ],
         "tags": {
-            "1975": 44,
+            "1975": 46,
             "70s": 36,
             "Brian Eno": 16,
             "albums I own": 26,
@@ -12575,15 +12593,15 @@
         ],
         "tags": {
             "00s": 20,
-            "2008": 84,
+            "2008": 85,
             "albums I own": 100,
-            "alternative": 11,
+            "alternative": 13,
             "best of 2008": 41,
             "favorite albums": 13,
-            "indie": 73,
+            "indie": 75,
             "indie pop": 31,
             "indie rock": 61,
-            "rock": 14
+            "rock": 16
         },
         "title": "Vampire Weekend"
     },
@@ -12632,7 +12650,10 @@
         },
         "genre": [
             "art pop",
-            "glam rock"
+            "glam rock",
+            "interview",
+            "art rock",
+            "avant-pop"
         ],
         "tags": {
             "1974": 45,
@@ -12662,8 +12683,8 @@
             "valence": 0.49791843984322187
         },
         "genre": [
-            "folk rock",
-            "rock"
+            "rock",
+            "folk rock"
         ],
         "tags": {
             "1970": 64,
@@ -12675,7 +12696,7 @@
             "favorite albums": 31,
             "george harrison": 34,
             "rock": 70,
-            "singer-songwriter": 67
+            "singer-songwriter": 64
         },
         "title": "All Things Must Pass"
     },
@@ -12693,8 +12714,8 @@
             "valence": 0.4094638697375399
         },
         "genre": [
-            "power pop",
-            "rock"
+            "rock",
+            "power pop"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 24,
@@ -12724,8 +12745,8 @@
             "valence": 0.475444846727867
         },
         "genre": [
-            "punk rock",
             "grunge",
+            "punk rock",
             "alternative rock",
             "noise rock"
         ],
@@ -12818,6 +12839,8 @@
             "valence": 0.744
         },
         "genre": [
+            "new wave",
+            "jangle pop",
             "post-punk"
         ],
         "tags": {
@@ -12883,53 +12906,18 @@
             "new wave"
         ],
         "tags": {
-            "1001 Albums You Must Hear Before You Die": 28,
-            "1985": 55,
-            "Irish Folk": 46,
-            "The Pogues": 28,
-            "albums I own": 82,
-            "celtic": 82,
+            "1001 Albums You Must Hear Before You Die": 25,
+            "1985": 50,
+            "Irish Folk": 42,
+            "The Pogues": 25,
+            "albums I own": 75,
+            "celtic": 75,
             "folk": 100,
-            "folk rock": 28,
-            "irish": 46,
-            "punk": 28
+            "folk rock": 25,
+            "irish": 42,
+            "punk": 25
         },
         "title": "Rum Sodomy and The Lash"
-    },
-    {
-        "artist": "Devo",
-        "features": {
-            "acousticness": 0.16643103710181736,
-            "danceability": 0.5099093091179183,
-            "energy": 0.6929883286811304,
-            "instrumentalness": 0.24068856617493087,
-            "liveness": 0.1823414865165982,
-            "loudness": -10.709932191247468,
-            "speechiness": 0.10322585525858662,
-            "tempo": 139.50400533777392,
-            "valence": 0.6948118510176943
-        },
-        "genre": [
-            "rolling stone",
-            "punk rock",
-            "art rock",
-            "paste",
-            "new wave",
-            "post-punk"
-        ],
-        "tags": {
-            "1978": 44,
-            "70s": 35,
-            "albums I own": 20,
-            "alternative": 13,
-            "art punk": 15,
-            "indie": 13,
-            "new wave": 100,
-            "post-punk": 83,
-            "punk": 32,
-            "rock": 13
-        },
-        "title": "Q: Are We Not Men? A: We Are Devo!"
     },
     {
         "artist": "Cheap Trick",
@@ -12945,8 +12933,8 @@
             "valence": 0.7271246648856922
         },
         "genre": [
-            "power pop",
-            "rock and roll"
+            "rock and roll",
+            "power pop"
         ],
         "tags": {
             "1977": 100,
@@ -12976,8 +12964,12 @@
             "valence": 0.46949431876704023
         },
         "genre": [
-            "psychedelic soul",
-            "funk"
+            "afro roots",
+            "funk",
+            "jazz",
+            "progressive soul",
+            "soul",
+            "psychedelic soul"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 24,
@@ -13007,9 +12999,9 @@
             "valence": 0.5830114362671849
         },
         "genre": [
-            "blues",
-            "psychedelic rock",
             "rock",
+            "psychedelic rock",
+            "blues",
             "space rock"
         ],
         "tags": {
@@ -13040,8 +13032,8 @@
             "valence": 0.7212301973772334
         },
         "genre": [
-            "proto-punk",
             "rock and roll",
+            "proto-punk",
             "hard rock"
         ],
         "tags": {
@@ -13104,7 +13096,7 @@
             "valence": 0.6480040204317022
         },
         "genre": [
-            "post-punk",
+            "art pop",
             "new wave"
         ],
         "tags": {
@@ -13163,9 +13155,9 @@
             "valence": 0.5780892712157919
         },
         "genre": [
-            "neo soul",
             "contemporary r&b",
             "soul",
+            "neo soul",
             "rhythm and blues"
         ],
         "tags": {
@@ -13196,9 +13188,9 @@
             "valence": 0.4585056125190293
         },
         "genre": [
-            "country folk",
             "bluegrass",
-            "americana"
+            "americana",
+            "country folk"
         ],
         "tags": {
             "1": 54,
@@ -13258,12 +13250,12 @@
             "valence": 0.5350188376643581
         },
         "genre": [
-            "popmatters",
-            "hard rock",
             "heavy metal",
-            "glam rock",
+            "hard rock",
+            "album of the year",
+            "popmatters",
             "shock rock",
-            "album of the year"
+            "glam rock"
         ],
         "tags": {
             "1971": 79,
@@ -13294,9 +13286,9 @@
         },
         "genre": [
             "blues rock",
-            "r&b",
+            "heartland rock",
             "chicano rock",
-            "heartland rock"
+            "r&b"
         ],
         "tags": {
             "1984": 67,
@@ -13357,24 +13349,25 @@
             "valence": 0.41945125409065814
         },
         "genre": [
-            "la weekly",
-            "indie pop",
-            "alternative country",
+            "psychedelic rock",
+            "southern rock",
+            "jam",
             "indie rock",
-            "soul",
-            "space rock"
+            "americana",
+            "art rock",
+            "alternative country"
         ],
         "tags": {
-            "00s": 45,
+            "00s": 48,
             "2005": 100,
-            "Psychedelic Rock": 30,
-            "albums I own": 65,
-            "alternative": 30,
-            "art rock": 25,
-            "favorite albums": 55,
-            "favourite albums": 35,
-            "indie": 85,
-            "indie rock": 80
+            "Psychedelic Rock": 29,
+            "albums I own": 62,
+            "alternative": 29,
+            "art rock": 24,
+            "favorite albums": 53,
+            "favourite albums": 34,
+            "indie": 81,
+            "indie rock": 77
         },
         "title": "Z"
     },
@@ -13423,8 +13416,8 @@
             "valence": 0.37867654076498547
         },
         "genre": [
-            "punk rock",
             "grunge",
+            "punk rock",
             "alternative rock",
             "allmusic"
         ],
@@ -13517,9 +13510,9 @@
             "valence": 0.3795177922292451
         },
         "genre": [
+            "glam metal",
             "guitar world",
-            "hard rock",
-            "glam metal"
+            "hard rock"
         ],
         "tags": {
             "1987": 37,
@@ -13538,21 +13531,21 @@
     {
         "artist": "The Magnetic Fields",
         "features": {
-            "acousticness": 0.6562795754362644,
-            "danceability": 0.5278117331978185,
-            "energy": 0.5371817628399583,
-            "instrumentalness": 0.14101323948458838,
-            "liveness": 0.2415300411244927,
-            "loudness": -8.72295295970011,
-            "speechiness": 0.053126325457739064,
-            "tempo": 116.4765633603474,
-            "valence": 0.5146715175186374
+            "acousticness": 0.6560693777996767,
+            "danceability": 0.5271688263904547,
+            "energy": 0.5372113385273508,
+            "instrumentalness": 0.14169634369328155,
+            "liveness": 0.2415656061545206,
+            "loudness": -8.722942246572067,
+            "speechiness": 0.05278948831539226,
+            "tempo": 116.40030947040417,
+            "valence": 0.5147130174158036
         },
         "genre": [
             "indie pop",
             "chamber pop",
-            "synthpop",
-            "indie folk"
+            "indie folk",
+            "synthpop"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 32,
@@ -13589,10 +13582,10 @@
             "2002": 16,
             "Coldplay": 52,
             "albums I own": 100,
-            "alternative": 34,
+            "alternative": 35,
             "alternative rock": 24,
             "british": 11,
-            "britpop": 36,
+            "britpop": 37,
             "favorite albums": 14,
             "favourite albums": 12,
             "rock": 42
@@ -13643,9 +13636,9 @@
             "valence": 0.774809211751616
         },
         "genre": [
-            "blues rock",
             "chicago blues",
-            "blue-eyed soul"
+            "blue-eyed soul",
+            "blues rock"
         ],
         "tags": {
             "Confrontational": 19,
@@ -13765,12 +13758,12 @@
             "valence": 0.5106298664811089
         },
         "genre": [
-            "synthpop",
             "pop",
-            "r&b",
-            "soul",
-            "funk",
             "rock",
+            "r&b",
+            "funk",
+            "synthpop",
+            "soul",
             "blue-eyed soul"
         ],
         "tags": {
@@ -13801,13 +13794,13 @@
             "valence": 0.721229412867856
         },
         "genre": [
-            "jangle pop",
-            "allmusic",
-            "indie rock",
-            "billboard",
             "alternative rock",
+            "jangle pop",
             "post-punk",
-            "vice"
+            "billboard",
+            "vice",
+            "indie rock",
+            "allmusic"
         ],
         "tags": {
             "1984": 100,
@@ -13902,9 +13895,9 @@
             "valence": 0.6054508924114428
         },
         "genre": [
-            "hardcore hip hop",
             "mafioso rap",
-            "gangsta rap"
+            "gangsta rap",
+            "hardcore hip hop"
         ],
         "tags": {
             "1990s": 25,
@@ -13986,11 +13979,11 @@
             "valence": 0.46676518467641587
         },
         "genre": [
-            "funk rock",
-            "psychedelic funk",
             "r&b",
+            "psychedelic funk",
             "progressive soul",
-            "acid rock"
+            "acid rock",
+            "funk rock"
         ],
         "tags": {
             "1971": 32,
@@ -14051,9 +14044,10 @@
         },
         "genre": [
             "neo soul",
-            "soul",
+            "r&b",
             "funk",
-            "jazz"
+            "jazz",
+            "soul"
         ],
         "tags": {
             "00s": 19,
@@ -14115,10 +14109,8 @@
             "valence": 0.6408740610599079
         },
         "genre": [
-            "punk-funk",
+            "art punk",
             "dance-punk",
-            "trouser press",
-            "funk rock",
             "post-punk"
         ],
         "tags": {
@@ -14209,10 +14201,10 @@
             "valence": 0.6165318193183522
         },
         "genre": [
-            "r&b",
+            "progressive soul",
             "soul",
-            "funk",
-            "progressive soul"
+            "r&b",
+            "funk"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 47,
@@ -14251,8 +14243,8 @@
             "albums I own": 18,
             "cyndi lauper": 18,
             "female vocalist": 9,
-            "female vocalists": 48,
-            "new wave": 40,
+            "female vocalists": 49,
+            "new wave": 42,
             "pop": 74,
             "rock": 24,
             "singer-songwriter": 8
@@ -14304,10 +14296,10 @@
             "valence": 0.594653792769116
         },
         "genre": [
-            "blues rock",
+            "boogie rock",
             "texas blues",
-            "hard rock",
-            "boogie rock"
+            "blues rock",
+            "hard rock"
         ],
         "tags": {
             "1001 Albums You Must Hear Before You Die": 11,
@@ -14398,14 +14390,14 @@
             "valence": 0.4684757239106821
         },
         "genre": [
-            "folk rock",
             "art rock",
+            "alternative rock",
             "experimental rock",
-            "alternative rock"
+            "folk rock"
         ],
         "tags": {
-            "00s": 27,
-            "2002": 58,
+            "00s": 28,
+            "2002": 59,
             "Alt-country": 48,
             "albums I own": 75,
             "alternative rock": 30,
@@ -14420,20 +14412,20 @@
     {
         "artist": "MGMT",
         "features": {
-            "acousticness": 0.07236988059415396,
+            "acousticness": 0.07232244709276675,
             "danceability": 0.5276649853014808,
-            "energy": 0.8748926421476527,
-            "instrumentalness": 0.1331609285566864,
+            "energy": 0.874513174136555,
+            "instrumentalness": 0.13363526357055872,
             "liveness": 0.29128414245418177,
-            "loudness": -4.55975729762064,
-            "speechiness": 0.05777183052334659,
-            "tempo": 118.81318733465197,
-            "valence": 0.4400742456990927
+            "loudness": -4.559662430617868,
+            "speechiness": 0.05778131722362404,
+            "tempo": 118.81337706865754,
+            "valence": 0.4402639797046416
         },
         "genre": [
             "indie pop",
-            "neo-psychedelia",
-            "psychedelic pop"
+            "psychedelic pop",
+            "neo-psychedelia"
         ],
         "tags": {
             "00s": 23,
@@ -14444,7 +14436,7 @@
             "best of 2008": 52,
             "electronic": 87,
             "favourite albums": 38,
-            "indie": 93,
+            "indie": 92,
             "psychedelic": 20
         },
         "title": "Oracular Spectacular"
@@ -14463,11 +14455,11 @@
             "valence": 0.6146971563052288
         },
         "genre": [
-            "folk rock",
             "folk",
-            "blues",
             "r&b",
-            "soft rock"
+            "blues",
+            "soft rock",
+            "folk rock"
         ],
         "tags": {
             "1972": 50,
@@ -14497,11 +14489,10 @@
             "valence": 0.548044934557246
         },
         "genre": [
-            "jazz rock",
-            "blues rock",
             "rock",
-            "blue-eyed soul",
-            "soft rock"
+            "soft rock",
+            "jazz rock",
+            "blues rock"
         ],
         "tags": {
             "1969": 67,
@@ -14531,8 +14522,8 @@
             "valence": 0.3119488704530531
         },
         "genre": [
-            "blues rock",
-            "garage rock revival"
+            "garage rock revival",
+            "blues rock"
         ],
         "tags": {
             "00s": 15,
@@ -14562,10 +14553,10 @@
             "valence": 0.47515703437787904
         },
         "genre": [
+            "madchester",
             "jangle pop",
-            "neo-psychedelia",
             "alternative rock",
-            "madchester"
+            "neo-psychedelia"
         ],
         "tags": {
             "1989": 78,
@@ -14625,8 +14616,8 @@
             "valence": 0.4028751532476954
         },
         "genre": [
-            "hip hop",
-            "alternative hip hop"
+            "alternative hip hop",
+            "hip hop"
         ],
         "tags": {
             "1998": 56,
@@ -14641,5 +14632,1311 @@
             "rap": 41
         },
         "title": "Aquemini"
+    },
+    {
+        "artist": "Pink Floyd",
+        "features": {
+            "acousticness": 0.3958218824048938,
+            "danceability": 0.22651865070938937,
+            "energy": 0.5996859111070129,
+            "instrumentalness": 0.597250135021272,
+            "liveness": 0.13250085087807606,
+            "loudness": -11.280059152438133,
+            "speechiness": 0.0938405864950811,
+            "tempo": 107.21655312996745,
+            "valence": 0.22858861026349472
+        },
+        "genre": [
+            "psychedelic rock",
+            "experimental rock",
+            "space rock"
+        ],
+        "tags": {
+            "1968": 62,
+            "60s": 70,
+            "Pink Floyd": 44,
+            "Progressive rock": 91,
+            "Psychedelic Rock": 100,
+            "albums I own": 61,
+            "classic rock": 39,
+            "psychedelic": 92,
+            "rock": 29,
+            "space rock": 27
+        },
+        "title": "A Saucerful of Secrets"
+    },
+    {
+        "artist": "Pink Floyd",
+        "features": {
+            "acousticness": 0.3087824972476626,
+            "danceability": 0.36340995980821134,
+            "energy": 0.3242288305248028,
+            "instrumentalness": 0.44715351648034407,
+            "liveness": 0.20004566328212628,
+            "loudness": -16.435183122656415,
+            "speechiness": 0.04241174739298673,
+            "tempo": 128.47896420838714,
+            "valence": 0.23075314750140516
+        },
+        "genre": [
+            "progressive rock"
+        ],
+        "tags": {
+            "1971": 38,
+            "70s": 28,
+            "Pink Floyd": 33,
+            "Progressive rock": 100,
+            "Psychedelic Rock": 33,
+            "albums I own": 71,
+            "classic rock": 39,
+            "favorite albums": 27,
+            "psychedelic": 36,
+            "rock": 26
+        },
+        "title": "Meddle"
+    },
+    {
+        "artist": "Pink Floyd",
+        "features": {
+            "acousticness": 0.6268334160822228,
+            "danceability": 0.32014116608390325,
+            "energy": 0.24125064046359865,
+            "instrumentalness": 0.6384328275887678,
+            "liveness": 0.15330642585939602,
+            "loudness": -16.771814572703626,
+            "speechiness": 0.03863193121182467,
+            "tempo": 132.60156534873454,
+            "valence": 0.16189055523064214
+        },
+        "genre": [
+            "progressive rock",
+            "experimental rock"
+        ],
+        "tags": {
+            "1970": 38,
+            "70s": 29,
+            "Experimental Rock": 10,
+            "Pink Floyd": 35,
+            "Progressive rock": 100,
+            "Psychedelic Rock": 59,
+            "albums I own": 72,
+            "classic rock": 29,
+            "psychedelic": 25,
+            "rock": 17
+        },
+        "title": "Atom Heart Mother"
+    },
+    {
+        "artist": "Pink Floyd",
+        "features": {
+            "acousticness": 0.09422650710694319,
+            "danceability": 0.35881509313869736,
+            "energy": 0.5426221381919833,
+            "instrumentalness": 0.25538334362098275,
+            "liveness": 0.4456197531120863,
+            "loudness": -12.393052629201156,
+            "speechiness": 0.07190928588334633,
+            "tempo": 122.53049454985094,
+            "valence": 0.19641261226539414
+        },
+        "genre": [
+            "progressive rock",
+            "rolling stone"
+        ],
+        "tags": {
+            "1977": 34,
+            "70s": 39,
+            "Pink Floyd": 30,
+            "Progressive rock": 100,
+            "Psychedelic Rock": 18,
+            "albums I own": 73,
+            "classic rock": 48,
+            "concept album": 17,
+            "favorite albums": 49,
+            "rock": 32
+        },
+        "title": "Animals"
+    },
+    {
+        "artist": "Pink Floyd",
+        "features": {
+            "acousticness": 0.5878748638618853,
+            "danceability": 0.44743452765116376,
+            "energy": 0.2872662389720924,
+            "instrumentalness": 0.051462773998376427,
+            "liveness": 0.26388812126520567,
+            "loudness": -14.498765156710094,
+            "speechiness": 0.043259493508588945,
+            "tempo": 113.6202028652391,
+            "valence": 0.1974352732414413
+        },
+        "genre": [
+            "art rock"
+        ],
+        "tags": {
+            "1983": 38,
+            "80s": 34,
+            "Pink Floyd": 70,
+            "Progressive rock": 100,
+            "Roger Waters": 14,
+            "albums I own": 82,
+            "classic rock": 58,
+            "concept album": 14,
+            "favorite albums": 16,
+            "rock": 41
+        },
+        "title": "The Final Cut"
+    },
+    {
+        "artist": "David Bowie",
+        "features": {
+            "acousticness": 0.4771807734554903,
+            "danceability": 0.4237963050299852,
+            "energy": 0.5395012905766506,
+            "instrumentalness": 0.002329403775819638,
+            "liveness": 0.4032755473441268,
+            "loudness": -14.880315536588963,
+            "speechiness": 0.06820760491365824,
+            "tempo": 125.80321381295262,
+            "valence": 0.41683558256642983
+        },
+        "genre": [
+            "funk",
+            "soul",
+            "art rock",
+            "proto-punk",
+            "glam rock"
+        ],
+        "tags": {
+            "1974": 37,
+            "70s": 72,
+            "albums I own": 100,
+            "art rock": 17,
+            "bowie": 17,
+            "classic rock": 45,
+            "concept album": 15,
+            "david bowie": 23,
+            "glam rock": 90,
+            "rock": 47
+        },
+        "title": "Diamond Dogs"
+    },
+    {
+        "artist": "David Bowie",
+        "features": {
+            "acousticness": 0.2164996886063906,
+            "danceability": 0.4118416867980435,
+            "energy": 0.6461574881768213,
+            "instrumentalness": 0.47253357984419003,
+            "liveness": 0.13958295200292545,
+            "loudness": -10.09843153109449,
+            "speechiness": 0.052949731263503295,
+            "tempo": 115.09066851578099,
+            "valence": 0.4021032938013902
+        },
+        "genre": [
+            "art rock"
+        ],
+        "tags": {
+            "1977": 63,
+            "70s": 63,
+            "Experimental Rock": 26,
+            "albums I own": 100,
+            "ambient": 19,
+            "art rock": 45,
+            "classic rock": 23,
+            "electronic": 19,
+            "experimental": 38,
+            "rock": 41
+        },
+        "title": "Heroes"
+    },
+    {
+        "artist": "David Bowie",
+        "features": {
+            "acousticness": 0.2024899027648395,
+            "danceability": 0.5643289842362669,
+            "energy": 0.834397458225379,
+            "instrumentalness": 0.054133711653117804,
+            "liveness": 0.16561668979796804,
+            "loudness": -8.963736585543362,
+            "speechiness": 0.052528500662280576,
+            "tempo": 120.42354073862478,
+            "valence": 0.6469808309801752
+        },
+        "genre": [
+            "art rock",
+            "post-punk",
+            "new wave"
+        ],
+        "tags": {
+            "1980": 63,
+            "80s": 75,
+            "albums I own": 100,
+            "art rock": 25,
+            "favorite albums": 25,
+            "new wave": 75,
+            "pop": 25,
+            "pop rock": 25,
+            "post-punk": 25,
+            "rock": 88
+        },
+        "title": "Scary Monsters (And Super Creeps)"
+    },
+    {
+        "artist": "David Bowie",
+        "features": {
+            "acousticness": 0.07089192969002008,
+            "danceability": 0.6046758207621412,
+            "energy": 0.7820997896817279,
+            "instrumentalness": 0.030592031022175253,
+            "liveness": 0.11638017519131347,
+            "loudness": -7.072114224953947,
+            "speechiness": 0.04402235406685753,
+            "tempo": 127.78509859103073,
+            "valence": 0.8085438340180078
+        },
+        "genre": [
+            "new wave",
+            "dance-pop",
+            "dance-rock",
+            "post-disco"
+        ],
+        "tags": {
+            "1983": 100,
+            "80s": 100,
+            "albums I own": 67,
+            "alternative": 10,
+            "classic rock": 25,
+            "david bowie": 19,
+            "glam rock": 13,
+            "new wave": 31,
+            "pop": 34,
+            "rock": 61
+        },
+        "title": "Let's Dance"
+    },
+    {
+        "artist": "The Beatles",
+        "features": {
+            "acousticness": 0.28840967463020356,
+            "danceability": 0.45188877832643515,
+            "energy": 0.49539951149839384,
+            "instrumentalness": 0.05734062717123732,
+            "liveness": 0.1971386510934738,
+            "loudness": -10.32287435995892,
+            "speechiness": 0.05608227234420575,
+            "tempo": 108.98219230144818,
+            "valence": 0.4746993601869367
+        },
+        "genre": [
+            "art pop",
+            "the daily beast",
+            "rolling stone",
+            "psychedelia",
+            "ultimate classic rock",
+            "psychedelic pop"
+        ],
+        "tags": {
+            "1967": 58,
+            "60s": 87,
+            "Psychedelic Rock": 52,
+            "The Beatles": 53,
+            "albums I own": 100,
+            "beatles": 31,
+            "classic rock": 80,
+            "favorite albums": 40,
+            "psychedelic": 89,
+            "rock": 68
+        },
+        "title": "Magical Mystery Tour"
+    },
+    {
+        "artist": "The Doors",
+        "features": {
+            "acousticness": 0.3933026711094698,
+            "danceability": 0.4952654497146231,
+            "energy": 0.3677544171027296,
+            "instrumentalness": 0.004025762791235592,
+            "liveness": 0.2624329577341906,
+            "loudness": -15.329278222182094,
+            "speechiness": 0.06822142056417989,
+            "tempo": 122.42855202523248,
+            "valence": 0.5479095072201471
+        },
+        "genre": [
+            "psychedelia",
+            "avant-garde"
+        ],
+        "tags": {
+            "1968": 50,
+            "60s": 49,
+            "Acid Rock": 13,
+            "Psychedelic Rock": 100,
+            "The Doors": 16,
+            "albums I own": 76,
+            "blues rock": 13,
+            "classic rock": 82,
+            "psychedelic": 57,
+            "rock": 55
+        },
+        "title": "Waiting for the Sun"
+    },
+    {
+        "artist": "The Doors",
+        "features": {
+            "acousticness": 0.29110340691670133,
+            "danceability": 0.528024277412581,
+            "energy": 0.505024677399314,
+            "instrumentalness": 0.031716206076531125,
+            "liveness": 0.19395121686557923,
+            "loudness": -13.165499825005805,
+            "speechiness": 0.03918883195458368,
+            "tempo": 124.47112477853457,
+            "valence": 0.7010243511725106
+        },
+        "genre": [
+            "psychedelic rock",
+            "blues rock",
+            "art rock",
+            "jazz fusion",
+            "experimental"
+        ],
+        "tags": {
+            "1969": 63,
+            "60s": 75,
+            "Acid Rock": 25,
+            "Psychedelic Rock": 100,
+            "albums I own": 82,
+            "blues": 22,
+            "blues rock": 29,
+            "classic rock": 63,
+            "psychedelic": 29,
+            "rock": 38
+        },
+        "title": "The Soft Parade"
+    },
+    {
+        "artist": "The Doors",
+        "features": {
+            "acousticness": 0.31679386562394884,
+            "danceability": 0.538246965598185,
+            "energy": 0.5532256966063364,
+            "instrumentalness": 0.020368408341742347,
+            "liveness": 0.17615431252728456,
+            "loudness": -9.573824244888394,
+            "speechiness": 0.031276572440975876,
+            "tempo": 114.91900049827882,
+            "valence": 0.6381297162047076
+        },
+        "genre": [
+            "psychedelia",
+            "blues rock"
+        ],
+        "tags": {
+            "1970": 46,
+            "70s": 57,
+            "Acid Rock": 23,
+            "Psychedelic Rock": 99,
+            "The Doors": 22,
+            "albums I own": 100,
+            "blues rock": 50,
+            "classic rock": 85,
+            "psychedelic": 30,
+            "rock": 53
+        },
+        "title": "Morrison Hotel"
+    },
+    {
+        "artist": "Led Zeppelin",
+        "features": {
+            "acousticness": 0.03241701810555035,
+            "danceability": 0.43147821467043873,
+            "energy": 0.7688030572553662,
+            "instrumentalness": 0.06759632982908578,
+            "liveness": 0.1721783644607773,
+            "loudness": -9.685983711990888,
+            "speechiness": 0.07666335860888795,
+            "tempo": 141.56470994009885,
+            "valence": 0.5160878658557655
+        },
+        "genre": [
+            "heavy metal",
+            "blues rock",
+            "hard rock"
+        ],
+        "tags": {
+            "1976": 54,
+            "70s": 54,
+            "Led Zeppelin": 35,
+            "albums I own": 75,
+            "blues": 13,
+            "blues rock": 43,
+            "classic rock": 79,
+            "hard rock": 100,
+            "heavy metal": 32,
+            "rock": 56
+        },
+        "title": "Presence"
+    },
+    {
+        "artist": "Led Zeppelin",
+        "features": {
+            "acousticness": 0.059252174437120414,
+            "danceability": 0.47023014087376264,
+            "energy": 0.8091574934136866,
+            "instrumentalness": 0.2595407543064206,
+            "liveness": 0.1319163836882018,
+            "loudness": -8.694305818490287,
+            "speechiness": 0.03999603716100494,
+            "tempo": 113.99535855972987,
+            "valence": 0.5828356573709096
+        },
+        "genre": [
+            "art rock",
+            "hard rock"
+        ],
+        "tags": {
+            "1979": 31,
+            "70s": 50,
+            "Led Zeppelin": 35,
+            "Progressive rock": 13,
+            "albums I own": 75,
+            "blues rock": 22,
+            "classic rock": 100,
+            "hard rock": 88,
+            "heavy metal": 20,
+            "rock": 75
+        },
+        "title": "In Through the Out Door"
+    },
+    {
+        "artist": "Joy Division",
+        "features": {
+            "acousticness": 0.039875604558420034,
+            "danceability": 0.360566193869365,
+            "energy": 0.7865330913829361,
+            "instrumentalness": 0.38544617112108404,
+            "liveness": 0.4434782355280841,
+            "loudness": -7.7266072290083505,
+            "speechiness": 0.07156445256409394,
+            "tempo": 120.87705187690666,
+            "valence": 0.23232420377050822
+        },
+        "genre": [
+            "post-punk"
+        ],
+        "tags": {
+            "1979": 40,
+            "70s": 22,
+            "albums I own": 42,
+            "alternative": 15,
+            "british": 12,
+            "favorite albums": 26,
+            "favourite albums": 26,
+            "new wave": 41,
+            "post-punk": 100,
+            "rock": 10
+        },
+        "title": "Unknown Pleasures"
+    },
+    {
+        "artist": "Bauhaus",
+        "features": {
+            "acousticness": 0.12275845565005292,
+            "danceability": 0.5132934758272687,
+            "energy": 0.6396053138456327,
+            "instrumentalness": 0.18986066006477317,
+            "liveness": 0.1668587063241759,
+            "loudness": -11.385594035651044,
+            "speechiness": 0.07822708298337873,
+            "tempo": 125.05698844797465,
+            "valence": 0.38581421014287226
+        },
+        "genre": [
+            "gothic rock",
+            "post-punk"
+        ],
+        "tags": {
+            "1980": 27,
+            "4ad": 14,
+            "80s": 45,
+            "Gothic": 39,
+            "Gothic Rock": 60,
+            "albums I own": 22,
+            "alternative": 14,
+            "goth": 24,
+            "new wave": 24,
+            "post-punk": 100
+        },
+        "title": "In the Flat Field"
+    },
+    {
+        "artist": "Bauhaus",
+        "features": {
+            "acousticness": 0.02542440140025621,
+            "danceability": 0.5100974668598182,
+            "energy": 0.4854300772514024,
+            "instrumentalness": 0.11708292471488295,
+            "liveness": 0.2019931667325693,
+            "loudness": -15.81404132450023,
+            "speechiness": 0.09489489830649979,
+            "tempo": 138.24874020550016,
+            "valence": 0.5635880550084054
+        },
+        "genre": [
+            "gothic rock",
+            "post-punk"
+        ],
+        "tags": {
+            "1001 Albums You Must Hear Before You Die": 18,
+            "1981": 56,
+            "80s": 38,
+            "Gothic": 38,
+            "Gothic Rock": 87,
+            "albums I own": 42,
+            "alternative": 14,
+            "goth": 25,
+            "new wave": 21,
+            "post-punk": 100
+        },
+        "title": "Mask"
+    },
+    {
+        "artist": "Bauhaus",
+        "features": {
+            "acousticness": 0.27048376059205703,
+            "danceability": 0.41318664063065924,
+            "energy": 0.4907866069043193,
+            "instrumentalness": 0.05284430085157061,
+            "liveness": 0.3334597298154086,
+            "loudness": -16.937772976555912,
+            "speechiness": 0.08078182555303796,
+            "tempo": 117.27192975262935,
+            "valence": 0.31653951543116365
+        },
+        "genre": [
+            "gothic rock",
+            "post-punk"
+        ],
+        "tags": {
+            "1982": 48,
+            "80s": 37,
+            "Gothic": 58,
+            "Gothic Rock": 85,
+            "albums I own": 43,
+            "alternative": 37,
+            "favorite albums": 37,
+            "goth": 64,
+            "new wave": 22,
+            "post-punk": 100
+        },
+        "title": "The Sky's Gone Out"
+    },
+    {
+        "artist": "Pavement",
+        "features": {
+            "acousticness": 0.07629109154120345,
+            "danceability": 0.47390839026869647,
+            "energy": 0.6751908123978221,
+            "instrumentalness": 0.14985619924343282,
+            "liveness": 0.22636804023868484,
+            "loudness": -7.060729929726633,
+            "speechiness": 0.03877484582093342,
+            "tempo": 121.70979402765094,
+            "valence": 0.42761623896537343
+        },
+        "genre": [
+            "indie rock"
+        ],
+        "tags": {
+            "1997": 71,
+            "90s": 48,
+            "Lo-Fi": 36,
+            "albums I own": 83,
+            "alternative": 12,
+            "favorite albums": 36,
+            "indie": 71,
+            "indie rock": 100,
+            "matador": 18,
+            "rock": 18
+        },
+        "title": "Brighten the Corners"
+    },
+    {
+        "artist": "The Stranglers",
+        "features": {
+            "acousticness": 0.006592123545763809,
+            "danceability": 0.48451846461532583,
+            "energy": 0.8210497478109052,
+            "instrumentalness": 0.24090719977749894,
+            "liveness": 0.32888943027981776,
+            "loudness": -9.426995128897042,
+            "speechiness": 0.07520806874178626,
+            "tempo": 142.80621796398796,
+            "valence": 0.738410917838088
+        },
+        "genre": [
+            "post-punk",
+            "punk rock",
+            "new wave"
+        ],
+        "tags": {
+            "1977": 50,
+            "70s": 25,
+            "UK": 25,
+            "british": 13,
+            "new wave": 50,
+            "post-punk": 75,
+            "punk": 100,
+            "punk rock": 38,
+            "rock": 13,
+            "seen live": 13
+        },
+        "title": "No More Heroes"
+    },
+    {
+        "artist": "The Stranglers",
+        "features": {
+            "acousticness": 0.013126752842174244,
+            "danceability": 0.4664271288904782,
+            "energy": 0.748907560277166,
+            "instrumentalness": 0.18461373547460064,
+            "liveness": 0.2571846806060369,
+            "loudness": -9.799939498851824,
+            "speechiness": 0.04622725180952281,
+            "tempo": 133.90527614979428,
+            "valence": 0.8052327422811606
+        },
+        "genre": [
+            "new wave",
+            "punk rock",
+            "art punk",
+            "rolling stone"
+        ],
+        "tags": {
+            "1001 Albums You Must Hear Before You Die": 34,
+            "1977": 25,
+            "70s": 42,
+            "albums I own": 25,
+            "alternative": 25,
+            "new wave": 25,
+            "post-punk": 50,
+            "punk": 100,
+            "punk rock": 42,
+            "rock": 17
+        },
+        "title": "Rattus Norvegicus"
+    },
+    {
+        "artist": "The Stranglers",
+        "features": {
+            "acousticness": 0.21876834471565346,
+            "danceability": 0.5964135028371944,
+            "energy": 0.617789797057826,
+            "instrumentalness": 0.26177549369140873,
+            "liveness": 0.15562086689316953,
+            "loudness": -12.467873465351692,
+            "speechiness": 0.0638670888418194,
+            "tempo": 127.65405311108444,
+            "valence": 0.5777525438604265
+        },
+        "genre": [
+            "new wave",
+            "post-punk"
+        ],
+        "tags": {
+            "1981": 46,
+            "80s": 37,
+            "albums I own": 10,
+            "alternative": 10,
+            "baroque pop": 19,
+            "new wave": 100,
+            "post-punk": 55,
+            "punk": 10,
+            "rock": 10,
+            "seen live": 10
+        },
+        "title": "La folie"
+    },
+    {
+        "artist": "The Alan Parsons Project",
+        "features": {
+            "acousticness": 0.5677100127766807,
+            "danceability": 0.5198144299445288,
+            "energy": 0.3697053291802067,
+            "instrumentalness": 0.36293098071033747,
+            "liveness": 0.13404958960311988,
+            "loudness": -12.945843771384443,
+            "speechiness": 0.036385289498054633,
+            "tempo": 109.39602469304606,
+            "valence": 0.31989589933008694
+        },
+        "genre": [
+            "soft rock",
+            "progressive rock"
+        ],
+        "tags": {
+            "80s": 45,
+            "Progressive": 24,
+            "Progressive rock": 100,
+            "Symphonic Rock": 49,
+            "albums I own": 24,
+            "art rock": 25,
+            "classic rock": 34,
+            "prog": 18,
+            "psychedelic": 18,
+            "rock": 58
+        },
+        "title": "Eye in the Sky"
+    },
+    {
+        "artist": "The Alan Parsons Project",
+        "features": {
+            "acousticness": 0.3633441311852553,
+            "danceability": 0.5719619265627315,
+            "energy": 0.4435647395223478,
+            "instrumentalness": 0.2628812915032828,
+            "liveness": 0.2043543411026639,
+            "loudness": -12.609196611764977,
+            "speechiness": 0.04237424064299205,
+            "tempo": 122.5101324405442,
+            "valence": 0.4474069225286208
+        },
+        "genre": [
+            "symphonic rock",
+            "progressive rock",
+            "new wave"
+        ],
+        "tags": {
+            "Alan Parsons Project": 39,
+            "Progressive": 33,
+            "Progressive rock": 100,
+            "Symphonic Rock": 36,
+            "classic rock": 71,
+            "epic": 26,
+            "prog": 26,
+            "psychedelic": 26,
+            "rock": 42,
+            "symphonic prog": 33
+        },
+        "title": "The Turn Of A Friendly Card"
+    },
+    {
+        "artist": "The Alan Parsons Project",
+        "features": {
+            "acousticness": 0.3411590093447363,
+            "danceability": 0.6218477778668803,
+            "energy": 0.50460472389027,
+            "instrumentalness": 0.1995835080946623,
+            "liveness": 0.13236929901112154,
+            "loudness": -12.550427901027245,
+            "speechiness": 0.03644164422074522,
+            "tempo": 116.72381619162029,
+            "valence": 0.5633096276623902
+        },
+        "genre": [
+            "pop rock",
+            "symphonic rock",
+            "progressive rock",
+            "new wave"
+        ],
+        "tags": {
+            "80s": 40,
+            "Progressive rock": 100,
+            "Symphonic Rock": 36,
+            "art rock": 43,
+            "atmospheric": 33,
+            "classic rock": 58,
+            "epic": 33,
+            "prog": 33,
+            "psychedelic": 33,
+            "rock": 47
+        },
+        "title": "Ammonia Avenue"
+    },
+    {
+        "artist": "Talking Heads",
+        "features": {
+            "acousticness": 0.06721236285102768,
+            "danceability": 0.8641677269701734,
+            "energy": 0.6841905637100199,
+            "instrumentalness": 0.262542100658159,
+            "liveness": 0.11405719129072608,
+            "loudness": -9.257149223349439,
+            "speechiness": 0.056803616202072596,
+            "tempo": 116.40184116821787,
+            "valence": 0.8302615031502117
+        },
+        "genre": [
+            "art rock",
+            "funk",
+            "new wave"
+        ],
+        "tags": {
+            "1980s": 17,
+            "1983": 88,
+            "80s": 71,
+            "albums I own": 67,
+            "alternative": 25,
+            "art pop": 17,
+            "funk": 21,
+            "new wave": 100,
+            "post-punk": 34,
+            "rock": 30
+        },
+        "title": "Speaking in Tongues"
+    },
+    {
+        "artist": "Kate Bush",
+        "features": {
+            "acousticness": 0.5041928127677269,
+            "danceability": 0.49646532846503977,
+            "energy": 0.35864857898924873,
+            "instrumentalness": 0.029936109518658206,
+            "liveness": 0.13873159183859424,
+            "loudness": -13.523926591052906,
+            "speechiness": 0.033562259926574065,
+            "tempo": 115.52359812948802,
+            "valence": 0.45723384218250085
+        },
+        "genre": [
+            "art rock",
+            "baroque pop",
+            "art pop"
+        ],
+        "tags": {
+            "1978": 85,
+            "70s": 100,
+            "Kate Bush": 31,
+            "albums I own": 100,
+            "alternative": 52,
+            "art rock": 37,
+            "favourite albums": 55,
+            "female vocalists": 94,
+            "pop": 40,
+            "singer-songwriter": 31
+        },
+        "title": "The Kick Inside"
+    },
+    {
+        "artist": "Kate Bush",
+        "features": {
+            "acousticness": 0.5852069907672564,
+            "danceability": 0.4866122166746643,
+            "energy": 0.402012645031191,
+            "instrumentalness": 0.08800494733364247,
+            "liveness": 0.17967793580421687,
+            "loudness": -15.143820310839926,
+            "speechiness": 0.05482671838654252,
+            "tempo": 108.97267143407967,
+            "valence": 0.44540684983458173
+        },
+        "genre": [
+            "art rock",
+            "art pop",
+            "progressive rock",
+            "progressive pop"
+        ],
+        "tags": {
+            "1985": 63,
+            "80s": 100,
+            "Progressive rock": 40,
+            "albums I own": 75,
+            "alternative": 40,
+            "art pop": 44,
+            "art rock": 44,
+            "favorite albums": 46,
+            "favourite albums": 87,
+            "female vocalists": 89
+        },
+        "title": "Hounds of Love"
+    },
+    {
+        "artist": "Kate Bush",
+        "features": {
+            "acousticness": 0.6203798789787549,
+            "danceability": 0.49963246081547713,
+            "energy": 0.32016425323465386,
+            "instrumentalness": 0.002526457859082657,
+            "liveness": 0.1425704512803626,
+            "loudness": -13.41235823111765,
+            "speechiness": 0.03778833121333712,
+            "tempo": 118.24001293728794,
+            "valence": 0.4121995177561854
+        },
+        "genre": [
+            "art rock",
+            "baroque pop",
+            "progressive pop"
+        ],
+        "tags": {
+            "1980": 84,
+            "80s": 100,
+            "Progressive rock": 36,
+            "albums I own": 68,
+            "alternative": 20,
+            "art rock": 24,
+            "favourite albums": 20,
+            "female vocalists": 84,
+            "pop": 32,
+            "singer-songwriter": 20
+        },
+        "title": "Never for Ever"
+    },
+    {
+        "artist": "Elliott Smith",
+        "features": {
+            "acousticness": 0.466937879348865,
+            "danceability": 0.5225252359138902,
+            "energy": 0.45011489809160615,
+            "instrumentalness": 0.05135334125199186,
+            "liveness": 0.15820112114505117,
+            "loudness": -10.877515227965045,
+            "speechiness": 0.031350796858901624,
+            "tempo": 112.41916387699625,
+            "valence": 0.4110829805271866
+        },
+        "genre": [
+            "indie pop",
+            "indie rock"
+        ],
+        "tags": {
+            "1998": 45,
+            "90s": 32,
+            "acoustic": 17,
+            "albums I own": 100,
+            "favorite albums": 65,
+            "favourite albums": 23,
+            "folk": 19,
+            "indie": 47,
+            "indie pop": 21,
+            "singer-songwriter": 60
+        },
+        "title": "XO"
+    },
+    {
+        "artist": "Elliott Smith",
+        "features": {
+            "acousticness": 0.3037743039388518,
+            "danceability": 0.45302514800701577,
+            "energy": 0.5207001485424333,
+            "instrumentalness": 0.05449094380007794,
+            "liveness": 0.24064545216259176,
+            "loudness": -10.126439600575246,
+            "speechiness": 0.032620614985492576,
+            "tempo": 119.9460164473905,
+            "valence": 0.37699217810771585
+        },
+        "genre": [
+            "indie pop",
+            "indie rock"
+        ],
+        "tags": {
+            "2000": 63,
+            "albums I own": 100,
+            "alternative": 38,
+            "elliott smith": 41,
+            "favorite albums": 44,
+            "folk": 52,
+            "indie": 84,
+            "indie pop": 36,
+            "indie rock": 52,
+            "singer-songwriter": 90
+        },
+        "title": "Figure 8"
+    },
+    {
+        "artist": "Elliott Smith",
+        "features": {
+            "acousticness": 0.27174923600461737,
+            "danceability": 0.5306580791354677,
+            "energy": 0.2476272318428719,
+            "instrumentalness": 0.04584119956312352,
+            "liveness": 0.15583030353330063,
+            "loudness": -15.556975190175573,
+            "speechiness": 0.0342090386243099,
+            "tempo": 124.98855147890602,
+            "valence": 0.3682693150475228
+        },
+        "genre": [
+            "indie pop",
+            "indie rock",
+            "indie folk",
+            "out",
+            "exclaim!",
+            "here media",
+            "lo-fi"
+        ],
+        "tags": {
+            "1995": 100,
+            "90s": 20,
+            "acoustic": 16,
+            "albums I own": 84,
+            "favorite albums": 80,
+            "favourite albums": 28,
+            "folk": 20,
+            "indie": 56,
+            "indie rock": 28,
+            "singer-songwriter": 76
+        },
+        "title": "Elliott Smith"
+    },
+    {
+        "artist": "Elliott Smith",
+        "features": {
+            "acousticness": 0.23952599822906534,
+            "danceability": 0.46445190173117346,
+            "energy": 0.37087030173161095,
+            "instrumentalness": 0.1065849220334793,
+            "liveness": 0.11034728187778145,
+            "loudness": -10.660066014078875,
+            "speechiness": 0.03626597010631624,
+            "tempo": 114.27785380436477,
+            "valence": 0.280985485226806
+        },
+        "genre": [
+            "indie folk"
+        ],
+        "tags": {
+            "1994": 100,
+            "90s": 47,
+            "acoustic": 39,
+            "albums I own": 77,
+            "favorite albums": 39,
+            "folk": 39,
+            "indie": 47,
+            "indie pop": 31,
+            "indie rock": 47,
+            "singer-songwriter": 85
+        },
+        "title": "Roman Candle"
+    },
+    {
+        "artist": "Electric Light Orchestra",
+        "features": {
+            "acousticness": 0.420089004465298,
+            "danceability": 0.44463950544184627,
+            "energy": 0.5216347961835657,
+            "instrumentalness": 0.04363122829693807,
+            "liveness": 0.23639499384088697,
+            "loudness": -10.432613091026175,
+            "speechiness": 0.041894250999529994,
+            "tempo": 114.95587293040367,
+            "valence": 0.48235599932492534
+        },
+        "genre": [
+            "rock"
+        ],
+        "tags": {
+            "1001 Albums You Must Hear Before You Die": 23,
+            "1977": 49,
+            "70s": 71,
+            "80s": 10,
+            "ELO": 39,
+            "Progressive rock": 68,
+            "albums I own": 46,
+            "classic rock": 100,
+            "pop": 13,
+            "rock": 36
+        },
+        "title": "Out of the Blue"
+    },
+    {
+        "artist": "Electric Light Orchestra",
+        "features": {
+            "acousticness": 0.5666456059868864,
+            "danceability": 0.5928856156149198,
+            "energy": 0.5235519802256324,
+            "instrumentalness": 0.0012932880120685084,
+            "liveness": 0.21957243640735333,
+            "loudness": -9.85297895390815,
+            "speechiness": 0.033605184206935784,
+            "tempo": 137.01619303005884,
+            "valence": 0.6297245760275694
+        },
+        "genre": [
+            "pop rock",
+            "disco"
+        ],
+        "tags": {
+            "1979": 63,
+            "70s": 75,
+            "Disco": 21,
+            "ELO": 21,
+            "Electric Light Orchestra": 21,
+            "Progressive rock": 80,
+            "Symphonic Rock": 21,
+            "classic rock": 100,
+            "pop": 21,
+            "rock": 46
+        },
+        "title": "Discovery"
+    },
+    {
+        "artist": "Aphex Twin",
+        "features": {
+            "acousticness": 0.3499716522522439,
+            "danceability": 0.5709768689266722,
+            "energy": 0.5879896593076411,
+            "instrumentalness": 0.7235416864352413,
+            "liveness": 0.16667431867840946,
+            "loudness": -14.952009220402912,
+            "speechiness": 0.10770215067819003,
+            "tempo": 137.55307614372163,
+            "valence": 0.2970908196218503
+        },
+        "genre": [
+            "drill 'n' bass",
+            "electroacoustic",
+            "drum 'n' bass",
+            "idm",
+            "classical"
+        ],
+        "tags": {
+            "2001": 42,
+            "Warp": 19,
+            "albums I own": 30,
+            "ambient": 42,
+            "drill and bass": 26,
+            "electronic": 75,
+            "electronica": 19,
+            "experimental": 45,
+            "favourite albums": 23,
+            "idm": 100
+        },
+        "title": "Drukqs"
+    },
+    {
+        "artist": "Talk Talk",
+        "features": {
+            "acousticness": 0.12995263648142125,
+            "danceability": 0.6485449014915665,
+            "energy": 0.6329549536886452,
+            "instrumentalness": 0.1790478106415439,
+            "liveness": 0.12379979566469959,
+            "loudness": -8.594790992518936,
+            "speechiness": 0.03445027252451094,
+            "tempo": 113.83270684602635,
+            "valence": 0.6094485003020306
+        },
+        "genre": [
+            "synth-pop",
+            "new wave"
+        ],
+        "tags": {
+            "1984": 42,
+            "80s": 68,
+            "albums I own": 17,
+            "alternative": 17,
+            "art pop": 10,
+            "new romantic": 33,
+            "new wave": 100,
+            "pop": 7,
+            "synth pop": 39,
+            "synthpop": 36
+        },
+        "title": "It's My Life"
+    },
+    {
+        "artist": "Talk Talk",
+        "features": {
+            "acousticness": 0.14539624620325026,
+            "danceability": 0.5609585418439819,
+            "energy": 0.5251894672868069,
+            "instrumentalness": 0.10880357520507826,
+            "liveness": 0.15842725341857833,
+            "loudness": -12.138294633246643,
+            "speechiness": 0.03612734425261486,
+            "tempo": 94.91654038487823,
+            "valence": 0.6414594349116902
+        },
+        "genre": [
+            "experimental pop",
+            "art pop",
+            "progressive pop",
+            "new wave"
+        ],
+        "tags": {
+            "1001 Albums You Must Hear Before You Die": 39,
+            "1986": 62,
+            "80s": 100,
+            "albums I own": 54,
+            "art pop": 85,
+            "art rock": 31,
+            "chamber pop": 39,
+            "favourite albums": 47,
+            "new wave": 85,
+            "post-rock": 39
+        },
+        "title": "The Colour of Spring"
+    },
+    {
+        "artist": "Talk Talk",
+        "features": {
+            "acousticness": 0.7527352336609003,
+            "danceability": 0.296314977952068,
+            "energy": 0.13892644094481144,
+            "instrumentalness": 0.4766215678475183,
+            "liveness": 0.15709693317780613,
+            "loudness": -21.330822249580475,
+            "speechiness": 0.03625991286572683,
+            "tempo": 105.39646483759529,
+            "valence": 0.09995106766327712
+        },
+        "genre": [
+            "prog",
+            "progressive pop",
+            "nme",
+            "post-rock",
+            "art rock",
+            "pitchfork"
+        ],
+        "tags": {
+            "1988": 35,
+            "80s": 24,
+            "albums I own": 20,
+            "ambient": 7,
+            "art rock": 15,
+            "experimental": 22,
+            "favorite albums": 9,
+            "favourite albums": 30,
+            "post-rock": 100,
+            "spiritual": 9
+        },
+        "title": "Spirit of Eden"
+    },
+    {
+        "artist": "Talk Talk",
+        "features": {
+            "acousticness": 0.04799227268807797,
+            "danceability": 0.5918615956743728,
+            "energy": 0.8191225075645548,
+            "instrumentalness": 0.08205981922521045,
+            "liveness": 0.1908747318761679,
+            "loudness": -7.10282596525258,
+            "speechiness": 0.04052865773199514,
+            "tempo": 121.06798051242198,
+            "valence": 0.6657684701120355
+        },
+        "genre": [
+            "sophisti-pop",
+            "art pop",
+            "synthpop",
+            "new wave"
+        ],
+        "tags": {
+            "1982": 100,
+            "1982 albums": 40,
+            "80s": 60,
+            "albums I own": 40,
+            "alternative": 20,
+            "new romantic": 40,
+            "new wave": 80,
+            "synth pop": 20,
+            "synthpop": 60,
+            "wishlist": 20
+        },
+        "title": "The Party's Over"
     }
 ]

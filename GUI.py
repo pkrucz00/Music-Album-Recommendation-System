@@ -4,9 +4,12 @@ from tkinter import ttk
 from functools import partial
 from time import time
 from math import ceil
+from PIL import ImageTk, Image
 
 
 JSON_PATH = "album_info/album_info.json"
+album_covers = "album_info/album_covers/"
+
 
 class DisplayInfo:
     def __init__(self, chunk_length, mars_object):
@@ -106,11 +109,18 @@ def update(core, display_info):
     right_button.grid(row=0, column=2)
     # filling slidebar with albums
     truncated_list = display_info.return_chunk()
+
+    global cover
+    cover = [None for _ in range(len(truncated_list))]
     for index, position in enumerate(truncated_list):
+        cover[index] = ImageTk.PhotoImage(Image.open(album_covers + "{} - {}.png".format(core.album_artists[position[0]], core.album_titles[position[0]]).replace('/', ' ').replace('?', ' ')))
+        cover_label = tk.Label(display_window_left, image=cover[index])
+        cover_label.grid(row=index + 1, column=0)
+
         label = tk.Label(display_window_left,
                          text="{}\n{}".format(core.album_titles[position[0]],
                                               core.album_artists[position[0]]))
-        label.grid(row=index + 1, column=0)
+        label.grid(row=index + 1, column=1)
 
         # adding buttons to rank
         for rate in range(-2, 3):
@@ -118,7 +128,7 @@ def update(core, display_info):
             new_button = tk.Button(display_window_left, text=display_rate,
                                    padx=20, pady=20,
                                    command=partial(rate_update, position[0], rate))
-            new_button.grid(row=index + 1, column=display_rate)
+            new_button.grid(row=index + 1, column=display_rate + 1)
 
     # creating right slidebar for albums with grades
     chosen = tk.LabelFrame(root)
@@ -151,9 +161,10 @@ def update(core, display_info):
 
 if __name__ == "__main__":
     root = tk.Tk()
-    root.geometry("1080x720")
+    root.geometry("1100x700")
     # root.resizable(False, False)
     root.title("MARS")
+    root.iconbitmap('MARS_icon.ico')
 
     update(core, display_info)
     root.mainloop()

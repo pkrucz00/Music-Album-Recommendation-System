@@ -4,6 +4,7 @@ import re
 import csv
 import json
 import logging
+import requests
 
 # API imports
 import wptools
@@ -14,12 +15,14 @@ import pylast
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
+
 logging.basicConfig(level=logging.WARNING)
 
 last_fm_api_key = "194ebdf5b49fa996adb5ffb9bfcab1db"
 passwd_path = "hidden/passwdData.csv"
 albums_info_path = "album_info/albums.csv"
 dest_path = "album_info/album_info.json"
+album_covers = "album_info/album_covers/"
 
 os.environ['SPOTIPY_CLIENT_ID'] = 'a7dfe025796347eeb0e630dc21b2abb4'
 os.environ['SPOTIPY_CLIENT_SECRET'] = '3a3144d353cf42ff95b3f04a129c10a5'
@@ -55,6 +58,17 @@ def get_features(album, artist, spotify):
     if len(album_info) == 0:
         logging.warning(f"Album {artist} - {album} hasn't been found on spotify")
         return {}
+
+    # print(album_info[0]['images'])
+    # print()
+
+    cover = requests.get(album_info[0]['images'][2]['url'])
+    # with open(album_covers + "{}: {}.png".format(album, artist), 'wb') as file:
+    #     file.write(cover.content)
+
+    file = open(album_covers + "{} - {}.png".format(artist, album).replace('/', ' ').replace('?', ' '), "wb")
+    file.write(cover.content)
+    file.close()
 
     album_features = {feature: 0 for feature in features_list}
     tracks = spotify.album_tracks(album_info[0]['uri'])
