@@ -1,10 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import json
-
+import logging
 from time import time
 
 JSON_PATH = "album_info/album_info.json"
+
 
 def prepare_data(json_path):
     with open(json_path, "r") as file:
@@ -76,11 +77,13 @@ def get_tags_matrix(tags):
     weights_sum = np.sum(tags_values, axis=1)
     tags_values = np.array(
         [np.divide(tags_weights, weights_sum[index]) for index, tags_weights in enumerate(tags_values)])
-    tags = [[(tag[0], tags_values[alb_ind][tag_ind]) for tag_ind, tag in enumerate(album_tags)] for alb_ind, album_tags
+    tag_dictionaries = [{tag[0]: tags_values[alb_ind][tag_ind] for tag_ind, tag in enumerate(album_tags)} for alb_ind, album_tags
             in enumerate(tags)]
     similarity = np.array([[np.sum(
-        [[tag_1[1] + tag_2[1] if tag_1[0] == tag_2[0] else 0 for tag_2 in tags_2] for tag_1 in tags_1]) for tags_2 in
-                            tags] for tags_1 in tags])
+        [[val_1 + tags_2[tag_name] if tag_name in tags_2 else 0]
+         for tag_name, val_1 in tags_1.items()])
+        for tags_2 in tag_dictionaries]
+        for tags_1 in tag_dictionaries])
 
     # similarity = np.zeros([len(tags), len(tags)])
     # for album_a_index, album_a_tags in enumerate(tags):
@@ -171,7 +174,7 @@ def get_genres_matrix(data):
     genre_array = np.array([[cos_sim_np(tf_idf[:, i], tf_idf[:, j], lengths[i], lengths[j])
                             for i in range(n)] for j in range(n)])
     b = time()
-    print(f'General genres similarity computation: {round(b - a, 4)} [s]')
+    logging.debug(f'General genres similarity computation: {round(b - a, 4)} [s]')
 
     a = time()
     trigrams = [all_k_grams(album_genres, 3) for album_genres in data]
@@ -180,7 +183,7 @@ def get_genres_matrix(data):
                                             trigrams_lengths[i], trigrams_lengths[j])
                                for i in range(n)] for j in range(n)])
     b = time()
-    print(f"Cosine similarity of trigrams {round(b-a, 4)} [s]")
+    logging.debug(f"Cosine similarity of trigrams {round(b-a, 4)} [s]")
 
     return (genre_array + trigram_array)/2
 
@@ -191,23 +194,22 @@ def wrangle(json_path, features_weight=2, tags_weight=2, genre_weight=1):
     a = time()
     alice_in_wonderland = get_features_matrix(spotify_data, len(spotify_data))
     b = time()
-    print(f"Spotify total time: {round(b-a, 4)} [s]")
+    logging.debug(f"Spotify total time: {round(b-a, 4)} [s]")
 
     a = time()
     cat_in_a_hat = get_tags_matrix(lastfm_data)
     b = time()
-    print(f"Last fm total time: {round(b-a, 4)} [s]")
+    logging.debug(f"Last fm total time: {round(b-a, 4)} [s]")
 
     a = time()
     betty_boop = get_genres_matrix(data=wiki_data)
     b = time()
-    print(f"Wikipedia total time: {round(b-a, 4)} [s]")
+    logging.debug(f"Wikipedia total time: {round(b-a, 4)} [s]")
 
-    ###         FOR TESTING         ###
     final_matrix = features_weight * alice_in_wonderland +\
                    tags_weight * cat_in_a_hat + genre_weight * betty_boop
 
-    #TO THINK OF
+    # standarization
     final_matrix = [(final_matrix[i, :] - final_matrix[i, :].mean()) / final_matrix[i, :].std() for i in range(len(final_matrix))]
 
     # # album_index = 364
@@ -232,10 +234,3 @@ def wrangle(json_path, features_weight=2, tags_weight=2, genre_weight=1):
     # print(f'Percent of 0 similarities {100*acc/len(albums_info)}')
 
     return final_matrix
-
-
-# _, _, genres_data, _ = prepare_data(JSON_PATH)
-# hahaha = get_genres_matrix(genres_data)
-# n = hahaha.shape[0]
-# print(np.count_nonzero(hahaha)/(n*n))
-
