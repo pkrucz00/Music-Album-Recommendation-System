@@ -16,7 +16,7 @@ class MarsCore:
         with open(json_path, "r") as file:
             albums_info = load(file)
 
-        albums_info = albums_info[:100]
+        # albums_info = albums_info[:100]
         self.no_albums = len(albums_info)  # number of albums
         self.album_titles = [albums_info[i]["title"] for i in range(self.no_albums)]
         self.album_artists = [albums_info[i]["artist"] for i in range(self.no_albums)]
@@ -26,13 +26,11 @@ class MarsCore:
         self.already_chosen = {}  # {index: grade}
 
     def choose(self, index, grade):
-        print(f"Chosen album: {self.album_titles[index]} by {self.album_artists[index]}")
         logging.debug(f"Chosen album: {self.album_titles[index]} by {self.album_artists[index]}")
         self.already_chosen[index] = grade
         self.__update_result_list(index, grade)
 
     def unchoose(self, index):
-        print(f"Chosen album: {self.album_titles[index]} by {self.album_artists[index]}")
         logging.debug(f"Chosen album: {self.album_titles[index]} by {self.album_artists[index]}")
         old_grade = self.already_chosen.pop(index)
         new_rating = sum([grade*self.similarity_matrix[index][i] for i, grade in self.already_chosen.items()])
