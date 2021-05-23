@@ -70,10 +70,6 @@ def boolean_to_button_constants(expression):
     return tk.NORMAL if expression else tk.DISABLED
 
 
-# setting root
-
-
-
 def update(state):
     mars_core = state.mars_object
     for ele in root.winfo_children():
@@ -118,6 +114,7 @@ def update(state):
                 .replace('?', ' ').replace(':', ' ')))
         except:
             cover[index] = ImageTk.PhotoImage(Image.open(album_covers + "no_image.png"))
+
         cover_label = tk.Label(display_window_left, image=cover[index])
         cover_label.grid(row=index + 1, column=0)
 
@@ -128,11 +125,11 @@ def update(state):
 
         # adding buttons to rank
         for rate in range(-2, 3):
-            display_rate = rate + 3
-            new_button = tk.Button(display_window_left, text=display_rate,
+            rate_to_display = rate + 3
+            new_button = tk.Button(display_window_left, text=rate_to_display,
                                    padx=20, pady=20,
                                    command=partial(rate_update, state, entry[INDEX], rate))
-            new_button.grid(row=index + 1, column=display_rate+1)
+            new_button.grid(row=index + 1, column=rate_to_display+1)
 
     # creating right slidebar for albums with grades
     chosen = tk.LabelFrame(root)
@@ -166,7 +163,6 @@ def update(state):
 if __name__ == "__main__":
     root = tk.Tk()
     root.geometry("1100x700")
-    # root.resizable(False, False)
     root.title("MARS")
     root.iconbitmap('MARS_icon.ico')
 

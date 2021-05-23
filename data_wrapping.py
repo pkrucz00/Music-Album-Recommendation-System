@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import numpy as np
 import json
 import logging
@@ -11,14 +10,12 @@ def prepare_data(json_path):
     with open(json_path, "r") as file:
         albums_info = json.load(file)
 
-    # albums_info = albums_info[:100]
     no_albums = len(albums_info)
     max_tags = max(map(lambda album: len(album["tags"]), albums_info))
     max_genres = max(map(lambda album: len(album["genre"]), albums_info))
 
     spotify_features = np.array([[v for v in album["features"].values()] for album in albums_info], dtype="f8")
 
-    # lastfm_tags = np.array([[list(album['tags'].items())[tag_ind] if tag_ind < len(album['tags'].items()) else (None, 0) for tag_ind in range(max_tags)] for album in albums_info])
     lastfm_tags = np.zeros((no_albums, max_tags), dtype=[('tag_name', "U128"), ("value", "f4")])
     for i in range(no_albums):
         album_tags = list(albums_info[i]["tags"].items())
@@ -36,9 +33,8 @@ def prepare_data(json_path):
     return spotify_features, lastfm_tags, wiki_generes, albums_info
 
 
-
 def get_features_matrix(features, size):
-    # data standarization. Every feature has expected value 0 and standard deviation 1.
+    # data standardization. Every feature has expected value 0 and standard deviation 1.
     standardized = np.array([(features[:, feature] - features[:, feature].mean())
                              / features[:, feature].std() for feature in range(9)]).T
 
@@ -47,27 +43,6 @@ def get_features_matrix(features, size):
                              for alb_2 in range(size)] for alb_1 in range(size)])
 
     similarity = np.square(np.ones((size, size)) - differences / np.max(differences))
-    # similarity = np.array([similarity[]])
-
-    # distribution = [0 for i in range(101)]
-    # x = [i for i in range(101)]
-    # for album_a in range(len(similarity)):
-    #     for album_b in range(len(similarity)):
-    #         distribution[int(similarity[album_a][album_b] * 100)] += 1
-    # plt.scatter(x, distribution)
-    # plt.title("SPOTIFY ALBUM PAIRS")
-    # plt.show()
-    #
-    # distribution = [0 for i in range(30)]
-    # x = [i for i in range(30)]
-    # for album_a in range(len(similarity)):
-    #     album_similarity = 0
-    #     for album_b in range(len(similarity)):
-    #         album_similarity += similarity[album_a][album_b]
-    #     distribution[int(album_similarity / 10)] += 1
-    # plt.scatter(x, distribution)
-    # plt.title("SPOTIFY EVERY ALBUM")
-    # plt.show()
 
     return similarity
 
@@ -77,68 +52,27 @@ def get_tags_matrix(tags):
     weights_sum = np.sum(tags_values, axis=1)
     tags_values = np.array(
         [np.divide(tags_weights, weights_sum[index]) for index, tags_weights in enumerate(tags_values)])
-    tag_dictionaries = [{tag[0]: tags_values[alb_ind][tag_ind] for tag_ind, tag in enumerate(album_tags)} for alb_ind, album_tags
-            in enumerate(tags)]
+    tag_dictionaries = [{tag[0]: tags_values[alb_ind][tag_ind] for tag_ind, tag in enumerate(album_tags)} for
+                        alb_ind, album_tags
+                        in enumerate(tags)]
     similarity = np.array([[np.sum(
         [[val_1 + tags_2[tag_name] if tag_name in tags_2 else 0]
          for tag_name, val_1 in tags_1.items()])
         for tags_2 in tag_dictionaries]
         for tags_1 in tag_dictionaries])
 
-    # similarity = np.zeros([len(tags), len(tags)])
-    # for album_a_index, album_a_tags in enumerate(tags):
-    #     for album_b_index, album_b_tags in enumerate(tags):
-    #         for album_a_tag in album_a_tags:
-    #             for album_b_tag in album_b_tags:
-    #                 if album_a_tag[0] == album_b_tag[0]:
-    #                     similarity[album_a_index][album_b_index] += album_a_tag[1] + album_b_tag[1]
-
-    # distribution = [0 for i in range(21)]
-    # x = [i for i in range(21)]
-    # for album_a_index, album_a_tags in enumerate(tags):
-    #     for album_b_index, album_b_tags in enumerate(tags):
-    #         distribution[(int)(similarity[album_a_index][album_b_index] * 10)] += 1
-    # plt.scatter(x, distribution)
-    # plt.title("LASTFM ALBUM PAIRS")
-    # plt.show()
-    #
-    # distribution = [0 for i in range(50)]
-    # x = [i for i in range(50)]
-    # for album_a_index, album_a_tags in enumerate(tags):
-    #     counter = 0
-    #     for album_b_index, album_b_tags in enumerate(tags):
-    #         if similarity[album_a_index][album_b_index] > 0:
-    #             counter += 1
-    #     distribution[counter // 10] += 1
-    # plt.scatter(x, distribution)
-    # plt.title("LASTFM FOUND ALBUMS WITH SAME >= 1 TAGS")
-    # plt.show()
-    #
-    # distribution = [0 for i in range(50)]
-    # x = [i for i in range(50)]
-    # for album_a_index, album_a_tags in enumerate(tags):
-    #     album_similarity = 0
-    #     for album_b_index, album_b_tags in enumerate(tags):
-    #         album_similarity += similarity[album_a_index][album_b_index]
-    #     distribution[int(album_similarity / 10)] += 1
-    # plt.scatter(x, distribution)
-    # plt.title("LASTFM ALBUMS WEIGHTS SUM")
-    # plt.show()
-
-    return similarity / 2
-
-
+    return similarity / 2  # devided by 2 because max val in matrix can be 2
 
 
 def get_genres_matrix(data):
     def cos_sim_np(vec_a, vec_b, len_a, len_b):
-        return np.sum(vec_a * vec_b)/(len_a*len_b)
+        return np.sum(vec_a * vec_b) / (len_a * len_b)
 
     def all_k_grams(album_genres, k):
         result = {}
         for genre_name in album_genres:
             for i in range(len(genre_name) - k + 1):
-                k_gram = genre_name[i:i+k]
+                k_gram = genre_name[i:i + k]
                 result.setdefault(k_gram, 0)
                 result[k_gram] += 1
         return result
@@ -151,7 +85,7 @@ def get_genres_matrix(data):
             if key_a in dict_b:
                 val_b = dict_b[key_a]
                 value += val_a * val_b
-        return value/(len_a*len_b)
+        return value / (len_a * len_b)
 
     n = data.shape[0]
 
@@ -162,17 +96,17 @@ def get_genres_matrix(data):
     squeezed_matrix = np.array([";".join(row) for row in data])
     no_occurrences = np.array([np.char.count(squeezed_matrix, genre_name) for genre_name in general_generes])
     unmatched_indicator = np.float_(np.all(no_occurrences == 0, axis=0))
-    no_occurrences = np.vstack([no_occurrences, unmatched_indicator])      #adding "other" row
+    no_occurrences = np.vstack([no_occurrences, unmatched_indicator])  # adding "other" row
 
     genre_tf = np.log(1 + no_occurrences)
     no_documents_with_given_genre = np.sum(np.sign(no_occurrences) + 10e-7, axis=1)
-    terms_idf = np.log(1 + n/no_documents_with_given_genre)
+    terms_idf = np.log(1 + n / no_documents_with_given_genre)
     tf_idf = terms_idf[:, np.newaxis] * genre_tf
 
     a = time()
     lengths = np.linalg.norm(tf_idf, axis=0)
     genre_array = np.array([[cos_sim_np(tf_idf[:, i], tf_idf[:, j], lengths[i], lengths[j])
-                            for i in range(n)] for j in range(n)])
+                             for i in range(n)] for j in range(n)])
     b = time()
     logging.debug(f'General genres similarity computation: {round(b - a, 4)} [s]')
 
@@ -183,54 +117,34 @@ def get_genres_matrix(data):
                                             trigrams_lengths[i], trigrams_lengths[j])
                                for i in range(n)] for j in range(n)])
     b = time()
-    logging.debug(f"Cosine similarity of trigrams {round(b-a, 4)} [s]")
+    logging.debug(f"Cosine similarity of trigrams {round(b - a, 4)} [s]")
 
-    return (genre_array + trigram_array)/2
+    return (genre_array + trigram_array) / 2
 
 
 def wrangle(json_path, features_weight=2, tags_weight=2, genre_weight=1):
     spotify_data, lastfm_data, wiki_data, albums_info = prepare_data(json_path)
 
     a = time()
-    alice_in_wonderland = get_features_matrix(spotify_data, len(spotify_data))
+    alice_in_wonderland = get_features_matrix(spotify_data, len(spotify_data))  # spotify_matrix
     b = time()
-    logging.debug(f"Spotify total time: {round(b-a, 4)} [s]")
+    logging.debug(f"Spotify total time: {round(b - a, 4)} [s]")
 
     a = time()
     cat_in_a_hat = get_tags_matrix(lastfm_data)
     b = time()
-    logging.debug(f"Last fm total time: {round(b-a, 4)} [s]")
+    logging.debug(f"Last fm total time: {round(b - a, 4)} [s]")
 
     a = time()
     betty_boop = get_genres_matrix(data=wiki_data)
     b = time()
-    logging.debug(f"Wikipedia total time: {round(b-a, 4)} [s]")
+    logging.debug(f"Wikipedia total time: {round(b - a, 4)} [s]")
 
-    final_matrix = features_weight * alice_in_wonderland +\
+    final_matrix = features_weight * alice_in_wonderland + \
                    tags_weight * cat_in_a_hat + genre_weight * betty_boop
 
-    # standarization
-    final_matrix = [(final_matrix[i, :] - final_matrix[i, :].mean()) / final_matrix[i, :].std() for i in range(len(final_matrix))]
-
-    # # album_index = 364
-    # album_index = 370
-    # print(albums_info[album_index]['title'], albums_info[album_index]['artist'])
-    # similarity_list = [(i, final_matrix[album_index][i]) for i in range(len(final_matrix))]
-    # similarity_list.sort(key=lambda x: x[1], reverse=True)
-    # del similarity_list[0]
-    # acc = 0
-    # for album in similarity_list:
-    #     if album[1] == 0:
-    #         acc += 1
-    #     print(f"{albums_info[album[0]]['title']:40}, {albums_info[album[0]]['artist']:30}, {album[1]:10}")
-    #
-    # x = [album_similarity[1] for album_similarity in similarity_list]
-    #
-    # plt.hist(x, bins=40)
-    # plt.title(f"{albums_info[album_index]['title']} by  {albums_info[album_index]['artist']} \n"
-    #           f"Spotify: {features_weight}, LastFm {tags_weight} wiki: {genre_weight}")
-    # plt.show()
-    #
-    # print(f'Percent of 0 similarities {100*acc/len(albums_info)}')
+    # standardization
+    final_matrix = [(final_matrix[i, :] - final_matrix[i, :].mean()) / final_matrix[i, :].std() for i in
+                    range(len(final_matrix))]
 
     return final_matrix
