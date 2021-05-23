@@ -131,12 +131,12 @@ def wrangle(json_path, features_weight=2, tags_weight=2, genre_weight=1):
     logging.debug(f"Spotify total time: {round(b - a, 4)} [s]")
 
     a = time()
-    cat_in_a_hat = get_tags_matrix(lastfm_data)
+    cat_in_a_hat = get_tags_matrix(lastfm_data)   # last_fm matrix
     b = time()
     logging.debug(f"Last fm total time: {round(b - a, 4)} [s]")
 
     a = time()
-    betty_boop = get_genres_matrix(data=wiki_data)
+    betty_boop = get_genres_matrix(data=wiki_data)  # wikipedia matrix
     b = time()
     logging.debug(f"Wikipedia total time: {round(b - a, 4)} [s]")
 
