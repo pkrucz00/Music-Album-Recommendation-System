@@ -6,6 +6,14 @@ from time import time
 JSON_PATH = "album_info/album_info.json"
 
 
+def log_time_debug_message(func, message):
+    t1 = time()
+    result = func()
+    t2 = time()
+    logging.debug(message + f": {round(t2 - t1, 5)} [s]")
+    return result
+
+
 def prepare_data(json_path):
     with open(json_path, "r") as file:
         albums_info = json.load(file)
@@ -38,7 +46,9 @@ def get_features_matrix(features, size):
     standardized = np.array([(features[:, feature] - features[:, feature].mean())
                              / features[:, feature].std() for feature in range(9)]).T
 
-    # returns matrix of similarity between albums. Every value is a sum of distances between feature values of two albums. The smaller number is, the more similar albums are.
+    # returns matrix of similarity between albums.
+    # Every value is a sum of distances between feature values of two albums.
+    # The smaller number is, the more similar albums are.
     differences = np.array([[np.sum(np.abs(standardized[alb_1, :] - standardized[alb_2, :]))
                              for alb_2 in range(size)] for alb_1 in range(size)])
 
@@ -52,16 +62,13 @@ def get_tags_matrix(tags):
     weights_sum = np.sum(tags_values, axis=1)
     tags_values = np.array(
         [np.divide(tags_weights, weights_sum[index]) for index, tags_weights in enumerate(tags_values)])
-    tag_dictionaries = [{tag[0]: tags_values[alb_ind][tag_ind] for tag_ind, tag in enumerate(album_tags)} for
-                        alb_ind, album_tags
-                        in enumerate(tags)]
-    similarity = np.array([[np.sum(
-        [[val_1 + tags_2[tag_name] if tag_name in tags_2 else 0]
-         for tag_name, val_1 in tags_1.items()])
-        for tags_2 in tag_dictionaries]
-        for tags_1 in tag_dictionaries])
+    tag_dictionaries = [{tag[0]: tags_values[alb_ind][tag_ind] for tag_ind, tag in enumerate(album_tags)}
+                        for alb_ind, album_tags in enumerate(tags)]
+    similarity = np.array([[np.sum([[val_1 + tags_2[tag_name] if tag_name in tags_2 else 0]
+                                    for tag_name, val_1 in tags_1.items()])
+                            for tags_2 in tag_dictionaries] for tags_1 in tag_dictionaries])
 
-    return similarity / 2  # devided by 2 because max val in matrix can be 2
+    return similarity / 2  # divided by 2 because max val in matrix can be 2
 
 
 def get_genres_matrix(data):
@@ -87,7 +94,7 @@ def get_genres_matrix(data):
                 value += val_a * val_b
         return value / (len_a * len_b)
 
-    n = data.shape[0]
+    n = data.shape[0]  #No. albums
 
     general_generes = np.array(["rock", "blues", "jazz", "rap", "pop", "r&b", "hip hop", "folk", "punk",
                                 "reggae", "country", "soul", "funk", "baroque", "metal", "chamber", "art", "electro",
@@ -103,21 +110,15 @@ def get_genres_matrix(data):
     terms_idf = np.log(1 + n / no_documents_with_given_genre)
     tf_idf = terms_idf[:, np.newaxis] * genre_tf
 
-    a = time()
     lengths = np.linalg.norm(tf_idf, axis=0)
     genre_array = np.array([[cos_sim_np(tf_idf[:, i], tf_idf[:, j], lengths[i], lengths[j])
                              for i in range(n)] for j in range(n)])
-    b = time()
-    logging.debug(f'General genres similarity computation: {round(b - a, 4)} [s]')
 
-    a = time()
     trigrams = [all_k_grams(album_genres, 3) for album_genres in data]
     trigrams_lengths = np.array([np.linalg.norm(list(dictionary.values())) for dictionary in trigrams])
     trigram_array = np.array([[cos_sim_dict(trigrams[i], trigrams[j],
                                             trigrams_lengths[i], trigrams_lengths[j])
                                for i in range(n)] for j in range(n)])
-    b = time()
-    logging.debug(f"Cosine similarity of trigrams {round(b - a, 4)} [s]")
 
     return (genre_array + trigram_array) / 2
 
@@ -125,20 +126,20 @@ def get_genres_matrix(data):
 def wrangle(json_path, features_weight=2, tags_weight=2, genre_weight=1):
     spotify_data, lastfm_data, wiki_data, albums_info = prepare_data(json_path)
 
-    a = time()
-    alice_in_wonderland = get_features_matrix(spotify_data, len(spotify_data))  # spotify_matrix
-    b = time()
-    logging.debug(f"Spotify total time: {round(b - a, 4)} [s]")
+    alice_in_wonderland = \
+        log_time_debug_message(
+            lambda: get_features_matrix(spotify_data, len(spotify_data)),
+            "Spotify total time")
 
-    a = time()
-    cat_in_a_hat = get_tags_matrix(lastfm_data)   # last_fm matrix
-    b = time()
-    logging.debug(f"Last fm total time: {round(b - a, 4)} [s]")
+    cat_in_a_hat = \
+        log_time_debug_message(
+            lambda: get_tags_matrix(lastfm_data),
+            "Last fm total time")  # last_fm matrix
 
-    a = time()
-    betty_boop = get_genres_matrix(data=wiki_data)  # wikipedia matrix
-    b = time()
-    logging.debug(f"Wikipedia total time: {round(b - a, 4)} [s]")
+    betty_boop = \
+        log_time_debug_message(
+            lambda: get_genres_matrix(data=wiki_data),
+            "Wikipedia total time")  # wikipedia matrix
 
     final_matrix = features_weight * alice_in_wonderland + \
                    tags_weight * cat_in_a_hat + genre_weight * betty_boop

@@ -16,7 +16,6 @@ class MarsCore:
         with open(json_path, "r") as file:
             albums_info = load(file)
 
-        # albums_info = albums_info[:100]
         self.no_albums = len(albums_info)  # number of albums
         self.album_titles = [albums_info[i]["title"] for i in range(self.no_albums)]
         self.album_artists = [albums_info[i]["artist"] for i in range(self.no_albums)]

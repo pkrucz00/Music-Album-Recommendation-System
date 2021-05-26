@@ -14,8 +14,6 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 
-logging.basicConfig(level=logging.WARNING)
-
 last_fm_api_key = "194ebdf5b49fa996adb5ffb9bfcab1db"
 passwd_path = "hidden/passwdData.csv"
 albums_info_path = "album_info/albums.csv"
@@ -47,10 +45,9 @@ def get_features(album, artist, spotify):
 
     cover = requests.get(album_info[0]['images'][2]['url'])
 
-    file = open(album_covers + "{} - {}.png".format(artist, album).replace('/', ' ')
-                .replace('?', ' ').replace(':', ' '), "wb")
-    file.write(cover.content)
-    file.close()
+    with open(album_covers + "{} - {}.png".format(artist, album).replace('/', ' ')
+              .replace('?', ' ').replace(':', ' '), "wb") as file:
+        file.write(cover.content)
 
     album_features = {feature: 0 for feature in features_list}
     tracks = spotify.album_tracks(album_info[0]['uri'])
@@ -82,7 +79,6 @@ def get_tags(artist, title, network):
         tags = album.get_top_tags(limit=10)
         if len(tags) == 0:
             logging.warning(f'Album {artist} - {title} has 0 tags on last.fm')
-
         return {tag.item.name: int(tag.weight) for tag in tags}
 
     except pylast.WSError:
