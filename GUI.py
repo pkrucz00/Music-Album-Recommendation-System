@@ -228,7 +228,7 @@ if __name__ == "__main__":
     root = tk.Tk()
     root.geometry("1200x700")
     root.title("MARS")
-    root.iconbitmap('MARS_icon.ico')
+    root.iconbitmap('album_info/MARS_icon.ico')
 
     state = LoopState(mars_object=MarsCore(json_path=JSON_PATH), chunk_length=30)
     update(state)
