@@ -47,11 +47,11 @@ class LoopState:
             lambda: update(self),
             'Time of updating the root')
 
-    def increment_chunk_index(self):
+    def increment_chunk_index(self, event=None):
         self.curr_chunk_index += 1
         update(self)
 
-    def decrement_chunk_index(self):
+    def decrement_chunk_index(self, event=None):
         self.curr_chunk_index -= 1
         update(self)
 
@@ -146,6 +146,12 @@ def update(state):
     left_button.grid(row=0, column=0)
     chunk_num_label.grid(row=0, column=1)
     right_button.grid(row=0, column=2, columnspan=5)
+
+    if state.can_click_left(): root.bind("<Left>", state.decrement_chunk_index)
+    else: root.unbind("<Left>")
+
+    if state.can_click_right(): root.bind("<Right>", state.increment_chunk_index)
+    else: root.unbind("<Right>")
 
     # searchbar
     search_label = tk.LabelFrame(display_window_left, border=0)
