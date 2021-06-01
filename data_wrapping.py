@@ -115,7 +115,8 @@ def get_genres_matrix(data):
                                 "disco", "soft", "hard", "alternative", "grunge", "new wave", "trip hop"])
 
     squeezed_matrix = np.array([";".join(row) for row in data])
-    no_occurrences = np.array([np.char.count(squeezed_matrix, genre_name) for genre_name in general_generes])
+    no_occurrences = np.array([np.char.count(squeezed_matrix, genre_name)
+                               for genre_name in general_generes])
     unmatched_indicator = np.float_(np.all(no_occurrences == 0, axis=0))
     no_occurrences = np.vstack([no_occurrences, unmatched_indicator])  # adding "other" row
 
@@ -163,7 +164,7 @@ def wrangle(json_path, features_weight=2, tags_weight=2, genre_weight=1):
                    tags_weight * cat_in_a_hat + genre_weight * betty_boop
 
     # standardization
-    final_matrix = [(final_matrix[i, :] - final_matrix[i, :].mean()) / final_matrix[i, :].std() for i in
-                    range(len(final_matrix))]
+    final_matrix = [(final_matrix[i, :] - final_matrix[i, :].mean()) / final_matrix[i, :].std()
+                    for i in range(len(final_matrix))]
 
     return final_matrix
