@@ -15,7 +15,9 @@ album_covers = "album_info/album_covers/"
 
 logging.basicConfig(level=logging.DEBUG)
 
-
+'''
+Objects of this class 
+'''
 class LoopState:
     def __init__(self, chunk_length, mars_object):
         self.mars_object = mars_object
@@ -65,8 +67,8 @@ class LoopState:
         if self.searched_phrase == '':
             self.display_list = self.mars_object.result_list
         else:
-            titles = list(map(lambda title: title.lower(), self.mars_object.album_titles))
-            artists = list(map(lambda artist: artist.lower(), self.mars_object.album_artists))
+            titles = list(map(str.lower, self.mars_object.album_titles))
+            artists = list(map(str.lower, self.mars_object.album_artists))
             result_list = self.mars_object.result_list
             self.display_list = list(filter(
                 lambda elem: self.searched_phrase in titles[elem[INDEX]] or
@@ -107,9 +109,6 @@ def log_time_debug_message(func, message):
 
 def boolean_to_button_constants(expression):
     return tk.NORMAL if expression else tk.DISABLED
-
-
-
 
 
 def update(state):
@@ -221,7 +220,6 @@ def update(state):
         remove_button = tk.Button(display_window_right, text="remove", command=partial(state.del_album, index))
         label.grid(row=i, column=0)
         remove_button.grid(row=i, column=1)
-        i += 1
 
 
 if __name__ == "__main__":
