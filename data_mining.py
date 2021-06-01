@@ -38,7 +38,8 @@ def read_album_info_from_csv(path):
 
 
 def get_features(album, artist, spotify):
-    album_info = spotify.search(q="album:{} artist:{}".format(album, artist), type="album")['albums']['items']
+    album_info = spotify.search(q="album:{} artist:{}".format(album, artist),
+                                type="album")['albums']['items']
     if len(album_info) == 0:
         logging.warning(f"Album {artist} - {album} hasn't been found on spotify")
         return {}
@@ -98,7 +99,7 @@ def remove_duplicates(arr):
 
 
 def get_genre(album, artist):
-    names_list = wikipedia.search(album + " (" + artist + ")")  # clever, Robert, very clever
+    names_list = wikipedia.search(album + " (" + artist + ")")
     for name_index in range(min(5, len(names_list))):
         so = wptools.page(names_list[name_index], silent=True).get_parse()
         infobox = so.data.get('infobox') if so else None

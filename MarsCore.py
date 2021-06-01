@@ -12,7 +12,18 @@ RATING = 1
 
 
 class MarsCore:
+    """
+    Stores and computes information for every album. That includes:
+        - basic info (titles, artist)
+        - similarity marix between every album
+        - result list with all albums ranked by similarity to graded albums
+        - already chosen albums with indexes and grades of graded albums"""
     def __init__(self, json_path):
+        """
+        Constructs MarsCore object based on data wrangling module
+
+        :param json_path: path with information about albums
+        """
         with open(json_path, "r") as file:
             albums_info = load(file)
 
@@ -25,11 +36,13 @@ class MarsCore:
         self.already_chosen = {}  # {index: grade}
 
     def choose(self, index, grade):
+        """Grading an album with index with a given grade"""
         logging.debug(f"Chosen album: {self.album_titles[index]} by {self.album_artists[index]}")
         self.already_chosen[index] = grade
         self.__update_result_list(index, grade)
 
     def unchoose(self, index):
+        """Deleting album from the graded albums list and reverting it to result list"""
         logging.debug(f"Chosen album: {self.album_titles[index]} by {self.album_artists[index]}")
         old_grade = self.already_chosen.pop(index)
         new_rating = sum([grade*self.similarity_matrix[index][i] for i, grade in self.already_chosen.items()])
@@ -45,6 +58,7 @@ class MarsCore:
         self.result_list = sorted(new_result_list, key=lambda x: x[RATING], reverse=True)
 
     def __str__(self):
+        """For debug purposes"""
         already_chosen_info = [f"{self.album_titles[index]} by {self.album_artists[index]}" \
                                f" with grade {grade}"
                                for index, grade in self.already_chosen.items()]

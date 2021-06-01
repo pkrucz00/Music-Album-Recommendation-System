@@ -15,33 +15,47 @@ album_covers = "album_info/album_covers/"
 
 logging.basicConfig(level=logging.DEBUG)
 
-'''
-Objects of this class 
-'''
+
 class LoopState:
+    """
+    Objects of this class contains and maintains information about what and how to display.
+    It provides functionalities for dealing with user input, i.e. searchbar and buttons
+    """
+
     def __init__(self, chunk_length, mars_object):
+        """
+        :param chunk_length: number of albums displayed on one page
+        :param mars_object: this is the core of our system. It computes grading for every album
+        and provides information about albums
+
+        searched_phrase - phrase searched by the user
+        display_list - all the entries that satisfy the search_phrase
+        """
         self.mars_object = mars_object
 
         self.chunk_length = chunk_length
         self.curr_chunk_index = 0
 
         self.searched_phrase = ""
-        # No. ALL albums to display (including albums on other pages)
         self.display_list = mars_object.result_list
 
+    # methods for rating unranked and deleting ranked albums
     def rate_album(self, index, rate):
+        """Rates the album and modifies data"""
         log_time_debug_message(
             lambda: self.mars_object.choose(index, rate),
             'Time of giving grade (adding similarities, sorting, etc.)')
         self.__show_modifications()
 
     def del_album(self, index):
+        """Deletes the given album and modifies data"""
         log_time_debug_message(
             lambda: self.mars_object.unchoose(index),
             'Time of deleting grade')
         self.__show_modifications()
 
     def __show_modifications(self):
+        """Modifies data"""
         log_time_debug_message(
             self.set_display_list,
             "Time of resorting the list")
@@ -49,22 +63,30 @@ class LoopState:
             lambda: update(self),
             'Time of updating the root')
 
+    # left and right buttons
     def increment_chunk_index(self, event=None):
+        """Turns to the next page (the next chunk of albums is displayed)"""
         self.curr_chunk_index += 1
         update(self)
 
     def decrement_chunk_index(self, event=None):
+        """Turns to the previous page (the previous chunk of albums is displayed)"""
         self.curr_chunk_index -= 1
         update(self)
 
     def can_click_left(self):
-        return self.curr_chunk_index > 0
+        """Checks if the left button can be clicked"""
+        return boolean_to_button_constants(self.curr_chunk_index > 0)
 
     def can_click_right(self):
-        return (self.curr_chunk_index + 1) * self.chunk_length < len(self.display_list)
+        """Checks if the right button can be clicked"""
+        return boolean_to_button_constants(
+            (self.curr_chunk_index + 1) * self.chunk_length < len(self.display_list))
 
+    # functions for searchbar
     def set_display_list(self):
-        if self.searched_phrase == '':
+        """Filters the display_list by the searched phrase set by the user"""
+        if not self.searched_phrase:
             self.display_list = self.mars_object.result_list
         else:
             titles = list(map(str.lower, self.mars_object.album_titles))
@@ -82,10 +104,13 @@ class LoopState:
         update(self)
 
     def clear_search(self, search_bar):
+        """Clears the searchbar and shows all unranked albums"""
         search_bar.delete(0, len(search_bar.get()))
         self.set_searched_phrase("")  # setting search phrase to BLANK resets the search
 
+    # getters
     def get_truncated_list(self):
+        """Returns albums from the display list that are within the current chunk"""
         display_list = self.display_list
         return display_list[self.chunk_length * self.curr_chunk_index:
                             self.chunk_length * (self.curr_chunk_index + 1)]
@@ -134,23 +159,27 @@ def update(state):
     # buttons for traversing the list
     left_button = tk.Button(display_window_left, text="left",
                             command=state.decrement_chunk_index,
-                            state=boolean_to_button_constants(state.can_click_left()),
+                            state=state.can_click_left(),
                             padx=7, pady=5)
     chunk_num_label = tk.Label(display_window_left,
                                text=f"{state.curr_chunk_index + 1} out of {state.get_no_chunks()}")
     right_button = tk.Button(display_window_left, text="right",
                              command=state.increment_chunk_index,
-                             state=boolean_to_button_constants(state.can_click_right()),
+                             state=state.can_click_right(),
                              padx=7, pady=5)
     left_button.grid(row=0, column=0)
     chunk_num_label.grid(row=0, column=1)
     right_button.grid(row=0, column=2, columnspan=5)
 
-    if state.can_click_left(): root.bind("<Left>", state.decrement_chunk_index)
-    else: root.unbind("<Left>")
+    if state.can_click_left():
+        root.bind("<Left>", state.decrement_chunk_index)
+    else:
+        root.unbind("<Left>")
 
-    if state.can_click_right(): root.bind("<Right>", state.increment_chunk_index)
-    else: root.unbind("<Right>")
+    if state.can_click_right():
+        root.bind("<Right>", state.increment_chunk_index)
+    else:
+        root.unbind("<Right>")
 
     # searchbar
     search_label = tk.LabelFrame(display_window_left, border=0)
@@ -178,8 +207,8 @@ def update(state):
         try:
             cover[index] = ImageTk.PhotoImage(Image.open(
                 album_covers + "{} - {}.png".format(state.mars_object.album_artists[entry[INDEX]],
-                                                    state.mars_object.album_titles[entry[INDEX]]).replace('/', ' ')
-                .replace('?', ' ').replace(':', ' ')))
+                                                    state.mars_object.album_titles[entry[INDEX]])
+                .replace('/', ' ').replace('?', ' ').replace(':', ' ')))
         except FileNotFoundError:
             cover[index] = ImageTk.PhotoImage(Image.open(album_covers + "no_image.png"))
 
@@ -211,7 +240,8 @@ def update(state):
     scrollbar_right.pack(side='right', fill='y')
 
     canvas_right.configure(yscrollcommand=scrollbar_right.set)
-    canvas_right.bind('<Configure>', lambda e: canvas_right.configure(scrollregion=canvas_right.bbox('all')))
+    canvas_right.bind('<Configure>',
+                      lambda e: canvas_right.configure(scrollregion=canvas_right.bbox('all')))
 
     display_window_right = tk.Frame(canvas_right)
     canvas_right.create_window((0, 0), window=display_window_right, anchor='nw')
@@ -223,7 +253,8 @@ def update(state):
                          text="{}\n{}\nRating: {}".format(mars_core.album_titles[index],
                                                           mars_core.album_artists[index],
                                                           display_grade))
-        remove_button = tk.Button(display_window_right, text="remove", command=partial(state.del_album, index))
+        remove_button = tk.Button(display_window_right, text="remove",
+                                  command=partial(state.del_album, index))
         label.grid(row=i, column=0)
         remove_button.grid(row=i, column=1)
 
