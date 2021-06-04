@@ -66,13 +66,16 @@ class LoopState:
     # left and right buttons
     def increment_chunk_index(self, event=None):
         """Turns to the next page (the next chunk of albums is displayed)"""
-        self.curr_chunk_index += 1
-        update(self)
+
+        if self.can_click_right() == "normal":
+            self.curr_chunk_index += 1
+            update(self)
 
     def decrement_chunk_index(self, event=None):
         """Turns to the previous page (the previous chunk of albums is displayed)"""
-        self.curr_chunk_index -= 1
-        update(self)
+        if self.can_click_left() == "normal":
+            self.curr_chunk_index -= 1
+            update(self)
 
     def can_click_left(self):
         """Checks if the left button can be clicked"""
@@ -171,15 +174,8 @@ def update(state):
     chunk_num_label.grid(row=0, column=1)
     right_button.grid(row=0, column=2, columnspan=5)
 
-    if state.can_click_left():
-        root.bind("<Left>", state.decrement_chunk_index)
-    else:
-        root.unbind("<Left>")
-
-    if state.can_click_right():
-        root.bind("<Right>", state.increment_chunk_index)
-    else:
-        root.unbind("<Right>")
+    root.bind("<Left>", state.decrement_chunk_index)
+    root.bind("<Right>", state.increment_chunk_index)
 
     # searchbar
     search_label = tk.LabelFrame(display_window_left, border=0)
