@@ -20,8 +20,8 @@ albums_info_path = "album_info/albums.csv"
 dest_path = "album_info/album_info.json"
 album_covers = "album_info/album_covers/"
 
-os.environ['SPOTIPY_CLIENT_ID'] = 'a7dfe025796347eeb0e630dc21b2abb4'
-os.environ['SPOTIPY_CLIENT_SECRET'] = '3a3144d353cf42ff95b3f04a129c10a5'
+os.environ['SPOTIPY_CLIENT_ID'] = None   # Here the spotify client ID key should be pasted
+os.environ['SPOTIPY_CLIENT_SECRET'] = None   # Here the spotify client secret key should be pasted
 features_list = ['danceability', 'energy', 'loudness', 'speechiness', 'acousticness', 'instrumentalness',
                  'liveness', 'valence', 'tempo']
 

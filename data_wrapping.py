@@ -83,6 +83,7 @@ def get_tags_matrix(tags):
 
 def get_genres_matrix(data):
     """Wrangling wikipedia data"""
+
     def cos_sim_np(vec_a, vec_b, len_a, len_b):
         """:returns similarity between two vectors, a and b, with lengths len_a and len_b"""
         return np.sum(vec_a * vec_b) / (len_a * len_b)
@@ -147,7 +148,7 @@ def wrangle(json_path, features_weight=2, tags_weight=2, genre_weight=1):
     alice_in_wonderland = \
         log_time_debug_message(
             lambda: get_features_matrix(spotify_data, len(spotify_data)),
-            "Spotify total time")
+            "Spotify total time")  # spotify matrix
 
     cat_in_a_hat = \
         log_time_debug_message(
